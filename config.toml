@@ -1,0 +1,235 @@
+# Page settings
+
+baseurl = ""
+languageCode = "en-us"
+title = "Tenny Vongtip Resume"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Siriwat (Tenny) Vongitp"
+        tagline = "Full Stack Developer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: tenny.vongtip@gmail.com"
+        title = "Tenny Vongtip"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+12104289096"
+        title = "+210-428-9096"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//portfoliosite.com"
+        title = "portfoliosite.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/siriwat-vongtip"
+        title = "linkedin.com/in/Tenny"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/TennyV"
+        title = "github.com/TennyV"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/tennyv"
+        title = "@TennyV"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "BS in Computer Science"
+        college = "Southern New Hampshire University"
+        dates = "2021-2023"
+
+      #  [[params.education.list]]
+      #  degree = "BSc in Applied Mathematics"
+      #  college = "Bristol University"
+      #  dates = "2007 - 2011"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "Thai"
+        level = "Conversational"
+
+       # [[params.language.list]]
+       # language = "Russian"
+       # level = "Professional"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Embedded technologies"
+
+        [[params.interests.list]]
+        interest = "Raspberry Pi"
+
+        [[params.interests.list]]
+        interest = "Fly fishing"
+
+        [[params.interests.list]]
+
+        interest = "Rock Climbing"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "Hello, I am a dedicated and results-driven IT professional and full-stack developer with 20 years of experience in the U.S. Army. I have a strong background in team collaboration and time management and have successfully led and executed various technology projects. I am quick to adapt and learn new systems and technologies and am comfortable working independently to achieve tangible results. My passion lies in cyber security and software development, and I am excited to bring my skills and experience to a civilian IT role in this field. I look forward to the opportunity to work with you and contribute to the success of your organization."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Power Applications Developer"
+        dates = "December 2022 - Present"
+        company = "Piedmont Regional Council, Kernersville, NC"
+        details = "Developed and implemented custom business solutions using Microsoft PowerApps, including automation of business processes and data visualization dashboards, resulting in increased efficiency and productivity for clients.\n\n Successfully managed and administered Azure cloud infrastructure for an organization of 200 people, including deployment, configuration, and maintenance of virtual machines, storage, and network resources, resulting in increased scalability and security for the organization."
+
+        [[params.jobs.list]]
+        position = "Information Technology Support Administrator"
+        dates = "December 2021 - December 2022"
+        company = "10th Mountain Divsion, Fort Drum, NY"
+        details = "Developed and designed a musical group request form using CSS and HTML for the organization, which allowed users to request musical support and view upcoming performances, resulting in increased engagement and satisfaction.\n \n Served as a champion for advocating workflows and took problem-solving to the next level by building a cloud-based architecture to provide real-time updates and improve organizational workflows by over 50%."
+
+
+        [[params.jobs.list]]
+        position = "Direction of Plans and Operations"
+        dates = "January 2021 - December 2021"
+        company = "10th Mountain Division, Fort Drum, NY"
+        details = "Developed and executed plans, operations, and training for a 40 employee organization responsible for providing musical and logistical support to over 17,000 families and civilians in Upstate NY. \n \n Utilized digital marketing techniques, developed a vision and represented unit director at staff meetings at the local and corporate levels; made recommendations to the Deputy CEO following research on maximizing the returns on investment."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "I enjoy tinkering and I enjoy combining electricity and programming, I believe in my alternative life I'd been a computer engineer. I truly just enjoy technology and hope you like what you see!"
+
+        [[params.projects.list]]
+        title = "Inventory Management Application"
+        url = "https://github.com/TennyV/inventory_Management"
+        tagline = "The goal of this project was to design an Android inventory management application in Java with the ability to store users and inventory items and quantities in an SQLite database."
+
+        [[params.projects.list]]
+        title = "Dash visualization dashboard for Animal Shelter"
+        url = "https://github.com/TennyV/AAC_shelter"
+        tagline = "Simple application for tracking animals within the animal shelter utilizing the dash application and jupyter notebooks"
+
+        [[params.projects.list]]
+        title = "Open Access JPMorgan Chase Virtual experience"
+        url = "https://github.com/TennyV/JPMorgan"
+        tagline = "Analyze Datasets of Fraud in Financial Payments – Utilized Python and pandas’ library to analyze a large dataset. Created visualizations within Jupyter notebook to assist with and to make better-informed business decisions."
+
+        [[params.projects.list]]
+        title = "OWASP Vulnerability Report/Suppression of False Positives"
+        url = "https://github.com/TennyV/OWASPremedy"
+        tagline = "Set up IntelliJ environment to scan for vulnerabilities within banking app (with permission). Detected occurrences of bouncy house and identified and remediated false positives. Recommended the update of spring-boot and refactoring to ensure security and functionality. Testing and control design was paramount to this project."
+
+        [[params.projects.list]]
+        title = "Shopping Cart"
+        url = "https://github.com/TennyV/Shoppingcart"
+        tagline = "My shopping cart project takes a text file and produces a list that outputs three things. A list all all produce and number of produce was sold that day. A list of a specific item and how many times it was purchased in one day. A histogram of all produce items purchased on a particular day."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "60%"
+                
+        [[params.skills.list]]
+        skill = "MongoDB"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Angular"
+        level = "30%"
+
+        [[params.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "Java"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "C/C++"
+        level = "50%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Ported for Tenny Vongtip"
