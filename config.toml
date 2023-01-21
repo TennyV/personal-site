@@ -165,7 +165,7 @@ disable404 = true
         enable = true
         icon = "fa-archive"
         title = "Projects"
-        intro = "I enjoy tinkering and I enjoy combining electricity and programming. In my alternative life I'd been a computer engineer as I have developed a hobby of building IOT devices. I truly just enjoy technology and hope you like what you see!"
+        intro = "I enjoy tinkering and combining electricity and programming. In my alternative life I'd been a computer engineer as I have developed a hobby of building IOT devices. I truly just enjoy technology and hope you like what you see!"
 
         [[params.projects.list]]
         title = "Inventory Management Application"
