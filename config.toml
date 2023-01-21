@@ -170,17 +170,17 @@ disable404 = true
         [[params.projects.list]]
         title = "Inventory Management Application"
         url = "https://github.com/TennyV/inventory_Management"
-        tagline = "The goal of this project was to design an Android inventory management application in Java with the ability to store users and inventory items and quantities in an SQLite database."
+        tagline = "The goal of this project was to design an Android inventory management application in Java with the ability to store users,inventory items, and quantities in an SQLite database."
 
         [[params.projects.list]]
         title = "Dash visualization dashboard for Animal Shelter"
         url = "https://github.com/TennyV/AAC_shelter"
-        tagline = "Simple application for tracking animals within the animal shelter utilizing the dash application and jupyter notebooks"
+        tagline = "Simple application for tracking animals within the animal shelter utilizing the dash application connecting a python module with my REST API with mongodb and proofing work in jupyter notebooks"
 
         [[params.projects.list]]
         title = "Open Access JPMorgan Chase Virtual experience"
         url = "https://github.com/TennyV/JPMorgan"
-        tagline = "Analyze Datasets of Fraud in Financial Payments – Utilized Python and pandas’ library to analyze a large dataset. Created visualizations within Jupyter notebook to assist with and to make better-informed business decisions."
+        tagline = "Analyze Datasets of Fraud in Financial Payments – Utilized Python and pandas’ library to analyze a large dataset. Created visualizations within Jupyter notebook to assist and to make better-informed business decisions."
 
         [[params.projects.list]]
         title = "OWASP Vulnerability Report/Suppression of False Positives"
