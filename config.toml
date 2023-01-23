@@ -30,7 +30,7 @@ disable404 = true
 
     # Profile section
     [params.profile]
-        name = "Siriwat (Tenny) Vongitp"
+        name = "Siriwat (Tenny) Vongtip"
         tagline = "Full Stack Developer"
         avatar = "profile.png"
 
