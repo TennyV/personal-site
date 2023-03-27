@@ -80,15 +80,15 @@ disable404 = true
         title = "Education"
 
         [[params.education.list]]
+        degree = "B.P.S in Computer Science"
+        college = "Syracuse University"
+        dates = "2023 - 2025"
+        
+        [[params.education.list]]
         degree = "B.S. in Computer Science"
         college = "Southern New Hampshire University"
         dates = "2021-2023"
-
-      #  [[params.education.list]]
-      #  degree = "BSc in Applied Mathematics"
-      #  college = "Bristol University"
-      #  dates = "2007 - 2011"
-
+        
     # Languages section
     [params.language]
         enable = true
