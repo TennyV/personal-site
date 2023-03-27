@@ -80,7 +80,7 @@ disable404 = true
         title = "Education"
 
         [[params.education.list]]
-        degree = "B.P.S in Computer Science"
+        degree = "B.P.S. in Computer Programming"
         college = "Syracuse University"
         dates = "2023 - 2025"
         
