@@ -196,31 +196,31 @@ disable404 = true
     [params.skills]
         enable = true
         icon = "fa-rocket"
-        title = "Skills & Proficiency"
+        title = "Skills"
 
         [[params.skills.list]]
         skill = "Python"
-        level = "60%"
+       # level = "60%"
                 
         [[params.skills.list]]
         skill = "MongoDB"
-        level = "70%"
+       # level = "70%"
 
         [[params.skills.list]]
         skill = "Angular"
-        level = "40%"
+       # level = "40%"
 
         [[params.skills.list]]
         skill = "HTML5 & CSS"
-        level = "80%"
+       # level = "80%"
 
         [[params.skills.list]]
         skill = "Java"
-        level = "75%"
+      #  level = "75%"
 
         [[params.skills.list]]
         skill = "C/C++"
-        level = "50%"
+       # level = "50%"
 
     # Footer section
 
