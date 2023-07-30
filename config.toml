@@ -133,7 +133,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Career Profile"
-        summary = "Hello, I am a dedicated, results-driven IT professional and full-stack developer with 20 years of experience in the U.S. Army. I have a strong background in team collaboration, time management, and have successfully led and collaborated on various technology projects. I am quick to adapt and enjoy learning new systems and technologies. I am a self-starter and very comfortable working independently to achieve tangible results. My passions lie in networking and software development. I am dedicated to delivering top-quality products and solutions, and am excited for the opportunity to collaborate with your team to drive exceptional results."
+        summary = "Hello, I am a network engineer with over 10 years of experience. I am a dedicated lifelong student, continuously seeking opportunities to enhance my expertise and adeptly tackle complex challenges. As a proactive individual, I take ownership of my responsibilities and consistently strive to help my team achieve excellence. My passions lie in networking and software development. I am dedicated to delivering top-quality products and solutions, and am excited for the opportunity to collaborate with your team to drive exceptional results."
 
     # Experiences section
     [params.experiences]
@@ -142,8 +142,18 @@ disable404 = true
         title = "Experience"
 
         [[params.jobs.list]]
-        position = "Power Applications Developer"
-        dates = "December 2022 - Present"
+        position = "Cyber Security Auditor intern"
+        dates = "May 2023 - Present"
+        company = "United Services Automobile Association(USAA)"
+        details = " In this role, I created supporting technical documents that drove forward the design and operating effectiveness of various controls related to the integration, monitoring, and reporting of information indicative of internal threats." \n \n
+        "Updated process maps that identified business partner workflows that highlight technologies within the Internal Threat Management engagement, the work produced highlighted controls that require further refinement and opportunities for improvement."
+        
+
+        [[params.jobs.list]]
+
+        [[params.jobs.list]]
+        position = "Systems Administrator"
+        dates = "December 2022 - May 2023"
         company = "Piedmont Regional Council, Kernersville, NC"
         details = " In this role, I expertly developed and implemented custom business solutions using Microsoft PowerApps. These solutions included automation of business processes and data visualization dashboards, which helped drive more informed business decisions and boost productivity for various departments within the organization. \n \n Additionally, I successfully managed and administered the Azure cloud infrastructure for an organization of 200 people, including the deployment, configuration, and maintenance of virtual machines, storage, and network resources, resulting in increased scalability and security for the organization. "
 
