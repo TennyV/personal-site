@@ -145,8 +145,8 @@ disable404 = true
         position = "Cyber Security Auditor intern"
         dates = "May 2023 - Present"
         company = "United Services Automobile Association(USAA)"
-        details = " In this role, I created supporting technical documents that drove forward the design and operating effectiveness of various controls related to the integration, monitoring, and reporting of information indicative of internal threats." \n \n
-        "Updated process maps that identified business partner workflows that highlight technologies within the Internal Threat Management engagement, the work produced highlighted controls that require further refinement and opportunities for improvement."
+        details = " In this role, I created supporting technical documents that drove forward the design and operating effectiveness of various controls related to the integration, monitoring, and reporting of information indicative of internal threats. \n \n
+        Updated process maps that identified business partner workflows that highlight technologies within the Internal Threat Management engagement, the work produced highlighted controls that require further refinement and opportunities for improvement."
         
 
         [[params.jobs.list]]
