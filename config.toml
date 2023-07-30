@@ -32,7 +32,7 @@ disable404 = true
     [params.profile]
         name = "Siriwat (Tenny) Vongtip"
         tagline = "Network Engineer"
-        avatar = "profile.JPG"
+        avatar = "profile.png"
 
     # Contact section
     [params.contact]
