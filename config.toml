@@ -118,7 +118,7 @@ disable404 = true
         interest = "Raspberry Pi"
 
         [[params.interests.list]]
-        interest = "Fly fishing"
+        interest = "Rock Climbing"
 
         [[params.interests.list]]
 
