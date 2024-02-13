@@ -32,7 +32,7 @@ disable404 = true
     [params.profile]
         name = "Siriwat (Tenny) Vongtip"
         tagline = "Software Developer"
-        avatar = "profile.png"
+        avatar = "profile.JPG"
 
     # Contact section
     [params.contact]
@@ -85,7 +85,7 @@ disable404 = true
         dates = "2023 - 2025"
         
         [[params.education.list]]
-        degree = "B.S. in Computer Science"
+        degree = "Bachelor of Science in Computer Science"
         college = "Southern New Hampshire University"
         dates = "2021-2023"
         
@@ -142,7 +142,7 @@ disable404 = true
         title = "Experience"
 
         [[params.jobs.list]]
-        position = "IT /Cyber Security Auditor"
+        position = "IT/Cyber Security Auditor"
         dates = "January 2024 - Present"
         company = "United Services Automobile Association(USAA)"
         details = "In this role, I created supporting technical documents that drove forward the design and operating effectiveness of various controls related to the integration, monitoring, and reporting of information indicative of internal threats. \n \n In addition, I updated process maps that identified business partner workflows that highlight technologies within the Internal Threat Management engagement, the work produced highlighted controls that require further refinement and opportunities for improvement."
