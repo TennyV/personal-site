@@ -31,7 +31,7 @@ disable404 = true
     # Profile section
     [params.profile]
         name = "Siriwat (Tenny) Vongtip"
-        tagline = "Network Engineer"
+        tagline = "Software Developer"
         avatar = "profile.png"
 
     # Contact section
@@ -80,8 +80,8 @@ disable404 = true
         title = "Education"
 
         [[params.education.list]]
-        degree = "B.P.S. in Computer Programming"
-        college = "Syracuse University"
+        degree = "Masters in Information Security Engineering"
+        college = "SANS Technology Institute"
         dates = "2023 - 2025"
         
         [[params.education.list]]
@@ -118,7 +118,7 @@ disable404 = true
         interest = "Raspberry Pi"
 
         [[params.interests.list]]
-        interest = "Rock Climbing"
+        interest = "Network Engineering"
 
         [[params.interests.list]]
 
@@ -133,7 +133,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Career Profile"
-        summary = "Hello, I am a network engineer with over 10 years of professional enterprise experience. I am a dedicated lifelong student, continuously seeking opportunities to enhance my expertise and adeptly tackle complex challenges. As a proactive individual, I take ownership of my responsibilities and consistently strive to help my team achieve excellence. My passions lie in networking and software development. I am dedicated to delivering top-quality products and solutions, and am excited for the opportunity to collaborate with your team to drive exceptional results."
+        summary = "Hello, I am a software dev with over 10 years of professional IT experience. I am a dedicated lifelong student, continuously seeking opportunities to enhance my expertise and adeptly tackle complex challenges. As a proactive individual, I take ownership of my responsibilities and consistently strive to help my team achieve excellence. My passions lie in networking and software development. I am dedicated to delivering top-quality products and solutions, and am excited for the opportunity to collaborate with your team to drive exceptional results."
 
     # Experiences section
     [params.experiences]
@@ -142,8 +142,8 @@ disable404 = true
         title = "Experience"
 
         [[params.jobs.list]]
-        position = "Cyber Security Audit intern"
-        dates = "May 2023 - Present"
+        position = "IT /Cyber Security Auditor"
+        dates = "January 2024 - Present"
         company = "United Services Automobile Association(USAA)"
         details = "In this role, I created supporting technical documents that drove forward the design and operating effectiveness of various controls related to the integration, monitoring, and reporting of information indicative of internal threats. \n \n In addition, I updated process maps that identified business partner workflows that highlight technologies within the Internal Threat Management engagement, the work produced highlighted controls that require further refinement and opportunities for improvement."
         
