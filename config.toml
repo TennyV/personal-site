@@ -139,33 +139,37 @@ disable404 = true
     [params.experiences]
         enable = true
         icon = "fa-briefcase"
-        title = "Experiences"
+        title = "Experience"
 
-        [[params.experiences.list]]
+    # Jobs section
+    [params.jobs]
+        enable = true
+
+        [[params.jobs.list]]
         position = "IT Cybersecurity Specialist"
         dates = "July 2024 -  Present"
         company = "Department of the Interior"
         details = "• Enhanced cybersecurity governance, maintaining above a 95% compliance for 3 medium-risk systems and 4 low risk systems.Led an AI-driven cybersecurity awareness initiative, reducing content creation time by 50% and increasing the phishing reporting metric by over 60% increasing cyber maturity. Led campaign to audit over 10,000 Azure accounts and discovered 3% of users with unauthorized access in Microsoft Entra ID, mitigating security threats. Consulted with various business partners to create automated workflows using Microsoft Power Platform, cutting document processing time by over 80%. Facilitated continuity and contingency planning  efforts with two medium risk systems forcing the technical architects to realize discrepancies within their back-up plans."
 
-        [[params.experiences.list]]
+        [[params.jobs.list]]
         position = "IT/Cyber Security Auditor"
         dates = "January 2024 - July 2024"
         company = "United Services Automobile Association(USAA)"
         details = "In this role, I created supporting technical documents that drove forward the design and operating effectiveness of various controls related to the integration, monitoring, and reporting of information indicative of internal threats. \n \n In addition, I updated process maps that identified business partner workflows that highlight technologies within the Internal Threat Management engagement, the work produced highlighted controls that require further refinement and opportunities for improvement."
 
-        [[params.experiences.list]]
+        [[params.jobs.list]]
         position = "Systems Administrator"
         dates = "December 2022 - May 2023"
         company = "Piedmont Regional Council, Kernersville, NC"
         details = " In this role, I expertly developed and implemented custom business solutions using Microsoft PowerApps. These solutions included automation of business processes and data visualization dashboards, which helped drive more informed business decisions and boost productivity for various departments within the organization. \n \n Additionally, I successfully managed and administered the Azure cloud infrastructure for an organization of 200 people, including the deployment, configuration, and maintenance of virtual machines, storage, and network resources, resulting in increased scalability and security for the organization. "
 
-        [[params.experiences.list]]
+        [[params.jobs.list]]
         position = "Information Technology Support Administrator"
         dates = "December 2021 - December 2022"
         company = "10th Mountain Divsion, Fort Drum, NY"
         details = "Served as the Infrastructure Manager who managed and provided supervision of the maintenance of applications and computing infrastructure activities, to include Windows, LAN, and cloud backups ensuring the company maintained availability and resilience of data. \n \n Delivered same-day technical assistance to a diverse employee base of over 200 individuals located throughout the United States and ensured ticket to response and resolution resulted in less than 2-hour completion."
 
-        [[params.experiences.list]]
+        [[params.jobs.list]]
         position = "Director of Plans and Operations"
         dates = "January 2021 - December 2021"
         company = "10th Mountain Division, Fort Drum, NY"
