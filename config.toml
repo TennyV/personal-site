@@ -145,11 +145,7 @@ disable404 = true
         position = "IT Cybersecurity Specialist"
         dates = "July 2024 -  Present"
         company = "Department of the Interior"
-        details = "• Enhanced cybersecurity governance, maintaining above a 95% compliance for 3 medium-risk systems and 4 low risk systems.
-Led an AI-driven cybersecurity awareness initiative, reducing content creation time by 50% and increasing the phishing reporting metric by over 60% increasing cyber maturity.
-Led campaign to audit over 10,000 Azure accounts and discovered 3% of users with unauthorized access in Microsoft Entra ID, mitigating security threats.
-Consulted with various business partners to create automated workflows using Microsoft Power Platform, cutting document processing time by over 80%.
-Facilitated continuity and contingency planning  efforts with two medium risk systems forcing the technical architects to realize discrepancies within their back-up plans."
+        details = "• Enhanced cybersecurity governance, maintaining above a 95% compliance for 3 medium-risk systems and 4 low risk systems.Led an AI-driven cybersecurity awareness initiative, reducing content creation time by 50% and increasing the phishing reporting metric by over 60% increasing cyber maturity. Led campaign to audit over 10,000 Azure accounts and discovered 3% of users with unauthorized access in Microsoft Entra ID, mitigating security threats. Consulted with various business partners to create automated workflows using Microsoft Power Platform, cutting document processing time by over 80%. Facilitated continuity and contingency planning  efforts with two medium risk systems forcing the technical architects to realize discrepancies within their back-up plans."
 
     [params.experiences]
         enable = true
