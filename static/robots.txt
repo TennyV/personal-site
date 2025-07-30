@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tennyvongtip.com/sitemap.xml
+
+# Professional site settings
+Disallow: /admin/
+Disallow: /private/ 

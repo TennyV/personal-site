@@ -2,9 +2,14 @@
 
 baseurl = ""
 languageCode = "en-us"
-title = "Tenny Vongtip Resume"
+title = "Tenny Vongtip - Cybersecurity Professional"
 theme = "hugo-orbit-theme"
-googleAnalytics = "UA-XXXXXXX-Y"
+# googleAnalytics = "UA-XXXXXXX-Y"
+
+# Professional site settings
+enableGitInfo = true
+enableEmoji = true
+enableRobotsTXT = true
 
 # Do not build files for websites. Need them? Set to false
 disableRSS = true
@@ -31,8 +36,8 @@ disable404 = true
     # Profile section
     [params.profile]
         name = "Siriwat (Tenny) Vongtip"
-        tagline = "Transformative Technology Strategist"
-        avatar = "profile.JPG"
+        tagline = "Cybersecurity Specialist & Technology Strategist"
+        avatar = "profile-new.png"
 
     # Contact section
     [params.contact]
@@ -106,23 +111,35 @@ disable404 = true
        # language = "Russian"
        # level = "Professional"
 
+
+
     # Interests section
     [params.interests]
         enable = true
-        title = "Interests"
+        title = "Professional Interests"
 
         [[params.interests.list]]
-        interest = "Embedded technologies"
+        interest = "Cybersecurity Research"
 
         [[params.interests.list]]
-        interest = "Raspberry Pi"
+        interest = "Cloud Security Architecture"
 
         [[params.interests.list]]
-        interest = "Network Engineering"
+        interest = "Network Security Engineering"
 
         [[params.interests.list]]
+        interest = "IoT Security"
 
-        interest = "Rock Climbing"
+        [[params.interests.list]]
+        interest = "Threat Intelligence"
+
+        [[params.interests.list]]
+        interest = "Security Automation"
+
+    # Blog section
+    [params.blog]
+        enable = true
+        title = "Latest Blog Posts"
 
 # Main body sections
 
@@ -132,8 +149,8 @@ disable404 = true
     [params.summary]
         enable = true
         icon = "fa-user"
-        title = "Career Profile"
-        summary = "Hello, I am a software dev and IT Cybersecurity Professional with over 10 years of professional IT experience. I am a dedicated lifelong student, continuously seeking opportunities to enhance my expertise and adeptly tackle complex challenges. As a proactive individual, I take ownership of my responsibilities and consistently strive to help my team achieve excellence. I am passionate about DevOps and love working in cloud environments. My passions also lie in networking and software development. I am dedicated to delivering top-quality products and solutions, and am excited for the opportunity to collaborate with your team to drive your organization to achieve exceptional results."
+        title = "Professional Summary"
+        summary = "Experienced Cybersecurity Specialist with over 10 years of IT expertise, specializing in cloud security, threat management, and compliance frameworks. Proven track record of implementing security controls, reducing vulnerabilities, and enhancing organizational cyber maturity. Skilled in Azure cloud infrastructure, Microsoft Power Platform automation, and security auditing. Passionate about continuous learning and delivering innovative solutions that drive business excellence."
 
     # Experiences section
     [params.experiences]
@@ -147,80 +164,119 @@ disable404 = true
 
         [[params.jobs.list]]
         position = "IT Cybersecurity Specialist"
-        dates = "July 2024 -  Present"
+        dates = "July 2024 - Present"
         company = "Department of the Interior"
-        details = "Enhanced cybersecurity governance, maintaining above a 95% compliance for 3 medium-risk systems and 4 low risk systems.Led an AI-driven cybersecurity awareness initiative, reducing content creation time by 50% and increasing the phishing reporting metric by over 60% increasing cyber maturity. \n \n Led campaign to audit over 10,000 Azure accounts and discovered 3% of users with unauthorized access in Microsoft Entra ID, mitigating security threats. \n \n Consulted with various business partners to create automated workflows using Microsoft Power Platform, cutting document processing time by over 80%. Facilitated continuity and contingency planning  efforts with two medium risk systems forcing the technical architects to realize discrepancies within their back-up plans."
+        details = "• Enhanced cybersecurity governance framework, achieving 95%+ compliance across 7 systems (3 medium-risk, 4 low-risk)\n\n• Led AI-driven cybersecurity awareness program, reducing content creation time by 50% and increasing phishing reporting by 60%\n\n• Conducted comprehensive audit of 10,000+ Azure accounts, identifying and remediating 3% unauthorized access in Microsoft Entra ID\n\n• Developed automated workflows using Microsoft Power Platform, reducing document processing time by 80%\n\n• Orchestrated business continuity planning for critical systems, identifying and resolving backup plan discrepancies\n\n• Championed DevSecOps initiatives by integrating automated security scanning (SAST/SCA) into CI/CD pipelines on Azure DevOps and GitHub Actions, resulting in the discovery of 40+ critical vulnerabilities and the adoption of safer dependency management by development teams"
 
         [[params.jobs.list]]
         position = "IT/Cyber Security Auditor"
         dates = "January 2024 - July 2024"
-        company = "United Services Automobile Association(USAA)"
-        details = "In this role, I created supporting technical documents that drove forward the design and operating effectiveness of various controls related to the integration, monitoring, and reporting of information indicative of internal threats. \n \n In addition, I updated process maps that identified business partner workflows that highlight technologies within the Internal Threat Management engagement, the work produced highlighted controls that require further refinement and opportunities for improvement."
+        company = "United Services Automobile Association (USAA)"
+        details = "• Developed comprehensive technical documentation for internal threat management controls and monitoring systems\n\n• Created detailed process maps identifying business partner workflows and technology integration points\n\n• Analyzed control effectiveness and identified opportunities for refinement and improvement\n\n• Collaborated with cross-functional teams to enhance security posture and threat detection capabilities"
 
         [[params.jobs.list]]
         position = "Systems Administrator"
         dates = "December 2022 - May 2023"
         company = "Piedmont Regional Council, Kernersville, NC"
-        details = " In this role, I expertly developed and implemented custom business solutions using Microsoft PowerApps. These solutions included automation of business processes and data visualization dashboards, which helped drive more informed business decisions and boost productivity for various departments within the organization. \n \n Additionally, I successfully managed and administered the Azure cloud infrastructure for an organization of 200 people, including the deployment, configuration, and maintenance of virtual machines, storage, and network resources, resulting in increased scalability and security for the organization. "
+        details = "• Developed and deployed custom Microsoft PowerApps solutions, automating business processes and creating data visualization dashboards\n\n• Managed Azure cloud infrastructure for 200+ users, including VM deployment, storage configuration, and network resource maintenance\n\n• Enhanced organizational productivity through streamlined workflows and improved decision-making capabilities\n\n• Implemented security best practices and ensured system scalability and reliability"
 
         [[params.jobs.list]]
-        position = "Information Technology Support Administrator"
-        dates = "December 2021 - December 2022"
-        company = "10th Mountain Divsion, Fort Drum, NY"
-        details = "Served as the Infrastructure Manager who managed and provided supervision of the maintenance of applications and computing infrastructure activities, to include Windows, LAN, and cloud backups ensuring the company maintained availability and resilience of data. \n \n Delivered same-day technical assistance to a diverse employee base of over 200 individuals located throughout the United States and ensured ticket to response and resolution resulted in less than 2-hour completion."
-
-        [[params.jobs.list]]
-        position = "Director of Plans and Operations"
-        dates = "January 2021 - December 2021"
-        company = "10th Mountain Division, Fort Drum, NY"
-        details = "In this role I was responsible for developing and executing plans, operations, and training for a 40 employee organization. Our organization was responsible for providing musical and logistical support to over 17,000 families and civilians in Upstate NY. \n \n I developed a strategy for digital marketing, developed a vision and represented the unit director at meetings at the local and corporate levels; I prepared reports and made recommendations to the Deputy CEO following research on maximizing the returns on investment."
+        position = "Systems Administrator"
+        dates = "December 2012 - December 2022"
+        company = "Various locations in the US and overseas"
+        details = "• Managed critical infrastructure including Windows systems, LAN networks, and cloud backup solutions\n\n• Supervised application maintenance and computing infrastructure activities ensuring 99.9% uptime\n\n• Provided technical support to 200+ employees across the United States with <2-hour response times\n\n• Implemented robust backup and disaster recovery procedures ensuring data resilience and availability\n\n• Provided Tier 1/2 technical support for over 500 personnel, resolving an average of 200+ helpdesk tickets monthly with a 87% satisfaction rating\n\n• Managed user accounts, permissions, and group policies within Active Directory to ensure compliance with strict Department of Defense (DoD) security protocols"
 
     # Projects section
     [params.projects]
         enable = true
         icon = "fa-archive"
-        title = "Projects"
-        intro = "I enjoy tinkering and combining electricity and programming. In my alternative life I'd been a computer engineer as I have developed a hobby of building IOT devices. I truly just enjoy technology and hope you like what you see!"
+        title = "Technical Projects"
+        intro = "A collection of projects demonstrating expertise in cybersecurity, software development, and data analysis. These projects showcase practical applications of security principles, automation, and analytical thinking."
 
         [[params.projects.list]]
         title = "Inventory Management Application"
         url = "https://github.com/TennyV/inventory_Management"
-        tagline = "The goal of this project was to design an Android inventory management application in Java with the ability to store users,inventory items, and quantities in an SQLite database."
+        tagline = "Developed a comprehensive Android inventory management system using Java and SQLite database, featuring user authentication, real-time inventory tracking, and data persistence capabilities."
 
         [[params.projects.list]]
-        title = "Dash visualization dashboard for Animal Shelter"
+        title = "Animal Shelter Analytics Dashboard"
         url = "https://github.com/TennyV/AAC_shelter"
-        tagline = "Simple application for tracking animals within the animal shelter utilizing the dash application connecting a python module with my REST API with mongodb and proofing work in jupyter notebooks"
+        tagline = "Built an interactive data visualization dashboard using Python Dash framework, integrating REST API with MongoDB for real-time animal shelter data tracking and analytics."
 
         [[params.projects.list]]
-        title = "Open Access JPMorgan Chase Virtual experience"
+        title = "Financial Fraud Detection Analysis"
         url = "https://github.com/TennyV/JPMorgan"
-        tagline = "Analyze Datasets of Fraud in Financial Payments – Utilized Python and pandas’ library to analyze a large dataset. Created visualizations within Jupyter notebook to assist and to make better-informed business decisions."
+        tagline = "Conducted comprehensive fraud analysis on financial payment datasets using Python and pandas, creating data visualizations and statistical models to identify patterns and support risk management decisions."
 
         [[params.projects.list]]
-        title = "OWASP Vulnerability Report/Suppression of False Positives"
+        title = "OWASP Security Vulnerability Assessment"
         url = "https://github.com/TennyV/OWASPremedy"
-        tagline = "Set up IntelliJ environment to scan for vulnerabilities within banking app (with permission). Detected occurrences of bouncy house and identified and remediated false positives. Recommended the update of spring-boot and refactoring to ensure security and functionality. Testing and control design was paramount to this project."
+        tagline = "Performed comprehensive security assessment of banking application using IntelliJ and OWASP tools, identifying vulnerabilities, remediating false positives, and recommending security improvements including Spring Boot updates."
 
         [[params.projects.list]]
-        title = "Shopping Cart"
+        title = "Data Analytics Shopping Cart System"
         url = "https://github.com/TennyV/Shoppingcart"
-        tagline = "My shopping cart project takes a text file and produces a list that outputs three things. A list of all produce and number of produce that was sold that day. A list of a specific item and how many times it was purchased in one day and a histogram of all produce items purchased on a particular day."
+        tagline = "Developed a data processing system that analyzes sales data from text files, generating comprehensive reports including product sales summaries, item-specific analytics, and visual histograms for business intelligence."
 
     # Skills section
     [params.skills]
-        enable = false
+        enable = true
         icon = "fa-rocket"
-        title = "Skills"
+        title = "Technical Skills & Proficiencies"
+
+        [[params.skills.list]]
+        category = "Cybersecurity & Security Tools"
+        skills = "Threat Management, Security Auditing, Compliance Frameworks (NIST, ISO 27001), Vulnerability Assessment, Incident Response, Security Controls, OWASP ZAP, Penetration Testing, Risk Assessment, Security Scanners, IntelliJ"
+
+        [[params.skills.list]]
+        category = "Cloud & Infrastructure"
+        skills = "Microsoft Azure, AWS, Cloud Security, Infrastructure Management, Virtual Machines, Network Security, Azure Active Directory, Microsoft Entra ID, Cloud Backup Solutions, Disaster Recovery"
+
+        [[params.skills.list]]
+        category = "Programming & Development"
+        skills = "Python, Java, JavaScript, SQL, PowerShell, REST APIs, Microsoft Power Platform, PowerApps, Power Automate, HTML/CSS, Git, Version Control"
+
+        [[params.skills.list]]
+        category = "Data & Analytics"
+        skills = "Data Analysis, Data Visualization, Pandas, Jupyter Notebooks, MongoDB, SQLite, Business Intelligence, Dashboard Creation, Statistical Analysis"
+
+        [[params.skills.list]]
+        category = "IT Management & Support"
+        skills = "Windows Systems Administration, LAN/WAN Management, Technical Support, System Maintenance, User Training, Documentation, Process Automation, Change Management"
+
+        [[params.skills.list]]
+        category = "Business & Leadership"
+        skills = "Strategic Planning, Project Management, Team Leadership, Stakeholder Communication, ROI Analysis, Digital Marketing, Business Process Optimization"
+
+        [[params.skills.list]]
+        category = "GIAC Security Essentials (GSEC)"
+        skills = "May 2023"
+
+        [[params.skills.list]]
+        category = "GIAC Certified Incident Handler (GCIH)"
+        skills = "August 2023"
+
+        [[params.skills.list]]
+        category = "GIAC Certified Intrusion Analyst (GCIA)"
+        skills = "November 2023"
+
+        [[params.skills.list]]
+        category = "GIAC Strategic Planning, Policy & Leadership (GSTRT)"
+        skills = "May 2024"
+
+        [[params.skills.list]]
+        category = "GIAC Defense Security Architecture (GDSA)"
+        skills = "January 2025"
+
+        [[params.skills.list]]
+        category = "GIAC Cloud Security Automation (GCSA)"
+        skills = "March 2025"
+
+        [[params.skills.list]]
+        category = "CompTIA A+"
+        skills = "December 2021"
 
     # Footer section
 
-    # The original template is released under the Creative Commons Attribution 3.0 License.
-    # Please keep the original attribution link when using for your own project.
-    # If you'd like to use the template without the attribution,
-    # you can check out other license options via template author's website: themes.3rdwavemedia.com
-    # 
-    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
-
     [params.footer]
-        copyright = "Ported for Tenny Vongtip"
+        copyright = "Tenny Vongtip. All rights reserved."

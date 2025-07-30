@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head.html" . }}
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+</head>
+<body>
+    {{ partial "banner.html" . }}
+    {{ partial "navigation.html" . }}
+    
+    <div class="wrapper">
+        {{ partial "sidebar.html" . }}
+        
+        <div class="main-wrapper">
+            <section class="blog-section section">
+                <h2 class="section-title">
+                    <i class="fa fa-blog"></i>{{ .Title }}
+                </h2>
+                
+                <div class="blog-intro">
+                    {{ .Content }}
+                </div>
+                
+                <div class="blog-posts">
+                    {{ range .Pages }}
+                    <article class="blog-post-card">
+                        <div class="blog-post-meta">
+                            <time class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</time>
+                            {{ if .Params.tags }}
+                            <div class="blog-post-tags">
+                                {{ range .Params.tags }}
+                                <span class="blog-tag">{{ . }}</span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+                        
+                        <h3 class="blog-post-title">
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </h3>
+                        
+                        {{ if .Params.description }}
+                        <p class="blog-post-description">{{ .Params.description }}</p>
+                        {{ end }}
+                        
+                        <div class="blog-post-excerpt">
+                            {{ .Summary }}
+                        </div>
+                        
+                        <a href="{{ .RelPermalink }}" class="blog-read-more">Read More →</a>
+                    </article>
+                    {{ end }}
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html> 

@@ -1,0 +1,37 @@
+<section class="blog-preview-section section">
+    <h2 class="section-title">
+        <i class="fa fa-blog"></i>Latest Blog Posts
+    </h2>
+    
+    <div class="blog-preview-intro">
+        <p>Sharing insights on cybersecurity, technology trends, and professional development.</p>
+        <a href="/blog/" class="blog-view-all">View All Posts →</a>
+    </div>
+    
+    <div class="blog-preview-posts">
+        {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+        <article class="blog-preview-card">
+            <div class="blog-preview-meta">
+                <time class="blog-preview-date">{{ .Date.Format "Jan 2, 2006" }}</time>
+                {{ if .Params.tags }}
+                <div class="blog-preview-tags">
+                    {{ range first 2 .Params.tags }}
+                    <span class="blog-preview-tag">{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+            
+            <h3 class="blog-preview-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            
+            {{ if .Params.description }}
+            <p class="blog-preview-description">{{ .Params.description }}</p>
+            {{ end }}
+            
+            <a href="{{ .RelPermalink }}" class="blog-preview-read-more">Read More →</a>
+        </article>
+        {{ end }}
+    </div>
+</section> 

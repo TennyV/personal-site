@@ -1,0 +1,325 @@
+    <title>{{ .Site.Title }}</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/{{ .Site.Params.styles }}">
+    
+    <!-- Custom Professional CSS - LOADS LAST WITH HIGHEST PRIORITY -->
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/custom.css">
+    
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Professional meta tags -->
+    <meta name="keywords" content="cybersecurity, IT security, cloud security, threat management, Azure, Microsoft Power Platform">
+    
+    <!-- Open Graph tags for professional social sharing -->
+    <meta property="og:title" content="Tenny Vongtip - Cybersecurity Professional">
+    <meta property="og:description" content="Experienced Cybersecurity Specialist with expertise in cloud security, threat management, and compliance frameworks">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    
+    <!-- Professional favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}favicon.ico"> 
+
+    <!-- PROFESSIONAL COLOR SCHEME - INLINE STYLE FOR MAXIMUM PRIORITY -->
+<style>
+/* Professional Color Palette */
+:root {
+    --primary-dark: #1a1a1a;      /* Deep charcoal for headers/sidebar */
+    --primary-medium: #2d2d2d;    /* Medium charcoal for accents */
+    --primary-light: #404040;     /* Light charcoal for borders */
+    --accent-navy: #2c3e50;       /* Professional navy blue accent */
+    --accent-navy-light: #34495e; /* Light navy for highlights */
+    --accent-slate: #5a6c7d;      /* Slate grey accent */
+    --text-dark: #1a1a1a;         /* Dark text */
+    --text-medium: #404040;       /* Medium text */
+    --text-light: #666666;        /* Light text */
+    --bg-white: #ffffff;          /* Pure white */
+    --bg-light: #f8f9fa;         /* Light grey background */
+    --bg-medium: #e9ecef;        /* Medium grey background */
+}
+
+/* Base styling */
+body {
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 50%, var(--bg-medium) 100%) !important;
+    color: var(--text-dark) !important;
+}
+
+/* Banner styling */
+.banner-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%) !important;
+    color: white !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+}
+
+.banner-section * {
+    color: white !important;
+}
+
+.banner-name {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+}
+
+.banner-subtitle {
+    color: var(--accent-slate) !important;
+}
+
+/* Sidebar styling */
+.sidebar-wrapper {
+    background: linear-gradient(180deg, var(--primary-dark) 0%, var(--primary-medium) 100%) !important;
+    color: white !important;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.1) !important;
+}
+
+.sidebar-wrapper * {
+    color: white !important;
+}
+
+/* Main content styling */
+.main-wrapper {
+    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(248,249,250,0.9) 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 0 0 20px 20px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+    padding: 30px !important;
+    margin: 20px !important;
+}
+
+/* Section titles */
+.section-title {
+    color: var(--primary-dark) !important;
+    border-bottom: 3px solid var(--accent-navy) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+}
+
+.section-title i {
+    color: var(--accent-navy) !important;
+    background-color: transparent !important;
+}
+
+/* Job details cards */
+.job-details {
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%) !important;
+    border-left: 4px solid var(--accent-navy) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+    padding: 25px !important;
+    margin: 20px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.job-details:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Skills categories */
+.skills-category {
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%) !important;
+    border-left: 4px solid var(--accent-navy) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+    padding: 25px !important;
+    margin: 20px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.skills-category:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
+    transform: translateX(5px) !important;
+}
+
+.skills-category h4 {
+    color: var(--primary-dark) !important;
+    font-weight: 600 !important;
+}
+
+/* Icons */
+.fa,
+.fas,
+.far,
+.fal,
+.fab,
+i[class*="fa"] {
+    color: var(--accent-navy) !important;
+    background-color: transparent !important;
+}
+
+/* Links */
+a, a:hover, a:focus {
+    color: var(--accent-navy) !important;
+}
+
+a:hover {
+    color: var(--accent-navy-light) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--accent-navy) !important;
+    border-color: var(--accent-navy) !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-navy-light) !important;
+    border-color: var(--accent-navy-light) !important;
+}
+
+/* Profile section */
+.profile-section {
+    background: linear-gradient(135deg, var(--bg-white) 0%, var(--bg-light) 100%) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1) !important;
+    border: 1px solid rgba(44, 62, 80, 0.2) !important;
+}
+
+/* Text styling */
+p, li, div {
+    color: var(--text-dark) !important;
+    line-height: 1.7 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-dark) !important;
+    font-weight: 600 !important;
+}
+
+/* NUCLEAR TEAL ELIMINATION - FINAL ATTEMPT */
+*[style*="teal"],
+*[style*="blue"],
+*[style*="cyan"],
+*[style*="aqua"],
+*[style*="#008080"],
+*[style*="#00CED1"],
+*[style*="#20B2AA"],
+*[style*="#40E0D0"],
+*[style*="#48D1CC"],
+*[style*="#00FFFF"],
+*[style*="#87CEEB"],
+*[style*="#87CEFA"],
+*[style*="#00BFFF"],
+*[style*="#1E90FF"],
+*[style*="#4169E1"],
+*[style*="#0000FF"],
+*[style*="#0000CD"],
+*[style*="#000080"],
+*[style*="#191970"],
+*[style*="#2F4F4F"],
+*[style*="#708090"],
+*[style*="#778899"],
+*[style*="#B0C4DE"],
+*[style*="#E6E6FA"],
+*[style*="#F0F8FF"],
+*[style*="#F8F8FF"],
+*[style*="#F0FFFF"],
+*[style*="#E0FFFF"],
+*[style*="#E6F3FF"],
+*[style*="#CCE5FF"],
+*[style*="#B3D9FF"],
+*[style*="#99CCFF"],
+*[style*="#80BFFF"],
+*[style*="#66B2FF"],
+*[style*="#4DA6FF"],
+*[style*="#3399FF"],
+*[style*="#1A8CFF"],
+*[style*="#0080FF"],
+*[style*="#0066FF"],
+*[style*="#004DFF"],
+*[style*="#0033FF"],
+*[style*="#001AFF"],
+*[style*="#0000FF"],
+*[style*="rgb(0, 128, 128)"],
+*[style*="rgb(0, 206, 209)"],
+*[style*="rgb(32, 178, 170)"],
+*[style*="rgb(64, 224, 208)"],
+*[style*="rgb(72, 209, 204)"],
+*[style*="rgb(0, 255, 255)"],
+*[style*="rgb(135, 206, 235)"],
+*[style*="rgb(135, 206, 250)"],
+*[style*="rgb(0, 191, 255)"],
+*[style*="rgb(30, 144, 255)"],
+*[style*="rgb(65, 105, 225)"],
+*[style*="rgb(0, 0, 255)"],
+*[style*="rgb(0, 0, 205)"],
+*[style*="rgb(0, 0, 128)"],
+*[style*="rgb(25, 25, 112)"],
+*[style*="rgb(47, 79, 79)"],
+*[style*="rgb(112, 128, 144)"],
+*[style*="rgb(119, 136, 153)"],
+*[style*="rgb(176, 196, 222)"],
+*[style*="rgb(230, 230, 250)"],
+*[style*="rgb(240, 248, 255)"],
+*[style*="rgb(248, 248, 255)"],
+*[style*="rgb(240, 255, 255)"],
+*[style*="rgb(224, 255, 255)"],
+*[style*="rgb(230, 243, 255)"],
+*[style*="rgb(204, 229, 255)"],
+*[style*="rgb(179, 217, 255)"],
+*[style*="rgb(153, 204, 255)"],
+*[style*="rgb(128, 191, 255)"],
+*[style*="rgb(102, 178, 255)"],
+*[style*="rgb(77, 166, 255)"],
+*[style*="rgb(51, 153, 255)"],
+*[style*="rgb(26, 140, 255)"],
+*[style*="rgb(0, 128, 255)"],
+*[style*="rgb(0, 102, 255)"],
+*[style*="rgb(0, 77, 255)"],
+*[style*="rgb(0, 51, 255)"],
+*[style*="rgb(0, 26, 255)"],
+*[style*="rgb(0, 0, 255)"] {
+    background-color: var(--accent-navy) !important;
+    color: white !important;
+    border-color: var(--accent-navy) !important;
+}
+
+/* Universal teal elimination */
+* {
+    color: var(--text-dark) !important;
+}
+
+*[style*="teal"],
+*[style*="blue"],
+*[style*="cyan"],
+*[style*="aqua"] {
+    color: var(--accent-navy) !important;
+    background-color: var(--accent-navy) !important;
+    border-color: var(--accent-navy) !important;
+}
+
+/* Force all elements to use our color scheme */
+body, html, div, section, article, aside, nav, header, footer, main {
+    background-color: var(--bg-white) !important;
+    color: var(--text-dark) !important;
+}
+
+/* Override any teal/blue classes */
+*[class*="teal"],
+*[class*="blue"],
+*[class*="cyan"],
+*[class*="aqua"],
+*[class*="info"],
+*[class*="primary"] {
+    color: var(--accent-navy) !important;
+    background-color: var(--accent-navy) !important;
+    border-color: var(--accent-navy) !important;
+}
+</style> 

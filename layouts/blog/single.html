@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "head.html" . }}
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+</head>
+<body>
+    {{ partial "banner.html" . }}
+    {{ partial "navigation.html" . }}
+    
+    <div class="wrapper">
+        {{ partial "sidebar.html" . }}
+        
+        <div class="main-wrapper">
+            <article class="blog-post-section section">
+                <header class="blog-post-header">
+                    <div class="blog-post-meta">
+                        <time class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</time>
+                        {{ if .Params.tags }}
+                        <div class="blog-post-tags">
+                            {{ range .Params.tags }}
+                            <span class="blog-tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    
+                    <h1 class="blog-post-title">{{ .Title }}</h1>
+                    
+                    {{ if .Params.description }}
+                    <p class="blog-post-description">{{ .Params.description }}</p>
+                    {{ end }}
+                </header>
+                
+                <div class="blog-post-content">
+                    {{ .Content }}
+                </div>
+                
+                <footer class="blog-post-footer">
+                    <a href="/blog/" class="blog-back-link">← Back to Blog</a>
+                </footer>
+            </article>
+        </div>
+    </div>
+    
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html> 
