@@ -52,8 +52,8 @@ disable404 = true
         [[params.contact.list]]
         class = "phone"
         icon = "fa-phone"
-        url = "tel:+313-603-5429"
-        title = "+313-603-5429"
+        url = "tel:+48 722 338 040"
+        title = "+48 722 338 040"
 
     #   [[params.contact.list]]
       #  class = "website"
