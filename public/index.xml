@@ -9,6 +9,20 @@
     <lastBuildDate>Wed, 30 Jul 2025 23:15:15 +0200</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GWAPT Journey: The Reality of Web Application Security Testing</title>
+      <link>//localhost:1313/blog/gwapt-web-app-security-testing/</link>
+      <pubDate>Mon, 19 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/gwapt-web-app-security-testing/</guid>
+      <description>&lt;h1 id=&#34;gwapt-journey-the-reality-of-web-application-security-testing&#34;&gt;GWAPT Journey: The Reality of Web Application Security Testing&lt;/h1&gt;&#xA;&lt;p&gt;As I prepare for my upcoming GWAPT (GIAC Web Application Penetration Tester) certification, I&amp;rsquo;ve been reflecting on the incredible complexity and time-intensive nature of web application security testing. It&amp;rsquo;s fascinating how the virtual world has evolved to such an accessible state, yet the underlying security challenges remain as intricate as ever.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-time-investment-reality&#34;&gt;The Time Investment Reality&lt;/h2&gt;&#xA;&lt;p&gt;One of the most eye-opening aspects of web application security testing is just how time consuming it can be. Even with professional-grade tools like Burp Suite Professional at your disposal, the process requires an immense amount of patience, persistence, and deep technical understanding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-tenny-vongtip&#34;&gt;About Tenny Vongtip&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a Cybersecurity Specialist &amp;amp; Technology Strategist with over 10 years of experience in IT and security. My expertise spans cloud security, threat management, and compliance frameworks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-journey&#34;&gt;My Journey&lt;/h2&gt;&#xA;&lt;p&gt;From my early days in IT support to my current role as a cybersecurity specialist, I&amp;rsquo;ve always been passionate about technology and security. I&amp;rsquo;ve worked across various industries and locations, gaining valuable experience in both technical and strategic aspects of cybersecurity.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>DevSecOps Best Practices: Integrating Security into CI/CD Pipelines</title>
       <link>//localhost:1313/blog/devsecops-best-practices/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>

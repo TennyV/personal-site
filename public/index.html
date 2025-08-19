@@ -437,7 +437,7 @@ body, html, div, section, article, aside, nav, header, footer, main {
 	            <section class="section summary-section">
                 <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
                 <div class="summary">
-                    <p>Experienced Cybersecurity Specialist with over 10 years of IT expertise, specializing in cloud security, threat management, and compliance frameworks. Proven track record of implementing security controls, reducing vulnerabilities, and enhancing organizational cyber maturity. Skilled in Azure cloud infrastructure, Microsoft Power Platform automation, and security auditing. Passionate about continuous learning and delivering innovative solutions that drive business excellence.</p>
+                    <p>Experienced Cybersecurity Specialist with over 10 years of IT expertise, specializing in cloud security, threat management, and compliance frameworks. Based in Poznan, Poland, I bring a global perspective to cybersecurity challenges while serving clients across Europe and beyond. Proven track record of implementing security controls, reducing vulnerabilities, and enhancing organizational cyber maturity. Skilled in Azure cloud infrastructure, Microsoft Power Platform automation, and security auditing. Passionate about continuous learning and delivering innovative solutions that drive business excellence.</p>
                 </div>
             </section>
 
@@ -645,6 +645,31 @@ body, html, div, section, article, aside, nav, header, footer, main {
         
         <article class="blog-preview-card">
             <div class="blog-preview-meta">
+                <time class="blog-preview-date">Aug 19, 2024</time>
+                
+                <div class="blog-preview-tags">
+                    
+                    <span class="blog-preview-tag">GWAPT</span>
+                    
+                    <span class="blog-preview-tag">Web Application Security</span>
+                    
+                </div>
+                
+            </div>
+            
+            <h3 class="blog-preview-title">
+                <a href="/blog/gwapt-web-app-security-testing/">GWAPT Journey: The Reality of Web Application Security Testing</a>
+            </h3>
+            
+            
+            <p class="blog-preview-description">Exploring the challenges and time-intensive nature of web application security testing, even with professional tools like Burp Suite.</p>
+            
+            
+            <a href="/blog/gwapt-web-app-security-testing/" class="blog-preview-read-more">Read More →</a>
+        </article>
+        
+        <article class="blog-preview-card">
+            <div class="blog-preview-meta">
                 <time class="blog-preview-date">Jul 30, 2024</time>
                 
                 <div class="blog-preview-tags">
@@ -675,11 +700,101 @@ body, html, div, section, article, aside, nav, header, footer, main {
 	</div>
     </div>
 
-	    <footer class="footer">
-        <div class="text-center">
-            <small class="copyright">2025 &copy; Tenny Vongtip. All rights reserved.</small>
+	<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>&copy; Tenny Vongtip. All rights reserved.</p>
+            <div class="visitor-dashboard">
+                <div class="dashboard-item">
+                    <span class="dashboard-label">🌐 Public IP:</span>
+                    <span id="ip-address" class="dashboard-value">Loading...</span>
+                </div>
+
+                <div class="dashboard-item">
+                    <span class="dashboard-label">👥 Visitors:</span>
+                    <span id="visitor-count" class="dashboard-value">Loading...</span>
+                </div>
+                <div class="dashboard-item">
+                    <span class="dashboard-label">📅 Last Visit:</span>
+                    <span id="last-visit" class="dashboard-value">Loading...</span>
+                </div>
+            </div>
         </div>
-    </footer> 
+    </div>
+</footer>
+
+<script>
+
+var goatcounter = {
+    no_onload: true,
+    endpoint: 'https://sereal.goatcounter.com/count'
+};
+
+
+async function getIPAddress() {
+    try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        document.getElementById('ip-address').textContent = data.ip;
+    } catch (error) {
+        document.getElementById('ip-address').textContent = 'Unable to fetch';
+    }
+}
+
+
+
+
+function getVisitorCount() {
+    let count = localStorage.getItem('visitorCount');
+    if (!count) {
+        count = 0;
+    }
+    count = parseInt(count) + 1;
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('visitor-count').textContent = count;
+}
+
+
+function getLastVisit() {
+    const now = new Date();
+    const lastVisit = localStorage.getItem('lastVisit');
+    
+    if (lastVisit) {
+        const lastVisitDate = new Date(lastVisit);
+        const timeDiff = now - lastVisitDate;
+        const hoursDiff = Math.floor(timeDiff / (1000 * 60 * 60));
+        
+        if (hoursDiff < 1) {
+            document.getElementById('last-visit').textContent = 'Just now';
+        } else if (hoursDiff < 24) {
+            document.getElementById('last-visit').textContent = `${hoursDiff}h ago`;
+        } else {
+            const daysDiff = Math.floor(hoursDiff / 24);
+            document.getElementById('last-visit').textContent = `${daysDiff}d ago`;
+        }
+    } else {
+        document.getElementById('last-visit').textContent = 'First visit';
+    }
+    
+    localStorage.setItem('lastVisit', now.toISOString());
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    getIPAddress();
+    getVisitorCount();
+    getLastVisit();
+    
+    
+    var script = document.createElement('script');
+    script.src = 'https://gc.zgo.at/count.js';
+    script.async = true;
+    document.head.appendChild(script);
+});
+</script>
+<script data-goatcounter="https://sereal.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script> 
 
                   
     <script type="text/javascript" src="//localhost:1313/assets/plugins/jquery-1.11.3.min.js"></script>

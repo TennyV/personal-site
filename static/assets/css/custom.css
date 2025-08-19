@@ -6,6 +6,134 @@ body {
     line-height: 1.6;
 }
 
+/* Footer styling */
+.site-footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-bg) 100%);
+    color: var(--light-bg);
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid var(--accent-color);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.visitor-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 6px;
+    margin-top: 8px;
+    padding: 8px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.visitor-dashboard:hover {
+    opacity: 0.7;
+}
+
+.dashboard-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4px 6px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.dashboard-item:hover {
+    background: transparent;
+    transform: none;
+    border-color: transparent;
+}
+
+.dashboard-label {
+    font-size: 0.65em;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 2px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0.05px;
+    font-family: inherit;
+}
+
+.dashboard-value {
+    font-size: 0.8em;
+    color: rgba(255,255,255,0.6);
+    font-weight: 400;
+    font-family: inherit;
+    margin-bottom: 0;
+}
+
+.dashboard-details {
+    font-size: 0.75em;
+    color: rgba(255,255,255,0.7);
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Courier New', monospace;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 2px 8px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Subtle dashboard animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.7; }
+}
+
+.dashboard-item {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.dashboard-item:nth-child(1) { animation-delay: 0.1s; }
+.dashboard-item:nth-child(2) { animation-delay: 0.2s; }
+.dashboard-item:nth-child(3) { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .visitor-dashboard {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .dashboard-item {
+        padding: 15px 10px;
+    }
+    
+    .dashboard-value {
+        font-size: 1.1em;
+    }
+}
+
 /* Professional color scheme - inspired by LinkedIn banner */
 :root {
     --primary-color: #2d2d2d;      /* Dark grey from banner background */
@@ -60,7 +188,6 @@ body {
     padding: 25px;
     margin: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.8);
 }
 
 /* Enhanced main content area */
@@ -510,7 +637,6 @@ html {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.8);
 }
 
 .card:hover {
@@ -554,7 +680,6 @@ html {
     position: relative;
     overflow: hidden;
     box-shadow: 0 6px 25px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.8);
 }
 
 .profile-section::before {

@@ -323,7 +323,7 @@ body, html, div, section, article, aside, nav, header, footer, main {
     border-color: var(--accent-navy) !important;
 }
 </style> 
-    <title>DevSecOps Best Practices: Integrating Security into CI/CD Pipelines - Tenny Vongtip - Cybersecurity Professional</title>
+    <title>GWAPT Journey: The Reality of Web Application Security Testing - Tenny Vongtip - Cybersecurity Professional</title>
 </head>
 <body>
         <section class="banner-section">
@@ -442,74 +442,68 @@ body, html, div, section, article, aside, nav, header, footer, main {
             <article class="blog-post-section section">
                 <header class="blog-post-header">
                     <div class="blog-post-meta">
-                        <time class="blog-post-date">July 30, 2024</time>
+                        <time class="blog-post-date">August 19, 2024</time>
                         
                         <div class="blog-post-tags">
                             
-                            <span class="blog-tag">DevSecOps</span>
+                            <span class="blog-tag">GWAPT</span>
                             
-                            <span class="blog-tag">Cybersecurity</span>
+                            <span class="blog-tag">Web Application Security</span>
                             
-                            <span class="blog-tag">CI/CD</span>
+                            <span class="blog-tag">Penetration Testing</span>
                             
-                            <span class="blog-tag">Azure DevOps</span>
+                            <span class="blog-tag">Burp Suite</span>
+                            
+                            <span class="blog-tag">Krakow</span>
                             
                         </div>
                         
                     </div>
                     
-                    <h1 class="blog-post-title">DevSecOps Best Practices: Integrating Security into CI/CD Pipelines</h1>
+                    <h1 class="blog-post-title">GWAPT Journey: The Reality of Web Application Security Testing</h1>
                     
                     
-                    <p class="blog-post-description">Exploring effective strategies for integrating automated security scanning into modern development pipelines.</p>
+                    <p class="blog-post-description">Exploring the challenges and time-intensive nature of web application security testing, even with professional tools like Burp Suite.</p>
                     
                 </header>
                 
                 <div class="blog-post-content">
-                    <h1 id="devsecops-best-practices-integrating-security-into-cicd-pipelines">DevSecOps Best Practices: Integrating Security into CI/CD Pipelines</h1>
-<p>In today&rsquo;s rapidly evolving cybersecurity landscape, the integration of security practices into the development lifecycle has become paramount. DevSecOps represents a cultural shift that emphasizes the importance of security as a shared responsibility across development, operations, and security teams.</p>
-<h2 id="the-foundation-of-devsecops">The Foundation of DevSecOps</h2>
-<p>DevSecOps builds upon the principles of DevOps while adding security as a core component. This approach ensures that security is not an afterthought but rather an integral part of the development process from the very beginning.</p>
-<h3 id="key-components">Key Components</h3>
-<ol>
-<li><strong>Automated Security Scanning</strong>: Implementing SAST (Static Application Security Testing) and SCA (Software Composition Analysis) tools</li>
-<li><strong>Continuous Monitoring</strong>: Real-time threat detection and vulnerability assessment</li>
-<li><strong>Compliance Integration</strong>: Automated compliance checks and reporting</li>
-<li><strong>Security Training</strong>: Ongoing education for development teams</li>
-</ol>
-<h2 id="implementation-strategies">Implementation Strategies</h2>
-<h3 id="azure-devops-integration">Azure DevOps Integration</h3>
-<p>Azure DevOps provides excellent tools for implementing DevSecOps practices:</p>
+                    <h1 id="gwapt-journey-the-reality-of-web-application-security-testing">GWAPT Journey: The Reality of Web Application Security Testing</h1>
+<p>As I prepare for my upcoming GWAPT (GIAC Web Application Penetration Tester) certification, I&rsquo;ve been reflecting on the incredible complexity and time-intensive nature of web application security testing. It&rsquo;s fascinating how the virtual world has evolved to such an accessible state, yet the underlying security challenges remain as intricate as ever.</p>
+<h2 id="the-time-investment-reality">The Time Investment Reality</h2>
+<p>One of the most eye-opening aspects of web application security testing is just how time consuming it can be. Even with professional-grade tools like Burp Suite Professional at your disposal, the process requires an immense amount of patience, persistence, and deep technical understanding.</p>
+<h3 id="why-web-app-testing-takes-so-long">Why Web App Testing Takes So Long</h3>
+<p><strong>1. Understanding Application Logic</strong>
+The biggest challenge isn&rsquo;t just running automated scans—it&rsquo;s understanding the complex business logic behind modern web applications. Every application has its own unique flow, authentication mechanisms, and data processing patterns that must be thoroughly understood before effective testing can begin.</p>
+<p><strong>2. Tool Limitations</strong>
+While Burp Suite Professional is an incredible tool, it&rsquo;s not a magic wand. It can identify common vulnerabilities, but it can&rsquo;t understand the context of your specific application. The real work begins when you need to:</p>
 <ul>
-<li><strong>Azure Security Center</strong>: Centralized security management</li>
-<li><strong>Azure Policy</strong>: Automated compliance enforcement</li>
-<li><strong>Azure Key Vault</strong>: Secure credential management</li>
+<li>Manually trace through application workflows</li>
+<li>Understand session management intricacies</li>
+<li>Analyze custom authentication mechanisms</li>
+<li>Test business logic flaws that automated tools miss</li>
 </ul>
-<h3 id="github-actions-workflow">GitHub Actions Workflow</h3>
-<p>Modern CI/CD pipelines can leverage GitHub Actions for automated security scanning:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Security Scan</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>: [<span style="color:#ae81ff">push, pull_request]</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">security-scan</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Run SAST Scan</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">github/codeql-action/init@v1</span>
-</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Perform CodeQL Analysis</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">github/codeql-action/analyze@v1</span>
-</span></span></code></pre></div><h2 id="best-practices">Best Practices</h2>
-<ol>
-<li><strong>Shift Left</strong>: Integrate security early in the development process</li>
-<li><strong>Automate Everything</strong>: Reduce manual security tasks</li>
-<li><strong>Continuous Monitoring</strong>: Implement real-time security oversight</li>
-<li><strong>Regular Training</strong>: Keep teams updated on security practices</li>
-<li><strong>Metrics and Reporting</strong>: Track security metrics and compliance</li>
-</ol>
-<h2 id="conclusion">Conclusion</h2>
-<p>DevSecOps is not just a methodology—it&rsquo;s a mindset that prioritizes security throughout the entire development lifecycle. By implementing these practices, organizations can significantly reduce vulnerabilities and improve their overall security posture.</p>
+<p><strong>3. The Human Element</strong>
+Web applications are built by humans, which means they contain human logic—and human errors. Finding these requires thinking like both a developer and an attacker, understanding not just how the application works, but how it could be made to work differently.</p>
+<h2 id="the-knowledge-gap">The Knowledge Gap</h2>
+<p>Having access to professional tools doesn&rsquo;t automatically make you a security expert. The gap between having Burp Suite Professional and being able to effectively use it is significant. It requires:</p>
+<ul>
+<li><strong>Deep understanding of web technologies</strong> (HTTP, JavaScript, various frameworks)</li>
+<li><strong>Knowledge of common vulnerabilities</strong> and how they manifest in real applications</li>
+<li><strong>Experience with different testing methodologies</strong> and when to apply them</li>
+<li><strong>Patience to methodically work through complex applications</strong></li>
+</ul>
+<h2 id="my-upcoming-testing-session">My Upcoming Testing Session</h2>
+<p>In two weeks, I&rsquo;ll be conducting some hands-on web application security testing while on vacation in Krakow, Poland. There&rsquo;s something poetic about testing the virtual world&rsquo;s security from such a historic city—a reminder that while our digital landscape is constantly evolving, the fundamental principles of security remain timeless.</p>
+<p>The ease of access to the virtual world today is incredible. We can test applications from anywhere, access tools and resources instantly, and collaborate with security professionals worldwide. But this accessibility also means that potential attackers have the same advantages, making thorough security testing more important than ever.</p>
+<h2 id="the-gwapt-challenge">The GWAPT Challenge</h2>
+<p>The GWAPT certification represents a significant milestone in web application security expertise. It&rsquo;s not just about knowing how to use tools—it&rsquo;s about understanding the underlying principles, being able to think like an attacker, and having the patience to methodically work through complex applications.</p>
+<p>As I continue my preparation, I&rsquo;m reminded that web application security testing is as much an art as it is a science. It requires creativity, persistence, and a deep understanding of both technology and human nature.</p>
+<h2 id="looking-forward">Looking Forward</h2>
+<p>The virtual world&rsquo;s accessibility has democratized security testing, but it hasn&rsquo;t made it easier. If anything, it&rsquo;s made the field more competitive and the challenges more complex. But that&rsquo;s what makes it exciting—there&rsquo;s always something new to learn, always a new vulnerability to discover, always a new way to think about security.</p>
+<p>Stay tuned for updates from my testing session in Krakow, where I&rsquo;ll be exploring the intersection of ancient history and modern cybersecurity.</p>
 <hr>
-<p><em>This post reflects my experience implementing DevSecOps practices in enterprise environments, particularly focusing on Azure cloud infrastructure and modern CI/CD pipelines.</em></p>
+<p><em>This post reflects my ongoing journey in web application security and preparation for the GWAPT certification. The virtual world may be easily accessible, but mastering its security requires dedication, patience, and continuous learning.</em></p>
 
                 </div>
                 

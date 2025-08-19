@@ -150,7 +150,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Professional Summary"
-        summary = "Experienced Cybersecurity Specialist with over 10 years of IT expertise, specializing in cloud security, threat management, and compliance frameworks. Proven track record of implementing security controls, reducing vulnerabilities, and enhancing organizational cyber maturity. Skilled in Azure cloud infrastructure, Microsoft Power Platform automation, and security auditing. Passionate about continuous learning and delivering innovative solutions that drive business excellence."
+        summary = "Experienced Cybersecurity Specialist with over 10 years of IT expertise, specializing in cloud security, threat management, and compliance frameworks. Based in Poznan, Poland, I bring a global perspective to cybersecurity challenges while serving clients across Europe and beyond. Proven track record of implementing security controls, reducing vulnerabilities, and enhancing organizational cyber maturity. Skilled in Azure cloud infrastructure, Microsoft Power Platform automation, and security auditing. Passionate about continuous learning and delivering innovative solutions that drive business excellence."
 
     # Experiences section
     [params.experiences]

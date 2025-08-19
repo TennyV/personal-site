@@ -342,7 +342,7 @@ body, html, div, section, article, aside, nav, header, footer, main {
             <span>Home</span>
         </a>
         <a href="/blog/" class="nav-blog-link">
-            <i class="fa fa-blog"></i>
+            <i class="fa fa-newspaper-o"></i>
             <span>Blog</span>
         </a>
     </div>
@@ -454,6 +454,44 @@ body, html, div, section, article, aside, nav, header, footer, main {
                     
                     <article class="blog-post-card">
                         <div class="blog-post-meta">
+                            <time class="blog-post-date">August 19, 2024</time>
+                            
+                            <div class="blog-post-tags">
+                                
+                                <span class="blog-tag">GWAPT</span>
+                                
+                                <span class="blog-tag">Web Application Security</span>
+                                
+                                <span class="blog-tag">Penetration Testing</span>
+                                
+                                <span class="blog-tag">Burp Suite</span>
+                                
+                                <span class="blog-tag">Krakow</span>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <h3 class="blog-post-title">
+                            <a href="/blog/gwapt-web-app-security-testing/">GWAPT Journey: The Reality of Web Application Security Testing</a>
+                        </h3>
+                        
+                        
+                        <p class="blog-post-description">Exploring the challenges and time-intensive nature of web application security testing, even with professional tools like Burp Suite.</p>
+                        
+                        
+                        <div class="blog-post-excerpt">
+                            <h1 id="gwapt-journey-the-reality-of-web-application-security-testing">GWAPT Journey: The Reality of Web Application Security Testing</h1>
+<p>As I prepare for my upcoming GWAPT (GIAC Web Application Penetration Tester) certification, I&rsquo;ve been reflecting on the incredible complexity and time-intensive nature of web application security testing. It&rsquo;s fascinating how the virtual world has evolved to such an accessible state, yet the underlying security challenges remain as intricate as ever.</p>
+<h2 id="the-time-investment-reality">The Time Investment Reality</h2>
+<p>One of the most eye-opening aspects of web application security testing is just how time consuming it can be. Even with professional-grade tools like Burp Suite Professional at your disposal, the process requires an immense amount of patience, persistence, and deep technical understanding.</p>
+                        </div>
+                        
+                        <a href="/blog/gwapt-web-app-security-testing/" class="blog-read-more">Read More →</a>
+                    </article>
+                    
+                    <article class="blog-post-card">
+                        <div class="blog-post-meta">
                             <time class="blog-post-date">July 30, 2024</time>
                             
                             <div class="blog-post-tags">
@@ -493,11 +531,101 @@ body, html, div, section, article, aside, nav, header, footer, main {
         </div>
     </div>
     
-        <footer class="footer">
-        <div class="text-center">
-            <small class="copyright">2025 &copy; Tenny Vongtip. All rights reserved.</small>
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>&copy; Tenny Vongtip. All rights reserved.</p>
+            <div class="visitor-dashboard">
+                <div class="dashboard-item">
+                    <span class="dashboard-label">🌐 Public IP:</span>
+                    <span id="ip-address" class="dashboard-value">Loading...</span>
+                </div>
+
+                <div class="dashboard-item">
+                    <span class="dashboard-label">👥 Visitors:</span>
+                    <span id="visitor-count" class="dashboard-value">Loading...</span>
+                </div>
+                <div class="dashboard-item">
+                    <span class="dashboard-label">📅 Last Visit:</span>
+                    <span id="last-visit" class="dashboard-value">Loading...</span>
+                </div>
+            </div>
         </div>
-    </footer> 
+    </div>
+</footer>
+
+<script>
+
+var goatcounter = {
+    no_onload: true,
+    endpoint: 'https://sereal.goatcounter.com/count'
+};
+
+
+async function getIPAddress() {
+    try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        document.getElementById('ip-address').textContent = data.ip;
+    } catch (error) {
+        document.getElementById('ip-address').textContent = 'Unable to fetch';
+    }
+}
+
+
+
+
+function getVisitorCount() {
+    let count = localStorage.getItem('visitorCount');
+    if (!count) {
+        count = 0;
+    }
+    count = parseInt(count) + 1;
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('visitor-count').textContent = count;
+}
+
+
+function getLastVisit() {
+    const now = new Date();
+    const lastVisit = localStorage.getItem('lastVisit');
+    
+    if (lastVisit) {
+        const lastVisitDate = new Date(lastVisit);
+        const timeDiff = now - lastVisitDate;
+        const hoursDiff = Math.floor(timeDiff / (1000 * 60 * 60));
+        
+        if (hoursDiff < 1) {
+            document.getElementById('last-visit').textContent = 'Just now';
+        } else if (hoursDiff < 24) {
+            document.getElementById('last-visit').textContent = `${hoursDiff}h ago`;
+        } else {
+            const daysDiff = Math.floor(hoursDiff / 24);
+            document.getElementById('last-visit').textContent = `${daysDiff}d ago`;
+        }
+    } else {
+        document.getElementById('last-visit').textContent = 'First visit';
+    }
+    
+    localStorage.setItem('lastVisit', now.toISOString());
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    getIPAddress();
+    getVisitorCount();
+    getLastVisit();
+    
+    
+    var script = document.createElement('script');
+    script.src = 'https://gc.zgo.at/count.js';
+    script.async = true;
+    document.head.appendChild(script);
+});
+</script>
+<script data-goatcounter="https://sereal.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script> 
                   
     <script type="text/javascript" src="//localhost:1313/assets/plugins/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="//localhost:1313/assets/plugins/bootstrap/js/bootstrap.min.js"></script>    

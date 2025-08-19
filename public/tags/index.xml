@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>Burp Suite</title>
+      <link>//localhost:1313/tags/burp-suite/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/burp-suite/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>CI/CD</title>
       <link>//localhost:1313/tags/ci/cd/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
@@ -34,6 +41,34 @@
       <link>//localhost:1313/tags/devsecops/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/devsecops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GWAPT</title>
+      <link>//localhost:1313/tags/gwapt/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/gwapt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Krakow</title>
+      <link>//localhost:1313/tags/krakow/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/krakow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Penetration Testing</title>
+      <link>//localhost:1313/tags/penetration-testing/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/penetration-testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Application Security</title>
+      <link>//localhost:1313/tags/web-application-security/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/web-application-security/</guid>
       <description></description>
     </item>
   </channel>

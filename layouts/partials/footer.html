@@ -1,5 +1,95 @@
-    <footer class="footer">
-        <div class="text-center">
-            <small class="copyright">{{ now.Year }} &copy; {{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ else }}Tenny Vongtip. All rights reserved.{{ end }}</small>
-        </div><!--//container-->
-    </footer><!--//footer--> 
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>&copy; {{ .Site.Params.footer.copyright }}</p>
+            <div class="visitor-dashboard">
+                <div class="dashboard-item">
+                    <span class="dashboard-label">🌐 Public IP:</span>
+                    <span id="ip-address" class="dashboard-value">Loading...</span>
+                </div>
+
+                <div class="dashboard-item">
+                    <span class="dashboard-label">👥 Visitors:</span>
+                    <span id="visitor-count" class="dashboard-value">Loading...</span>
+                </div>
+                <div class="dashboard-item">
+                    <span class="dashboard-label">📅 Last Visit:</span>
+                    <span id="last-visit" class="dashboard-value">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+// GoatCounter for persistent visitor tracking
+var goatcounter = {
+    no_onload: true,
+    endpoint: 'https://sereal.goatcounter.com/count'
+};
+
+// Get IP Address using a free API
+async function getIPAddress() {
+    try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const data = await response.json();
+        document.getElementById('ip-address').textContent = data.ip;
+    } catch (error) {
+        document.getElementById('ip-address').textContent = 'Unable to fetch';
+    }
+}
+
+
+
+// Get visitor count from localStorage (per device)
+function getVisitorCount() {
+    let count = localStorage.getItem('visitorCount');
+    if (!count) {
+        count = 0;
+    }
+    count = parseInt(count) + 1;
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('visitor-count').textContent = count;
+}
+
+// Get last visit time
+function getLastVisit() {
+    const now = new Date();
+    const lastVisit = localStorage.getItem('lastVisit');
+    
+    if (lastVisit) {
+        const lastVisitDate = new Date(lastVisit);
+        const timeDiff = now - lastVisitDate;
+        const hoursDiff = Math.floor(timeDiff / (1000 * 60 * 60));
+        
+        if (hoursDiff < 1) {
+            document.getElementById('last-visit').textContent = 'Just now';
+        } else if (hoursDiff < 24) {
+            document.getElementById('last-visit').textContent = `${hoursDiff}h ago`;
+        } else {
+            const daysDiff = Math.floor(hoursDiff / 24);
+            document.getElementById('last-visit').textContent = `${daysDiff}d ago`;
+        }
+    } else {
+        document.getElementById('last-visit').textContent = 'First visit';
+    }
+    
+    localStorage.setItem('lastVisit', now.toISOString());
+}
+
+
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    getIPAddress();
+    getVisitorCount();
+    getLastVisit();
+    
+    // Load GoatCounter script
+    var script = document.createElement('script');
+    script.src = 'https://gc.zgo.at/count.js';
+    script.async = true;
+    document.head.appendChild(script);
+});
+</script>
+<script data-goatcounter="https://sereal.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script> 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Burp Suite on Tenny Vongtip - Cybersecurity Professional</title>
+    <link>//localhost:1313/tags/burp-suite/</link>
+    <description>Recent content in Burp Suite on Tenny Vongtip - Cybersecurity Professional</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/burp-suite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GWAPT Journey: The Reality of Web Application Security Testing</title>
+      <link>//localhost:1313/blog/gwapt-web-app-security-testing/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/gwapt-web-app-security-testing/</guid>
+      <description>&lt;h1 id=&#34;gwapt-journey-the-reality-of-web-application-security-testing&#34;&gt;GWAPT Journey: The Reality of Web Application Security Testing&lt;/h1&gt;&#xA;&lt;p&gt;As I prepare for my upcoming GWAPT (GIAC Web Application Penetration Tester) certification, I&amp;rsquo;ve been reflecting on the incredible complexity and time-intensive nature of web application security testing. It&amp;rsquo;s fascinating how the virtual world has evolved to such an accessible state, yet the underlying security challenges remain as intricate as ever.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-time-investment-reality&#34;&gt;The Time Investment Reality&lt;/h2&gt;&#xA;&lt;p&gt;One of the most eye-opening aspects of web application security testing is just how time-consuming it can be. Even with professional-grade tools like Burp Suite Professional at your disposal, the process requires an immense amount of patience, persistence, and deep technical understanding.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
