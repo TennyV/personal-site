@@ -1,0 +1,10 @@
+            <div class="certifications-container container-block">
+                <h2 class="container-block-title">{{ i18n "certifications" }}</h2>
+				{{ range .Site.Params.certifications.list }}
+                <div class="item">
+                    <h4 class="certification">{{ .name }}</h4>
+                    <h5 class="meta">{{ .issuer }}</h5>
+                    <div class="time">{{ .date }}</div>
+                </div><!--//item-->
+				{{ end }}
+            </div><!--//certifications-container-->

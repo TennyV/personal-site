@@ -93,6 +93,51 @@ disable404 = true
         degree = "Bachelor of Science in Computer Science"
         college = "Southern New Hampshire University"
         dates = "2021-2023"
+
+    # Certifications section
+    [params.certifications]
+        enable = true
+        title = "Certifications"
+
+        [[params.certifications.list]]
+        name = "GIAC Web Application Penetration Tester (GWAPT)"
+        issuer = "GIAC"
+        date = "September 2025"
+
+        [[params.certifications.list]]
+        name = "GIAC Security Essentials (GSEC)"
+        issuer = "GIAC"
+        date = "May 2023"
+
+        [[params.certifications.list]]
+        name = "GIAC Certified Incident Handler (GCIH)"
+        issuer = "GIAC"
+        date = "August 2023"
+
+        [[params.certifications.list]]
+        name = "GIAC Certified Intrusion Analyst (GCIA)"
+        issuer = "GIAC"
+        date = "November 2023"
+
+        [[params.certifications.list]]
+        name = "GIAC Strategic Planning, Policy & Leadership (GSTRT)"
+        issuer = "GIAC"
+        date = "May 2024"
+
+        [[params.certifications.list]]
+        name = "GIAC Defense Security Architecture (GDSA)"
+        issuer = "GIAC"
+        date = "January 2025"
+
+        [[params.certifications.list]]
+        name = "GIAC Cloud Security Automation (GCSA)"
+        issuer = "GIAC"
+        date = "March 2025"
+
+        [[params.certifications.list]]
+        name = "CompTIA A+"
+        issuer = "CompTIA"
+        date = "December 2021"
         
     # Languages section
     [params.language]
@@ -247,34 +292,6 @@ disable404 = true
         [[params.skills.list]]
         category = "Business & Leadership"
         skills = "Strategic Planning, Project Management, Team Leadership, Stakeholder Communication, ROI Analysis, Digital Marketing, Business Process Optimization"
-
-        [[params.skills.list]]
-        category = "GIAC Security Essentials (GSEC)"
-        skills = "May 2023"
-
-        [[params.skills.list]]
-        category = "GIAC Certified Incident Handler (GCIH)"
-        skills = "August 2023"
-
-        [[params.skills.list]]
-        category = "GIAC Certified Intrusion Analyst (GCIA)"
-        skills = "November 2023"
-
-        [[params.skills.list]]
-        category = "GIAC Strategic Planning, Policy & Leadership (GSTRT)"
-        skills = "May 2024"
-
-        [[params.skills.list]]
-        category = "GIAC Defense Security Architecture (GDSA)"
-        skills = "January 2025"
-
-        [[params.skills.list]]
-        category = "GIAC Cloud Security Automation (GCSA)"
-        skills = "March 2025"
-
-        [[params.skills.list]]
-        category = "CompTIA A+"
-        skills = "December 2021"
 
     # Footer section
 

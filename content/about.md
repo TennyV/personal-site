@@ -22,6 +22,7 @@ From my early days in IT support to my current role as a cybersecurity specialis
 
 ## Certifications
 
+- GIAC Web Application Penetration Tester (GWAPT) - September 2025
 - GIAC Security Essentials (GSEC)
 - GIAC Certified Incident Handler (GCIH)
 - GIAC Certified Intrusion Analyst (GCIA)
@@ -31,3 +32,4 @@ From my early days in IT support to my current role as a cybersecurity specialis
 - CompTIA A+
 
 Feel free to reach out if you'd like to discuss cybersecurity, technology, or potential collaborations!
+
