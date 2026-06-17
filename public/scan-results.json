@@ -1,0 +1,21 @@
+{
+  "last_run": null,
+  "gitleaks": {
+    "tool": "Gitleaks",
+    "label": "Secret Scanning",
+    "description": "Exposed credentials, API keys, tokens",
+    "findings": 0
+  },
+  "trivy": {
+    "tool": "Trivy",
+    "label": "Vulnerability Scan",
+    "description": "HIGH & CRITICAL CVEs in dependencies",
+    "findings": 0
+  },
+  "semgrep": {
+    "tool": "Semgrep",
+    "label": "Static Analysis",
+    "description": "Security issues in source code",
+    "findings": 0
+  }
+}

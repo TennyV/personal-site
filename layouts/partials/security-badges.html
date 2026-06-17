@@ -1,28 +1,62 @@
 {{ if .Site.Params.securityBadges.enable }}
 <section class="section security-section">
     <h2 class="section-title"><i class="fa fa-shield"></i> Site Security</h2>
-    <div class="security-badges">
-        <p class="badges-intro">This site is scanned weekly using open-source security tools.</p>
-        <div class="badge-list">
-            <div class="badge-item">
-                <a href="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml" target="_blank" rel="noopener">
-                    <img src="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml/badge.svg?branch=master&label=Gitleaks%20%28Secrets%29" alt="Gitleaks secret scan status">
-                </a>
-                <span class="badge-label">Secret Scanning</span>
+    <div class="security-results">
+        <p class="security-intro">
+            This site is scanned weekly for secrets, vulnerabilities, and code security issues using open-source tools.
+            <a href="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml" target="_blank" rel="noopener" class="security-actions-link">View scan history on GitHub</a>
+        </p>
+        <div class="scan-cards" id="scan-cards">
+            <!-- Placeholder cards while JS loads -->
+            <div class="scan-card loading">
+                <div class="scan-tool">Gitleaks</div>
+                <div class="scan-label">Secret Scanning</div>
+                <div class="scan-count">—</div>
+                <div class="scan-desc">Exposed credentials, API keys, tokens</div>
             </div>
-            <div class="badge-item">
-                <a href="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml" target="_blank" rel="noopener">
-                    <img src="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml/badge.svg?branch=master&label=Trivy%20%28CVEs%29" alt="Trivy vulnerability scan status">
-                </a>
-                <span class="badge-label">Vulnerability Scan</span>
+            <div class="scan-card loading">
+                <div class="scan-tool">Trivy</div>
+                <div class="scan-label">Vulnerability Scan</div>
+                <div class="scan-count">—</div>
+                <div class="scan-desc">HIGH & CRITICAL CVEs in dependencies</div>
             </div>
-            <div class="badge-item">
-                <a href="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml" target="_blank" rel="noopener">
-                    <img src="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml/badge.svg?branch=master&label=Semgrep%20%28SAST%29" alt="Semgrep SAST scan status">
-                </a>
-                <span class="badge-label">SAST</span>
+            <div class="scan-card loading">
+                <div class="scan-tool">Semgrep</div>
+                <div class="scan-label">Static Analysis</div>
+                <div class="scan-count">—</div>
+                <div class="scan-desc">Security issues in source code</div>
             </div>
         </div>
+        <p class="scan-timestamp" id="scan-timestamp"></p>
     </div>
 </section>
+
+<script>
+(function () {
+    fetch('/scan-results.json?v=' + Date.now())
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+            var keys = ['gitleaks', 'trivy', 'semgrep'];
+            var cards = document.querySelectorAll('#scan-cards .scan-card');
+            keys.forEach(function (key, i) {
+                var scan = data[key];
+                var card = cards[i];
+                if (!scan || !card) return;
+                var count = scan.findings;
+                card.classList.remove('loading');
+                card.classList.add(count === 0 ? 'clean' : 'flagged');
+                card.querySelector('.scan-count').textContent =
+                    count === 0 ? '0 findings' : count + (count === 1 ? ' finding' : ' findings');
+            });
+            if (data.last_run) {
+                var d = new Date(data.last_run);
+                document.getElementById('scan-timestamp').textContent =
+                    'Last scanned: ' + d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            }
+        })
+        .catch(function () {
+            document.getElementById('scan-timestamp').textContent = 'Scan results unavailable.';
+        });
+})();
+</script>
 {{ end }}

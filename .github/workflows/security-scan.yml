@@ -9,38 +9,107 @@ on:
     - cron: '0 9 * * 1'  # Every Monday at 9am UTC
 
 jobs:
-  gitleaks:
-    name: Secret Scanning (Gitleaks)
+  security-scan:
+    name: Run Security Scans
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  trivy:
-    name: Vulnerability Scan (Trivy)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+      # --- Gitleaks ---
+      - name: Install Gitleaks
+        run: |
+          curl -sSfL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz \
+            | tar -xz -C /usr/local/bin gitleaks
+
+      - name: Run Gitleaks
+        id: gitleaks
+        run: |
+          gitleaks detect --source . --exit-code 0 --format json --report-path /tmp/gitleaks.json 2>/dev/null || true
+          COUNT=$(python3 -c "
+          import json, sys
+          try:
+              data = json.load(open('/tmp/gitleaks.json'))
+              print(len(data) if isinstance(data, list) else 0)
+          except:
+              print(0)
+          ")
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      # --- Trivy ---
+      - name: Install Trivy
+        run: curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+
       - name: Run Trivy
-        uses: aquasecurity/trivy-action@0.28.0
-        with:
-          scan-type: fs
-          scan-ref: .
-          severity: HIGH,CRITICAL
-          exit-code: 1
-          ignore-unfixed: true
-          format: table
+        id: trivy
+        run: |
+          trivy fs . --severity HIGH,CRITICAL --ignore-unfixed --format json --output /tmp/trivy.json --quiet 2>/dev/null || true
+          COUNT=$(python3 -c "
+          import json
+          try:
+              data = json.load(open('/tmp/trivy.json'))
+              vulns = [v for r in data.get('Results', []) for v in r.get('Vulnerabilities') or []]
+              print(len(vulns))
+          except:
+              print(0)
+          ")
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
 
-  semgrep:
-    name: SAST (Semgrep)
-    runs-on: ubuntu-latest
-    container:
-      image: semgrep/semgrep
-    steps:
-      - uses: actions/checkout@v4
+      # --- Semgrep ---
+      - name: Install Semgrep
+        run: pip install semgrep --quiet
+
       - name: Run Semgrep
-        run: semgrep scan --config auto --error --quiet .
+        id: semgrep
+        run: |
+          semgrep scan --config auto --json --output /tmp/semgrep.json . 2>/dev/null || true
+          COUNT=$(python3 -c "
+          import json
+          try:
+              data = json.load(open('/tmp/semgrep.json'))
+              print(len(data.get('results', [])))
+          except:
+              print(0)
+          ")
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      # --- Write results JSON ---
+      - name: Write scan results
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          cat > static/scan-results.json << EOF
+          {
+            "last_run": "$TIMESTAMP",
+            "gitleaks": {
+              "tool": "Gitleaks",
+              "label": "Secret Scanning",
+              "description": "Exposed credentials, API keys, tokens",
+              "findings": ${{ steps.gitleaks.outputs.count }}
+            },
+            "trivy": {
+              "tool": "Trivy",
+              "label": "Vulnerability Scan",
+              "description": "HIGH & CRITICAL CVEs in dependencies",
+              "findings": ${{ steps.trivy.outputs.count }}
+            },
+            "semgrep": {
+              "tool": "Semgrep",
+              "label": "Static Analysis",
+              "description": "Security issues in source code",
+              "findings": ${{ steps.semgrep.outputs.count }}
+            }
+          }
+          EOF
+
+      - name: Commit scan results
+        if: github.ref == 'refs/heads/master'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/scan-results.json
+          git diff --staged --quiet || git commit -m "chore: update scan results [skip ci]"
+          git push

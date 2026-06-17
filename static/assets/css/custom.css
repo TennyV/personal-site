@@ -1817,56 +1817,107 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* ===== SECURITY BADGES SECTION ===== */
+/* ===== SECURITY SCAN RESULTS SECTION ===== */
 
 .security-section {
     padding: 30px 0;
 }
 
-.security-badges {
-    background: linear-gradient(135deg, var(--bg-white, #fff) 0%, var(--bg-light, #f8f9fa) 100%);
-    border-left: 4px solid var(--accent-navy, #2c3e50);
+.security-results {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    border-left: 4px solid #2c3e50;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     padding: 25px 30px;
 }
 
-.badges-intro {
-    color: var(--text-medium, #404040);
+.security-intro {
+    color: #404040;
     margin-bottom: 20px;
     font-size: 0.95em;
 }
 
-.badge-list {
+.security-actions-link {
+    margin-left: 8px;
+    font-size: 0.9em;
+    color: #2c3e50 !important;
+    text-decoration: underline;
+}
+
+.scan-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
 }
 
-.badge-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+.scan-card {
+    flex: 1;
+    min-width: 180px;
+    border-radius: 10px;
+    padding: 18px 20px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    transition: box-shadow 0.2s ease;
 }
 
-.badge-item img {
-    height: 20px;
-    border-radius: 3px;
+.scan-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.badge-label {
+.scan-card.loading {
+    border-color: #e0e0e0;
+    opacity: 0.6;
+}
+
+.scan-card.clean {
+    border-left: 4px solid #27ae60;
+}
+
+.scan-card.flagged {
+    border-left: 4px solid #e67e22;
+}
+
+.scan-tool {
     font-size: 0.75em;
-    color: var(--text-light, #666);
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.scan-label {
+    font-size: 1em;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.scan-count {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+}
+
+.scan-card.clean .scan-count { color: #27ae60; }
+.scan-card.flagged .scan-count { color: #e67e22; }
+
+.scan-desc {
+    font-size: 0.8em;
+    color: #888;
+    line-height: 1.4;
+}
+
+.scan-timestamp {
+    font-size: 0.8em;
+    color: #aaa;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
-    .badge-list {
+    .scan-cards {
         flex-direction: column;
-        gap: 15px;
     }
 }
