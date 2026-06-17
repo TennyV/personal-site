@@ -33,6 +33,10 @@
     {{ partial "blog-preview.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.securityBadges.enable }}
+    {{ partial "security-badges.html" . }}
+    {{ end }}
+
 	</div><!--//main-body-->
     </div>
 

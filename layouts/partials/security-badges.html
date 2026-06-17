@@ -1,0 +1,28 @@
+{{ if .Site.Params.securityBadges.enable }}
+<section class="section security-section">
+    <h2 class="section-title"><i class="fa fa-shield"></i> Site Security</h2>
+    <div class="security-badges">
+        <p class="badges-intro">This site is scanned weekly using open-source security tools.</p>
+        <div class="badge-list">
+            <div class="badge-item">
+                <a href="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml" target="_blank" rel="noopener">
+                    <img src="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml/badge.svg?branch=master&label=Gitleaks%20%28Secrets%29" alt="Gitleaks secret scan status">
+                </a>
+                <span class="badge-label">Secret Scanning</span>
+            </div>
+            <div class="badge-item">
+                <a href="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml" target="_blank" rel="noopener">
+                    <img src="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml/badge.svg?branch=master&label=Trivy%20%28CVEs%29" alt="Trivy vulnerability scan status">
+                </a>
+                <span class="badge-label">Vulnerability Scan</span>
+            </div>
+            <div class="badge-item">
+                <a href="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml" target="_blank" rel="noopener">
+                    <img src="https://github.com/TennyV/personal-site/actions/workflows/security-scan.yml/badge.svg?branch=master&label=Semgrep%20%28SAST%29" alt="Semgrep SAST scan status">
+                </a>
+                <span class="badge-label">SAST</span>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

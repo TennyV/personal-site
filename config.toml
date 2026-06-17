@@ -22,6 +22,9 @@ disable404 = true
     description = "Experienced Cybersecurity Specialist with expertise in cloud security, threat management, and compliance frameworks"
     author = "Tenny Vongtip"
 
+    [params.securityBadges]
+        enable = true
+
 # Theme styles
 
     # The original template comes with 6 colour schemes. You may choose styles below.
@@ -195,7 +198,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Professional Summary"
-        summary = "Experienced Cybersecurity Specialist with over 10 years of IT expertise, specializing in cloud security, threat management, and compliance frameworks. Based in Poznan, Poland, I bring a global perspective to cybersecurity challenges while serving clients across Europe and beyond. Proven track record of implementing security controls, reducing vulnerabilities, and enhancing organizational cyber maturity. Skilled in Azure cloud infrastructure, Microsoft Power Platform automation, and security auditing. Passionate about continuous learning and delivering innovative solutions that drive business excellence."
+        summary = "Cybersecurity specialist and DevSecOps practitioner with 10+ years across federal agencies, financial services, and international environments. I build security into the places most teams skip: CI/CD pipelines, cloud identity, and developer workflows. Currently interning at Decyda SRLS in Poland, where I deploy Cloud Custodian on AWS and integrate AI-based guardrails into pipelines. Previously at the Department of the Interior, where I automated phishing triage, integrated SAST/SCA into Azure DevOps and GitHub Actions, and built Splunk queries that improved anomaly detection by 30%. Pursuing a Master's in Information Security Engineering at SANS Technology Institute, with active research into how NIST SP 800-204D maps to real federal CI/CD pipeline risks. GIAC-certified across five domains."
 
     # Experiences section
     [params.experiences]

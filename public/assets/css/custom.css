@@ -1809,10 +1809,64 @@ h1, h2, h3, h4, h5, h6 {
         gap: 10px;
         align-items: center;
     }
-    
+
     .nav-home-link,
     .nav-blog-link {
         width: 200px;
         justify-content: center;
     }
-} 
+}
+
+/* ===== SECURITY BADGES SECTION ===== */
+
+.security-section {
+    padding: 30px 0;
+}
+
+.security-badges {
+    background: linear-gradient(135deg, var(--bg-white, #fff) 0%, var(--bg-light, #f8f9fa) 100%);
+    border-left: 4px solid var(--accent-navy, #2c3e50);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 25px 30px;
+}
+
+.badges-intro {
+    color: var(--text-medium, #404040);
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.badge-item img {
+    height: 20px;
+    border-radius: 3px;
+}
+
+.badge-label {
+    font-size: 0.75em;
+    color: var(--text-light, #666);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .badge-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
