@@ -1,6 +1,6 @@
 ---
 title: "From Pipeline to Policy: Writing a Research Whitepaper on Federal CI/CD Security"
-date: 2026-06-17
+date: 2025-06-17
 draft: false
 tags: ["DevSecOps", "CI/CD Security", "NIST", "Research", "Federal Security"]
 description: "How my hands-on experience building CI/CD pipelines turned into a formal research whitepaper mapping federal security guidance against real-world pipeline vulnerabilities."

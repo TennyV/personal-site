@@ -1,6 +1,6 @@
 ---
 title: "DevSecOps Best Practices: Integrating Security into CI/CD Pipelines"
-date: 2024-07-30
+date: 2025-07-30
 draft: false
 tags: ["DevSecOps", "Cybersecurity", "CI/CD", "Azure DevOps"]
 description: "Exploring effective strategies for integrating automated security scanning into modern development pipelines."
