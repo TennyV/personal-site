@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Cybersecurity on Tenny Vongtip - Cybersecurity Professional</title>
-    <link>//localhost:1313/tags/cybersecurity/</link>
-    <description>Recent content in Cybersecurity on Tenny Vongtip - Cybersecurity Professional</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jul 2025 23:15:15 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DevSecOps Best Practices: Integrating Security into CI/CD Pipelines</title>
-      <link>//localhost:1313/blog/devsecops-best-practices/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/devsecops-best-practices/</guid>
-      <description>&lt;h1 id=&#34;devsecops-best-practices-integrating-security-into-cicd-pipelines&#34;&gt;DevSecOps Best Practices: Integrating Security into CI/CD Pipelines&lt;/h1&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s rapidly evolving cybersecurity landscape, the integration of security practices into the development lifecycle has become paramount. DevSecOps represents a cultural shift that emphasizes the importance of security as a shared responsibility across development, operations, and security teams.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-foundation-of-devsecops&#34;&gt;The Foundation of DevSecOps&lt;/h2&gt;&#xA;&lt;p&gt;DevSecOps builds upon the principles of DevOps while adding security as a core component. This approach ensures that security is not an afterthought but rather an integral part of the development process from the very beginning.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybersecurity on Tenny Vongtip - Cybersecurity Professional</title><link>/tags/cybersecurity/</link><description>Recent content in Cybersecurity on Tenny Vongtip - Cybersecurity Professional</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 30 Jul 2025 23:15:15 +0200</lastBuildDate><atom:link href="/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml"/><item><title>DevSecOps Best Practices: Integrating Security into CI/CD Pipelines</title><link>/blog/devsecops-best-practices/</link><pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate><guid>/blog/devsecops-best-practices/</guid><description>&lt;h1 id="devsecops-best-practices-integrating-security-into-cicd-pipelines">DevSecOps Best Practices: Integrating Security into CI/CD Pipelines&lt;/h1>
+&lt;p>In today&amp;rsquo;s rapidly evolving cybersecurity landscape, the integration of security practices into the development lifecycle has become paramount. DevSecOps represents a cultural shift that emphasizes the importance of security as a shared responsibility across development, operations, and security teams.&lt;/p>
+&lt;h2 id="the-foundation-of-devsecops">The Foundation of DevSecOps&lt;/h2>
+&lt;p>DevSecOps builds upon the principles of DevOps while adding security as a core component. This approach ensures that security is not an afterthought but rather an integral part of the development process from the very beginning.&lt;/p></description></item></channel></rss>
