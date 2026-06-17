@@ -19,8 +19,8 @@ disable404 = true
 [params]
 
 # Meta
-    description = "Hugo Responsive Resume/CV Theme for Developers"
-    author = "Pavel Kanyshev"
+    description = "Experienced Cybersecurity Specialist with expertise in cloud security, threat management, and compliance frameworks"
+    author = "Tenny Vongtip"
 
 # Theme styles
 
@@ -46,13 +46,13 @@ disable404 = true
         [[params.contact.list]]
         class = "email"
         icon = "fa-envelope"
-        url = "mailto: tenny.vongtip@gmail.com"
+        url = "mailto:tenny.vongtip@gmail.com"
         title = "Tenny Vongtip"
 
         [[params.contact.list]]
         class = "phone"
         icon = "fa-phone"
-        url = "tel:+48 722 338 040"
+        url = "tel:+48722338040"
         title = "+48 722 338 040"
 
     #   [[params.contact.list]]
@@ -208,10 +208,16 @@ disable404 = true
         enable = true
 
         [[params.jobs.list]]
+        position = "DevSecOps Intern"
+        dates = "Aug 2025 - Present"
+        company = "Decyda SRLS"
+        details = "• Engineered cloud security governance by deploying Cloud Custodian on AWS, writing custom Python-based policies to enforce compliance and auto-remediate risks.\n\n• Executed penetration testing on web applications, identifying critical vulnerabilities and partnering with developers to patch code before production deployment.\n\n• Deployed AI-based security guardrails within CI/CD pipelines, automatically blocking risky code changes and reducing manual code review time."
+
+        [[params.jobs.list]]
         position = "IT Cybersecurity Specialist"
-        dates = "July 2024 - Present"
+        dates = "Jul 2024 - Jul 2025"
         company = "Department of the Interior"
-        details = "• Enhanced cybersecurity governance framework, achieving 95%+ compliance across 7 systems (3 medium-risk, 4 low-risk)\n\n• Led AI-driven cybersecurity awareness program, reducing content creation time by 50% and increasing phishing reporting by 60%\n\n• Conducted comprehensive audit of 10,000+ Azure accounts, identifying and remediating 3% unauthorized access in Microsoft Entra ID\n\n• Developed automated workflows using Microsoft Power Platform, reducing document processing time by 80%\n\n• Orchestrated business continuity planning for critical systems, identifying and resolving backup plan discrepancies\n\n• Championed DevSecOps initiatives by integrating automated security scanning (SAST/SCA) into CI/CD pipelines on Azure DevOps and GitHub Actions, resulting in the discovery of 40+ critical vulnerabilities and the adoption of safer dependency management by development teams"
+        details = "• Developed and integrated automated security scanning tools into Azure and GitHub pipelines, successfully detecting and mitigating 40+ critical vulnerabilities during the build phase.\n\n• Scripted automation for phishing analysis and document processing, which increased team efficiency by 60% and reduced mean time to respond (MTTR).\n\n• Programmed custom Splunk queries to correlate data sources, improving anomaly detection rates by 30% across the enterprise environment.\n\n• Conducted comprehensive identity audits and engineered stricter access controls (IAM) to harden the environment against unauthorized entry."
 
         [[params.jobs.list]]
         position = "IT/Cyber Security Auditor"
