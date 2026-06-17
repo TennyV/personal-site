@@ -1,6 +1,6 @@
 ---
 title: "GWAPT Journey: The Reality of Web Application Security Testing"
-date: 2024-08-19
+date: 2025-08-19
 draft: false
 tags: ["GWAPT", "Web Application Security", "Penetration Testing", "Burp Suite", "Krakow"]
 description: "Exploring the challenges and time-intensive nature of web application security testing, even with professional tools like Burp Suite."
