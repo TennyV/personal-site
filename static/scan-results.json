@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-29T13:03:19Z",
+  "last_run": "2026-07-06T12:42:29Z",
   "gitleaks": {
     "tool": "Gitleaks",
     "label": "Secret Scanning",
@@ -16,6 +16,6 @@
     "tool": "Semgrep",
     "label": "Static Analysis",
     "description": "Security issues in source code",
-    "findings": 3
+    "findings": 5
   }
 }
