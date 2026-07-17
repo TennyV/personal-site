@@ -1,11 +1,24 @@
             <div class="certifications-container container-block">
                 <h2 class="container-block-title">{{ .Site.Params.certifications.title | default "Certifications" }}</h2>
+                <p class="certifications-intro"><a href="https://www.credly.com/users/siriwat-vongtip/badges" target="_blank" rel="noopener">View all badges on Credly</a></p>
+                <div class="certifications-grid">
 				{{ range .Site.Params.certifications.list }}
-                <div class="item">
-                    <h4 class="certification">{{ .name }}</h4>
-                    <h5 class="meta">{{ .issuer }}</h5>
-                    <div class="time">{{ .date }}</div>
-                </div><!--//item-->
+                <div class="cert-card">
+                    {{ if .credlyUrl }}
+                    <a href="{{ .credlyUrl }}" target="_blank" rel="noopener noref
+errer" class="cert-badge-link" title="View badge on Credly">
+                        <div class="cert-badge-placeholder">
+                            <div class="giac-logo">GIAC</div>
+                        </div>
+                    </a>
+                    {{ end }}
+                    <div class="cert-details">
+                        <h4 class="certification">{{ .name }}</h4>
+                        <h5 class="meta">{{ .issuer }}</h5>
+                        <div class="time">{{ .date }}</div>
+                    </div>
+                </div><!--//cert-card-->
 				{{ end }}
+                </div><!--//certifications-grid-->
             </div><!--//certifications-container-->
 

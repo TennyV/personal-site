@@ -117,41 +117,49 @@ disable404 = true
         name = "GIAC Web Application Penetration Tester (GWAPT, Honors)"
         issuer = "GIAC"
         date = "September 2025"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "GIAC Security Essentials (GSEC)"
         issuer = "GIAC"
         date = "May 2023"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "GIAC Certified Incident Handler (GCIH)"
         issuer = "GIAC"
         date = "August 2023"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "GIAC Certified Intrusion Analyst (GCIA)"
         issuer = "GIAC"
         date = "November 2023"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "GIAC Strategic Planning, Policy & Leadership (GSTRT)"
         issuer = "GIAC"
         date = "May 2024"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "GIAC Defense Security Architecture (GDSA)"
         issuer = "GIAC"
         date = "January 2025"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "GIAC Cloud Security Automation (GCSA, Honors)"
         issuer = "GIAC"
         date = "March 2025"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "GIAC Security Leadership (GSLC)"
         issuer = "GIAC"
         date = "2026"
+        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
 
         [[params.certifications.list]]
         name = "CompTIA A+"
