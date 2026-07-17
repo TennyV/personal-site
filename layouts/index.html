@@ -33,6 +33,10 @@
     {{ partial "results.html" . }}
     {{ end }}
 
+    {{ partial "lead-capture.html" . }}
+
+    {{ partial "faq.html" . }}
+
     {{ if .Site.Params.experiences.enable }}
     {{ partial "experiences.html" . }}
     {{ end }}

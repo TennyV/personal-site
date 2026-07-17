@@ -285,6 +285,11 @@ disable404 = true
         title = "Tabletop that changed priorities"
         text = "Ran an incident-response exercise with 15+ participants that exposed three critical security gaps and triggered focused remediation."
 
+        [[params.results.list]]
+        metric = "60 days"
+        title = "Compliance timeline compressed"
+        text = "Helped an EU healthcare provider accelerate NIS2 readiness from 6-month plan to 60-day remediation roadmap through prioritized risk assessment."
+
     # Experiences section
     [params.experiences]
         enable = true
