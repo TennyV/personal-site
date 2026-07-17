@@ -1,0 +1,7 @@
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fa {{ .Site.Params.summary.icon }}"></i><span data-en="{{ .Site.Params.summary.title }}" data-pl="Profesjonalne Streszczenie">{{ .Site.Params.summary.title }}</span></h2>
+                <div class="summary">
+                    <div data-lang-en>{{ with .Site.Params.summary.summary }}{{ . | markdownify }}{{ end }}</div>
+                    <div data-lang-pl style="display:none;">{{ with .Site.Params.summary.summary_pl }}{{ . | markdownify }}{{ end }}</div>
+                </div><!--//summary-->
+            </section><!--//section-->

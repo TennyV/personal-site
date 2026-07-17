@@ -1,6 +1,7 @@
             <section class="section help-section">
-                <h2 class="section-title"><i class="fa {{ .Site.Params.help.icon }}"></i>{{ .Site.Params.help.title }}</h2>
+                <h2 class="section-title"><i class="fa {{ .Site.Params.help.icon }}"></i><span data-en="{{ .Site.Params.help.title }}" data-pl="{{ .Site.Params.help.title_pl }}">{{ .Site.Params.help.title }}</span></h2>
                 <div class="summary">
-                    {{ with .Site.Params.help.content }}{{ . | markdownify }}{{ end }}
+                    <div data-lang-en>{{ with .Site.Params.help.content }}{{ . | markdownify }}{{ end }}</div>
+                    <div data-lang-pl style="display:none;">{{ with .Site.Params.help.content_pl }}{{ . | markdownify }}{{ end }}</div>
                 </div><!--//summary-->
             </section><!--//section-->

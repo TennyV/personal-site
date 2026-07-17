@@ -17,8 +17,20 @@
 	{{ partial "summary.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.nis2.enable }}
+    {{ partial "nis2.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.help.enable }}
     {{ partial "help.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.engagement.enable }}
+    {{ partial "engagement.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.results.enable }}
+    {{ partial "results.html" . }}
     {{ end }}
 
     {{ if .Site.Params.experiences.enable }}

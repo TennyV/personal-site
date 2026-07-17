@@ -1,0 +1,7 @@
+            <section class="section engagement-section">
+                <h2 class="section-title"><i class="fa {{ .Site.Params.engagement.icon }}"></i><span data-en="{{ .Site.Params.engagement.title }}" data-pl="{{ .Site.Params.engagement.title_pl }}">{{ .Site.Params.engagement.title }}</span></h2>
+                <div class="summary">
+                    <div data-lang-en>{{ with .Site.Params.engagement.content }}{{ . | markdownify }}{{ end }}</div>
+                    <div data-lang-pl style="display:none;">{{ with .Site.Params.engagement.content_pl }}{{ . | markdownify }}{{ end }}</div>
+                </div><!--//summary-->
+            </section><!--//section-->

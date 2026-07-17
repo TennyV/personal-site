@@ -1,0 +1,16 @@
+            <section class="section results-section">
+                <h2 class="section-title"><i class="fa {{ .Site.Params.results.icon }}"></i><span data-en="{{ .Site.Params.results.title }}" data-pl="{{ .Site.Params.results.title_pl }}">{{ .Site.Params.results.title }}</span></h2>
+                <div class="summary">
+                    <div data-lang-en><p>{{ .Site.Params.results.intro }}</p></div>
+                    <div data-lang-pl style="display:none;"><p>{{ .Site.Params.results.intro_pl }}</p></div>
+                </div>
+                <div class="results-grid">
+                {{ range .Site.Params.results.list }}
+                    <div class="result-card">
+                        <div class="result-metric">{{ .metric }}</div>
+                        <h4 class="result-title">{{ .title }}</h4>
+                        <p class="result-text">{{ .text }}</p>
+                    </div>
+                {{ end }}
+                </div><!--//results-grid-->
+            </section><!--//section-->

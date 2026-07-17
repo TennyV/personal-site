@@ -1,0 +1,7 @@
+            <section class="section nis2-section">
+                <h2 class="section-title"><i class="fa {{ .Site.Params.nis2.icon }}"></i><span data-en="{{ .Site.Params.nis2.title }}" data-pl="{{ .Site.Params.nis2.title_pl }}">{{ .Site.Params.nis2.title }}</span></h2>
+                <div class="summary">
+                    <div data-lang-en>{{ with .Site.Params.nis2.content }}{{ . | markdownify }}{{ end }}</div>
+                    <div data-lang-pl style="display:none;">{{ with .Site.Params.nis2.content_pl }}{{ . | markdownify }}{{ end }}</div>
+                </div><!--//summary-->
+            </section><!--//section-->

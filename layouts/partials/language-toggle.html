@@ -1,0 +1,80 @@
+<div class="language-toggle">
+    <button class="lang-btn lang-btn-en active" data-lang="en" aria-label="English">EN</button>
+    <button class="lang-btn lang-btn-pl" data-lang="pl" aria-label="Polski">PL</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const savedLang = localStorage.getItem('site-language') || 'en';
+    setLanguage(savedLang);
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            localStorage.setItem('site-language', lang);
+            setLanguage(lang);
+        });
+    });
+});
+
+function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.documentElement.setAttribute('data-lang', lang);
+
+    // Update active button
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Show/hide language-specific content
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        el.style.display = lang === 'en' ? '' : 'none';
+    });
+    document.querySelectorAll('[data-lang-pl]').forEach(el => {
+        el.style.display = lang === 'pl' ? '' : 'none';
+    });
+}
+</script>
+
+<style>
+.language-toggle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.lang-btn.active {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .language-toggle {
+        margin-left: 0;
+        margin-top: 12px;
+        justify-content: center;
+    }
+}
+</style>
