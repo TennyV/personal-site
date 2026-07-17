@@ -170,6 +170,20 @@ disable404 = true
         badgeImageUrl = "https://images.credly.com/size/220x220/images/bb26d719-4fc5-432e-ad22-2b17d367b900/image.png"
 
         [[params.certifications.list]]
+        name = "GIAC Advisory Board (invitation for 90+ exam scores)"
+        issuer = "GIAC"
+        date = "May 2023"
+        credlyUrl = "https://www.credly.com/badges/e74393b6-f252-49bf-9e84-39637c7295ea"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/efd77bd2-ab34-4323-b427-47b3e7136029/image.png"
+
+        [[params.certifications.list]]
+        name = "SANS Security Awareness Professional (SSAP)"
+        issuer = "SANS"
+        date = "August 2024"
+        credlyUrl = "https://www.credly.com/badges/6dbd24a2-1fd2-4530-80b7-af1d47574ada"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/f3b0e384-2906-40c6-a19f-354a2d2ad291/image.png"
+
+        [[params.certifications.list]]
         name = "CompTIA A+"
         issuer = "CompTIA"
         date = "December 2021"
@@ -234,8 +248,8 @@ disable404 = true
         icon = "fa-user"
         title = "Professional Summary"
         title_pl = "Profesjonalne Streszczenie"
-        summary = "I audit organizations against NIS2 requirements and architect the Zero Trust roadmaps that close the gaps. GIAC-certified across eight domains, including Defensible Security Architecture (GDSA, Zero Trust) and Cloud Security Automation (GCSA, earned with honors), with 10+ years of security work spanning U.S. federal agencies, financial services, and EU environments.\n\n**If your organization falls under NIS2 and you want a gap assessment or a Zero Trust architecture review, email me directly. No intake forms, no sales layer. You talk to the auditor.**"
-        summary_pl = "Przeprowadzam audyty organizacji pod kątem wymagań NIS2 i architektury Zero Trust zamykające luki bezpieczeństwa. Certyfikowany GIAC w ośmiu domenach, w tym Defensible Security Architecture (GDSA, Zero Trust) i Cloud Security Automation (GCSA, uzyskany z wyróżnieniem), z ponad 10-letnim doświadczeniem w bezpieczeństwie w agencjach federalnych USA, usługach finansowych i środowiskach europejskich.\n\n**Jeśli Twoja organizacja podlega NIS2 i chcesz oceny luk lub przeglądu architektury Zero Trust, napisz do mnie bezpośrednio. Żadnych formularzy wstępnych, brak warstwy sprzedaży. Rozmawiam z audytorem.**"
+        summary = "I audit organizations against NIS2 requirements and architect the Zero Trust roadmaps that close the gaps. GIAC-certified across eight domains — including Defensible Security Architecture (GDSA, Zero Trust) and Cloud Security Automation (GCSA, earned with honors) — and a GIAC Advisory Board member, an invitation reserved for exam scores of 90 or above. 10+ years of security work spanning U.S. federal agencies, financial services, and EU environments.\n\n**If your organization falls under NIS2 and you want a gap assessment or a Zero Trust architecture review, email me directly. No intake forms, no sales layer. You talk to the auditor.**"
+        summary_pl = "Przeprowadzam audyty organizacji pod kątem wymagań NIS2 i architektury Zero Trust zamykające luki bezpieczeństwa. Certyfikowany GIAC w ośmiu domenach — w tym Defensible Security Architecture (GDSA, Zero Trust) i Cloud Security Automation (GCSA, uzyskany z wyróżnieniem) — oraz członek GIAC Advisory Board, do którego zaproszenie otrzymują wyłącznie osoby z wynikiem egzaminu 90+. Ponad 10-letnie doświadczenie w bezpieczeństwie w agencjach federalnych USA, usługach finansowych i środowiskach europejskich.\n\n**Jeśli Twoja organizacja podlega NIS2 i chcesz oceny luk lub przeglądu architektury Zero Trust, napisz do mnie bezpośrednio. Żadnych formularzy wstępnych, brak warstwy sprzedaży. Rozmawiam z audytorem.**"
 
     # Why NIS2 Now section
     [params.nis2]
