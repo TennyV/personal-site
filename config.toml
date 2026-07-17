@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = ""
+baseurl = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Tenny Vongtip - NIS2 Compliance Auditor & Zero Trust Architect"
