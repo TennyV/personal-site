@@ -14,6 +14,10 @@
                         </div>
                         {{ end }}
                     </a>
+                    {{ else if .badgeImageUrl }}
+                    <span class="cert-badge-link">
+                        <img src="{{ .badgeImageUrl }}" alt="{{ .name }} badge" class="cert-badge-image" loading="lazy">
+                    </span>
                     {{ end }}
                     <div class="cert-details">
                         <h4 class="certification">{{ .name }}</h4>
