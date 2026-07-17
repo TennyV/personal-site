@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-17T19:33:37Z",
+  "last_run": "2026-07-17T19:41:36Z",
   "gitleaks": {
     "tool": "Gitleaks",
     "label": "Secret Scanning",

@@ -16,7 +16,7 @@ Note the phrasing. Nobody sends you a letter telling you that you are covered. T
 
 The KSC Act reaches roughly 42,000 companies across 18 sectors, split into two tiers:
 
-- **Essential entities**: energy, transport, banking and financial market infrastructure, healthcare, drinking water, wastewater, digital infrastructure, ICT service management, public administration, and space. Generally large entities in these sectors (250+ employees or over €50M turnover), though some — like qualified trust service providers and DNS operators — are covered regardless of size.
+- **Essential entities**: energy, transport, banking and financial market infrastructure, healthcare, drinking water, wastewater, digital infrastructure, ICT service management, public administration, and space. Generally large entities in these sectors (250+ employees or over €50M turnover), though some, like qualified trust service providers and DNS operators, are covered regardless of size.
 - **Important entities**: postal and courier services, waste management, chemicals, food production and distribution, manufacturing (including medical devices, electronics, machinery, and vehicles), digital providers, and research. Generally medium entities (50+ employees or over €10M turnover) in these sectors.
 
 Two traps catch companies here:
@@ -43,11 +43,11 @@ Fines reach **€10 million or 2% of global turnover** for essential entities. M
 
 If you have not yet confirmed your status, this is a half-day exercise:
 
-1. **Map your activities against the sector annexes.** Not your primary PKD code — your actual activities. Companies frequently qualify through a secondary line of business.
+1. **Map your activities against the sector annexes.** Not your primary PKD code, but your actual activities. Companies frequently qualify through a secondary line of business.
 2. **Check your size thresholds, including group structure.** Headcount and turnover, calculated the way the act calculates them, not the way your org chart suggests.
 3. **Document the conclusion either way.** If you determine you are *not* covered, write down the reasoning and the data behind it. If the regulator later disagrees, a documented good-faith analysis is a very different conversation than a shrug.
 
-If step 1 or 2 comes back positive or ambiguous, the next move is a [gap assessment](/#help) against the act's risk-management measures — because your real deadline is not October 2026, it is April 2027, and the [typical engagement runs four to six weeks](/#engagement) before remediation even starts.
+If step 1 or 2 comes back positive or ambiguous, the next move is a [gap assessment](/#help) against the act's risk-management measures, because your real deadline is not October 2026, it is April 2027, and the [typical engagement runs four to six weeks](/#engagement) before remediation even starts.
 
 ## Not sure? That is a free conversation
 
