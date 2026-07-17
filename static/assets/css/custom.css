@@ -2359,3 +2359,43 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.85rem;
     }
 }
+
+/* ===== Mobile: stack the fixed sidebar below the main content ===== */
+/* The desktop layout above forces .wrapper into a flex row with a 280px
+   sidebar via !important, which defeats the theme's own 767px breakpoint.
+   These rules restore a single-column layout on phones. */
+@media (max-width: 767px) {
+    .wrapper {
+        flex-direction: column !important;
+    }
+
+    .sidebar-wrapper {
+        width: 100% !important;
+        margin-left: 0 !important;
+        float: none !important;
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .main-wrapper {
+        padding: 24px 18px !important;
+        border-radius: 0 !important;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-wrapper img,
+    .sidebar-wrapper img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main-wrapper pre,
+    .main-wrapper table {
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+}
