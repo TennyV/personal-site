@@ -5,11 +5,14 @@
 				{{ range .Site.Params.certifications.list }}
                 <div class="cert-card">
                     {{ if .credlyUrl }}
-                    <a href="{{ .credlyUrl }}" target="_blank" rel="noopener noref
-errer" class="cert-badge-link" title="View badge on Credly">
+                    <a href="{{ .credlyUrl }}" target="_blank" rel="noopener noreferrer" class="cert-badge-link" title="View badge on Credly">
+                        {{ if .badgeImageUrl }}
+                        <img src="{{ .badgeImageUrl }}" alt="{{ .name }} badge" class="cert-badge-image" loading="lazy">
+                        {{ else }}
                         <div class="cert-badge-placeholder">
-                            <div class="giac-logo">GIAC</div>
+                            <div class="giac-logo">{{ .issuer | default "GIAC" }}</div>
                         </div>
+                        {{ end }}
                     </a>
                     {{ end }}
                     <div class="cert-details">

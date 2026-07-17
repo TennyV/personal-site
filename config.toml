@@ -118,48 +118,56 @@ disable404 = true
         issuer = "GIAC"
         date = "September 2025"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/c36a8340-ed9f-4b3a-89e4-a91d9ad9e8f0/GWAPT.png"
 
         [[params.certifications.list]]
         name = "GIAC Security Essentials (GSEC)"
         issuer = "GIAC"
         date = "May 2023"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/f88ccb88-26de-4876-acb7-91707146e55c/GSEC.png"
 
         [[params.certifications.list]]
         name = "GIAC Certified Incident Handler (GCIH)"
         issuer = "GIAC"
         date = "August 2023"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/5ced9eee-f2f9-4ffd-ac12-88da386dbac1/GCIH.png"
 
         [[params.certifications.list]]
         name = "GIAC Certified Intrusion Analyst (GCIA)"
         issuer = "GIAC"
         date = "November 2023"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/eff5eca2-df63-4b6d-aea7-fbf21b5a3d8a/GCIA.png"
 
         [[params.certifications.list]]
         name = "GIAC Strategic Planning, Policy & Leadership (GSTRT)"
         issuer = "GIAC"
         date = "May 2024"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/d06c4aeb-1752-4afa-b6b0-f1c2c83f9e7c/GSTRT.png"
 
         [[params.certifications.list]]
         name = "GIAC Defense Security Architecture (GDSA)"
         issuer = "GIAC"
         date = "January 2025"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/e5146244-2d48-4b00-ae35-5e93eae89a2f/GDSA.png"
 
         [[params.certifications.list]]
         name = "GIAC Cloud Security Automation (GCSA, Honors)"
         issuer = "GIAC"
         date = "March 2025"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/5f52fd5e-7c81-466e-ae5c-c2c8fe7b2e39/GCSA.png"
 
         [[params.certifications.list]]
         name = "GIAC Security Leadership (GSLC)"
         issuer = "GIAC"
         date = "2026"
         credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
+        badgeImageUrl = "https://images.credly.com/size/220x220/images/f88d1c18-19f5-4dd6-8e26-c2e2af57b6ad/GSLC.png"
 
         [[params.certifications.list]]
         name = "CompTIA A+"
