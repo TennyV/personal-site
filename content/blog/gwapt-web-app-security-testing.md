@@ -62,4 +62,4 @@ Stay tuned for updates from my testing session in Krakow, where I'll be explorin
 
 ---
 
-**Need hands-on web application security testing?** I provide [penetration testing and full-access audits](/index.html#help) as part of NIS2 compliance engagements. [Learn about the audit process and timeline](/index.html#engagement).
+**Need hands-on web application security testing?** I provide [penetration testing and full-access audits](/#help) as part of NIS2 compliance engagements. [Learn about the audit process and timeline](/#engagement).

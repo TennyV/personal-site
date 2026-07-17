@@ -67,4 +67,4 @@ DevSecOps is not just a methodology; it's a mindset that prioritizes security th
 
 ---
 
-**Ready to implement DevSecOps in your organization?** I work with teams on [NIS2 gap assessments and Zero Trust architecture reviews](/index.html#help). [Contact me to discuss your security posture](/index.html#engagement). 
+**Ready to implement DevSecOps in your organization?** I work with teams on [NIS2 gap assessments and Zero Trust architecture reviews](/#help). [Contact me to discuss your security posture](/#engagement). 

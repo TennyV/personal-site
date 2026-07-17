@@ -53,4 +53,4 @@ If you run pipelines in a regulated environment and want to compare notes, my in
 
 ---
 
-**Looking to secure your CI/CD pipeline for NIS2 compliance?** I conduct [supply-chain security audits and Zero Trust architecture reviews](/index.html#help) for EU organizations. [See the typical engagement timeline](/index.html#engagement) to understand what an audit looks like.
+**Looking to secure your CI/CD pipeline for NIS2 compliance?** I conduct [supply-chain security audits and Zero Trust architecture reviews](/#help) for EU organizations. [See the typical engagement timeline](/#engagement) to understand what an audit looks like.

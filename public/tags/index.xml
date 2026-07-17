@@ -16,10 +16,45 @@
       <description></description>
     </item>
     <item>
+      <title>Compliance</title>
+      <link>/tags/compliance/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/tags/compliance/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>DevSecOps</title>
       <link>/tags/devsecops/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
       <guid>/tags/devsecops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entity Classification</title>
+      <link>/tags/entity-classification/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/tags/entity-classification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EU Regulation</title>
+      <link>/tags/eu-regulation/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/tags/eu-regulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KSC Act</title>
+      <link>/tags/ksc-act/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/tags/ksc-act/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NIS2</title>
+      <link>/tags/nis2/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/tags/nis2/</guid>
       <description></description>
     </item>
     <item>
@@ -34,6 +69,13 @@
       <link>/tags/owasp/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
       <guid>/tags/owasp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poland</title>
+      <link>/tags/poland/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/tags/poland/</guid>
       <description></description>
     </item>
     <item>

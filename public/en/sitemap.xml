@@ -5,17 +5,35 @@
     <loc>/tags/ci/cd-security/</loc>
     <lastmod>2026-07-17T15:52:43+02:00</lastmod>
   </url><url>
+    <loc>/tags/compliance/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/devsecops/</loc>
     <lastmod>2026-07-17T15:52:43+02:00</lastmod>
   </url><url>
+    <loc>/tags/entity-classification/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/eu-regulation/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/blog/cicd-federal-guidance-interim-findings/</loc>
     <lastmod>2026-07-17T15:52:43+02:00</lastmod>
+  </url><url>
+    <loc>/tags/ksc-act/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/nis2/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/nist/</loc>
     <lastmod>2026-07-17T15:52:43+02:00</lastmod>
   </url><url>
     <loc>/tags/owasp/</loc>
     <lastmod>2026-07-17T15:52:43+02:00</lastmod>
+  </url><url>
+    <loc>/tags/poland/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/research/</loc>
     <lastmod>2026-07-17T15:52:43+02:00</lastmod>
@@ -48,6 +66,9 @@
                 hreflang="en"
                 href="/"
                 />
+  </url><url>
+    <loc>/blog/nis2-registration-deadline-october-2026/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/federal-security/</loc>
     <lastmod>2026-06-17T11:50:19+02:00</lastmod>

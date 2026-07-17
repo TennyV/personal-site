@@ -16,6 +16,13 @@
       <description>&lt;h1 id=&#34;interim-findings-how-well-does-federal-guidance-cover-the-owasp-cicd-top-10&#34;&gt;Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10?&lt;/h1&gt;&#xA;&lt;p&gt;Last month I &lt;a href=&#34;/blog/cicd-security-research-whitepaper/&#34;&gt;introduced my SANS research project&lt;/a&gt;: a structured mapping of federal cybersecurity guidance against the risks that actually show up in CI/CD pipelines. The control-extraction and mapping phase is now done, and the interim numbers are worth sharing.&lt;/p&gt;&#xA;&lt;p&gt;The usual caveat applies, and I mean it: these are interim results from a single coder. An independent reliability audit is pending, and no final calls get made until it has run. I flag this not as fine print but because reporting what the evidence says, before you know whether you like it, is the whole job. It is the same discipline I bring to security audits.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The NIS2 Registration Deadline Is October 3, 2026. Here Is What You Must Do Before Then</title>
+      <link>/blog/nis2-registration-deadline-october-2026/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/blog/nis2-registration-deadline-october-2026/</guid>
+      <description>&lt;h1 id=&#34;the-nis2-registration-deadline-is-october-3-2026-here-is-what-you-must-do-before-then&#34;&gt;The NIS2 Registration Deadline Is October 3, 2026. Here Is What You Must Do Before Then&lt;/h1&gt;&#xA;&lt;p&gt;Poland&amp;rsquo;s amended National Cybersecurity System Act (the KSC Act), which implements the EU&amp;rsquo;s NIS2 directive, has been in force since April 3, 2026. The first hard deadline it sets is closer than most companies realize: &lt;strong&gt;by October 3, 2026, covered entities must self-identify and register with the authorities.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Note the phrasing. Nobody sends you a letter telling you that you are covered. The obligation to figure that out is yours, and so is the liability if you get it wrong.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>From Pipeline to Policy: Writing a Research Whitepaper on Federal CI/CD Security</title>
       <link>/blog/cicd-security-research-whitepaper/</link>
       <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>

@@ -323,7 +323,7 @@ body, html, div, section, article, aside, nav, header, footer, main {
     border-color: var(--accent-navy) !important;
 }
 </style> 
-    <title>Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10? - Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</title>
+    <title>The NIS2 Registration Deadline Is October 3, 2026. Here Is What You Must Do Before Then - Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</title>
 </head>
 <body>
         <section class="banner-section">
@@ -670,61 +670,65 @@ function setLanguage(lang) {
                         
                         <div class="blog-post-tags">
                             
-                            <span class="blog-tag">DevSecOps</span>
+                            <span class="blog-tag">NIS2</span>
                             
-                            <span class="blog-tag">CI/CD Security</span>
+                            <span class="blog-tag">Compliance</span>
                             
-                            <span class="blog-tag">NIST</span>
+                            <span class="blog-tag">KSC Act</span>
                             
-                            <span class="blog-tag">OWASP</span>
+                            <span class="blog-tag">Poland</span>
                             
-                            <span class="blog-tag">Research</span>
+                            <span class="blog-tag">EU Regulation</span>
                             
-                            <span class="blog-tag">Supply Chain Security</span>
+                            <span class="blog-tag">Entity Classification</span>
                             
                         </div>
                         
                     </div>
                     
-                    <h1 class="blog-post-title">Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10?</h1>
+                    <h1 class="blog-post-title">The NIS2 Registration Deadline Is October 3, 2026. Here Is What You Must Do Before Then</h1>
                     
                     
-                    <p class="blog-post-description">700 mapping cells later: interim results from my SANS research mapping federal cybersecurity guidance against the OWASP Top 10 CI/CD Security Risks, and the four gap areas every pipeline owner should check.</p>
+                    <p class="blog-post-description">Poland&#39;s KSC Act gives covered entities until October 3, 2026 to self-identify and register. A practical walkthrough of who is covered, what registration requires, and the three-step check to run this month.</p>
                     
                 </header>
                 
                 <div class="blog-post-content">
-                    <h1 id="interim-findings-how-well-does-federal-guidance-cover-the-owasp-cicd-top-10">Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10?</h1>
-<p>Last month I <a href="/blog/cicd-security-research-whitepaper/">introduced my SANS research project</a>: a structured mapping of federal cybersecurity guidance against the risks that actually show up in CI/CD pipelines. The control-extraction and mapping phase is now done, and the interim numbers are worth sharing.</p>
-<p>The usual caveat applies, and I mean it: these are interim results from a single coder. An independent reliability audit is pending, and no final calls get made until it has run. I flag this not as fine print but because reporting what the evidence says, before you know whether you like it, is the whole job. It is the same discipline I bring to security audits.</p>
-<h2 id="the-numbers-so-far">The numbers so far</h2>
-<p>From a corpus of federal guidance documents (NIST SP 800-204D, the NSA/CISA joint advisory on defending CI/CD environments, the SSDF in SP 800-218, SP 800-53, SP 800-161r1, and Executive Order 14028, among others), I extracted 72 controls and rated 70 of them against all ten categories of the OWASP Top 10 CI/CD Security Risks. That is 700 mapping cells, each rated fully, partially, or not addressed, with verbatim quote evidence behind every rating.</p>
-<p>Rolled up to the category level:</p>
+                    <h1 id="the-nis2-registration-deadline-is-october-3-2026-here-is-what-you-must-do-before-then">The NIS2 Registration Deadline Is October 3, 2026. Here Is What You Must Do Before Then</h1>
+<p>Poland&rsquo;s amended National Cybersecurity System Act (the KSC Act), which implements the EU&rsquo;s NIS2 directive, has been in force since April 3, 2026. The first hard deadline it sets is closer than most companies realize: <strong>by October 3, 2026, covered entities must self-identify and register with the authorities.</strong></p>
+<p>Note the phrasing. Nobody sends you a letter telling you that you are covered. The obligation to figure that out is yours, and so is the liability if you get it wrong.</p>
+<h2 id="who-is-covered">Who is covered</h2>
+<p>The KSC Act reaches roughly 42,000 companies across 18 sectors, split into two tiers:</p>
 <ul>
-<li><strong>6 of 10 categories are fully addressed</strong> somewhere in the corpus: flow control, identity and access management, pipeline-based access controls abuse (poisoned pipeline execution), credential hygiene, artifact integrity, and logging and visibility.</li>
-<li><strong>4 of 10 are only partially addressed</strong>: dependency chain abuse, pipeline-based access controls, insecure system configuration, and ungoverned third-party services.</li>
-<li><strong>0 categories are unaddressed.</strong> Federal guidance now touches every category of the OWASP CI/CD taxonomy at least at the objective level.</li>
+<li><strong>Essential entities</strong>: energy, transport, banking and financial market infrastructure, healthcare, drinking water, wastewater, digital infrastructure, ICT service management, public administration, and space. Generally large entities in these sectors (250+ employees or over €50M turnover), though some — like qualified trust service providers and DNS operators — are covered regardless of size.</li>
+<li><strong>Important entities</strong>: postal and courier services, waste management, chemicals, food production and distribution, manufacturing (including medical devices, electronics, machinery, and vehicles), digital providers, and research. Generally medium entities (50+ employees or over €10M turnover) in these sectors.</li>
 </ul>
-<h2 id="what-surprised-me">What surprised me</h2>
-<p>I pre-registered a hypothesis that federal guidance would be broad but shallow: most categories touched, few covered with operational depth. The data is currently trending against my own hypothesis, and the reason is instructive.</p>
-<p>Two documents carry almost all of the operational weight: NIST SP 800-204D (2024) and the NSA/CISA cybersecurity information sheet on CI/CD environments (2023). These are not framework documents that tell you to &ldquo;manage risk.&rdquo; They name tool-recognizable mechanisms: sandboxed CI runs, push protection, enforced commit signing, provenance-gated deployment admission, secrets-manager indirection. The older framework documents (SP 800-53, the SSDF, EO 14028) rate almost uniformly &ldquo;partially&rdquo;: objectives named, implementation left to you.</p>
-<p>The practical takeaway: if you own a pipeline and you have only read the framework-level guidance, the two documents above are where the actionable material lives.</p>
-<h2 id="the-four-gaps-that-should-worry-you">The four gaps that should worry you</h2>
-<p>Across the entire corpus, four areas remain thin. These are the places where a pipeline owner gets the least help from official guidance, and in my experience they are also where real-world incidents concentrate:</p>
+<p>Two traps catch companies here:</p>
 <ol>
-<li><strong>Dependency-resolution abuse mechanics.</strong> Guidance covers pinning and verification objectives, but not the specific failure modes: dependency confusion, typosquatting, mutable-tag references on third-party actions.</li>
-<li><strong>Pipeline-node credential scoping.</strong> What a specific runner or pipeline node should be allowed to reach is largely left as an exercise for the reader.</li>
-<li><strong>CI/CD server and runner hardening.</strong> Hardening guidance for the pipeline infrastructure itself is objective-level at best.</li>
-<li><strong>Governance of third-party CI/CD service integrations.</strong> Only one corpus item even names third-party services in development processes as a control target.</li>
+<li><strong>Size is calculated at group level in some cases.</strong> A 40-person Polish subsidiary of a large international group may still qualify.</li>
+<li><strong>Sector definitions are broader than they look.</strong> &ldquo;Manufacturing&rdquo; alone covers a large share of Poland&rsquo;s industrial base. If you make medical devices, electronics, automotive components, or machinery, read the annexes before assuming you are out.</li>
 </ol>
-<p>If you want a quick self-check: could you say, today, which third-party actions or services your pipelines call, whether those references are pinned to immutable versions, and what credentials each pipeline node can reach? Those three questions cover most of the gap surface above.</p>
-<h2 id="why-this-matters-beyond-the-us-federal-space">Why this matters beyond the US federal space</h2>
-<p>I now work with EU organizations on NIS2 readiness, and the overlap is direct. NIS2&rsquo;s risk-management measures explicitly include supply-chain security, and your CI/CD pipeline is the part of your supply chain you actually control. The four gap areas above are precisely where I look first in an audit, because they are the places where neither US federal guidance nor most internal policies give teams concrete answers.</p>
-<h2 id="whats-next">What&rsquo;s next</h2>
-<p>The reference-compromise mapping (SolarWinds, Codecov, 3CX) is in progress, and the independent reliability audit comes after that. If the audit downgrades some borderline ratings, the picture shifts back toward my original hypothesis; if it holds, the &ldquo;guidance is more operational than expected&rdquo; story stands. Either way, the final whitepaper will report it.</p>
-<p>If you run pipelines in a regulated environment and want to compare notes, my inbox is open.</p>
-<hr>
-<p><strong>Looking to secure your CI/CD pipeline for NIS2 compliance?</strong> I conduct <a href="/#help">supply-chain security audits and Zero Trust architecture reviews</a> for EU organizations. <a href="/#engagement">See the typical engagement timeline</a> to understand what an audit looks like.</p>
+<h2 id="what-registration-actually-requires">What registration actually requires</h2>
+<p>Registration is not a compliance audit. It is a declaration: you identify your organization, its sector, its classification (essential or important), and contact points for the authorities. That is the easy part.</p>
+<p>The hard part is what registration triggers. Once registered, you are on the regulator&rsquo;s map, and the next deadlines apply to you directly:</p>
+<ul>
+<li><strong>April 2027</strong>: risk-management measures, security controls, and incident-reporting processes must be fully implemented.</li>
+<li><strong>April 2028</strong>: first mandatory security audits.</li>
+</ul>
+<p>This is why the smart move is to treat registration and gap assessment as one exercise, not two. Registering in October 2026 and starting your compliance work in 2027 leaves you attempting in twelve months what most organizations need eighteen to do properly.</p>
+<h2 id="the-penalties-are-not-theoretical">The penalties are not theoretical</h2>
+<p>Fines reach <strong>€10 million or 2% of global turnover</strong> for essential entities. More pointedly for anyone reading this in a leadership role: the KSC Act allows management to be held <strong>personally liable</strong> for compliance failures. This is not a fine your company absorbs while you move on. It follows the people who signed off on doing nothing.</p>
+<h2 id="the-three-step-check-to-run-this-month">The three-step check to run this month</h2>
+<p>If you have not yet confirmed your status, this is a half-day exercise:</p>
+<ol>
+<li><strong>Map your activities against the sector annexes.</strong> Not your primary PKD code — your actual activities. Companies frequently qualify through a secondary line of business.</li>
+<li><strong>Check your size thresholds, including group structure.</strong> Headcount and turnover, calculated the way the act calculates them, not the way your org chart suggests.</li>
+<li><strong>Document the conclusion either way.</strong> If you determine you are <em>not</em> covered, write down the reasoning and the data behind it. If the regulator later disagrees, a documented good-faith analysis is a very different conversation than a shrug.</li>
+</ol>
+<p>If step 1 or 2 comes back positive or ambiguous, the next move is a <a href="/#help">gap assessment</a> against the act&rsquo;s risk-management measures — because your real deadline is not October 2026, it is April 2027, and the <a href="/#engagement">typical engagement runs four to six weeks</a> before remediation even starts.</p>
+<h2 id="not-sure-that-is-a-free-conversation">Not sure? That is a free conversation</h2>
+<p>I audit organizations against NIS2 requirements, and the classification question is one I answer without charge: email me your organization&rsquo;s size, sector, and main services, and I will tell you whether the act covers you, by what date, and what your first step should be. See the <a href="/#faq">FAQ</a> for how engagements work, or <a href="/#checklist">grab the compliance checklist</a> if you want to run the first pass yourself.</p>
+<p>October 3 is a date with your company&rsquo;s name on it, whether you have read the act or not. Better to know now.</p>
 
                 </div>
                 

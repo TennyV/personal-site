@@ -1,4 +1,4 @@
-            <section class="section help-section">
+            <section class="section help-section" id="help">
                 <h2 class="section-title"><i class="fa {{ .Site.Params.help.icon }}"></i><span data-en="{{ .Site.Params.help.title }}" data-pl="{{ .Site.Params.help.title_pl }}">{{ .Site.Params.help.title }}</span></h2>
                 <div class="summary">
                     <div data-lang-en>{{ with .Site.Params.help.content }}{{ . | markdownify }}{{ end }}</div>
