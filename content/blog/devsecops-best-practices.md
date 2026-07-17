@@ -63,4 +63,8 @@ DevSecOps is not just a methodology; it's a mindset that prioritizes security th
 
 ---
 
-*This post reflects my experience implementing DevSecOps practices in enterprise environments, particularly focusing on Azure cloud infrastructure and modern CI/CD pipelines.* 
+*This post reflects my experience implementing DevSecOps practices in enterprise environments, particularly focusing on Azure cloud infrastructure and modern CI/CD pipelines.*
+
+---
+
+**Ready to implement DevSecOps in your organization?** I work with teams on [NIS2 gap assessments and Zero Trust architecture reviews](/index.html#help). [Contact me to discuss your security posture](/index.html#engagement). 

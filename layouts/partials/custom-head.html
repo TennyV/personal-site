@@ -13,4 +13,47 @@
 <meta property="og:url" content="{{ .Site.BaseURL }}">
 
 <!-- Professional favicon -->
-<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}"> 
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+
+<!-- LocalBusiness Schema for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Tenny Vongtip - NIS2 Compliance Auditor & Zero Trust Architect",
+  "description": "NIS2 Compliance Auditor & Zero Trust Architect. GIAC-certified security auditor providing NIS2 gap assessments, Zero Trust architecture reviews, and penetration testing.",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "+48722338040",
+  "email": "tenny.vongtip@gmail.com",
+  "areaServed": ["PL", "EU"],
+  "serviceType": ["NIS2 Gap Assessment", "Zero Trust Architecture Review", "Penetration Testing", "Security Audit"],
+  "sameAs": [
+    "https://linkedin.com/in/siriwat-vongtip",
+    "https://github.com/TennyV",
+    "https://twitter.com/tennyv"
+  ],
+  "knowsAbout": ["NIS2 Compliance", "Zero Trust Architecture", "Security Auditing", "Penetration Testing", "Cloud Security", "Identity Management", "GDSA", "GIAC Certification"]
+}
+</script>
+
+<!-- Article Schema for Blog Posts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "{{ .Site.BaseURL }}blog/"
+    }
+  ]
+}
+</script>

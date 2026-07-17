@@ -59,3 +59,7 @@ Stay tuned for updates from my testing session in Krakow, where I'll be explorin
 ---
 
 *This post reflects my ongoing journey in web application security and preparation for the GWAPT certification. The virtual world may be easily accessible, but mastering its security requires dedication, patience, and continuous learning.*
+
+---
+
+**Need hands-on web application security testing?** I provide [penetration testing and full-access audits](/index.html#help) as part of NIS2 compliance engagements. [Learn about the audit process and timeline](/index.html#engagement).

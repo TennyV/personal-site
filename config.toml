@@ -5,7 +5,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Tenny Vongtip - NIS2 Compliance Auditor & Zero Trust Architect"
 theme = "hugo-orbit-theme"
-# googleAnalytics = "UA-XXXXXXX-Y"
+googleAnalytics = "G-XXXXXXXXXX"
 
 # Professional site settings
 enableGitInfo = true
@@ -13,8 +13,8 @@ enableEmoji = true
 enableRobotsTXT = true
 
 # Do not build files for websites. Need them? Set to false
-disableRSS = true
-disableSitemap = true
+disableRSS = false
+disableSitemap = false
 disable404 = true
 
 # Multi-language support

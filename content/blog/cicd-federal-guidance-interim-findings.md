@@ -50,3 +50,7 @@ I now work with EU organizations on NIS2 readiness, and the overlap is direct. N
 The reference-compromise mapping (SolarWinds, Codecov, 3CX) is in progress, and the independent reliability audit comes after that. If the audit downgrades some borderline ratings, the picture shifts back toward my original hypothesis; if it holds, the "guidance is more operational than expected" story stands. Either way, the final whitepaper will report it.
 
 If you run pipelines in a regulated environment and want to compare notes, my inbox is open.
+
+---
+
+**Looking to secure your CI/CD pipeline for NIS2 compliance?** I conduct [supply-chain security audits and Zero Trust architecture reviews](/index.html#help) for EU organizations. [See the typical engagement timeline](/index.html#engagement) to understand what an audit looks like.
