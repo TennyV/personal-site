@@ -2,7 +2,7 @@
 
 baseurl = ""
 languageCode = "en-us"
-title = "Tenny Vongtip - Cybersecurity Professional"
+title = "Tenny Vongtip - NIS2 Compliance Auditor & Zero Trust Architect"
 theme = "hugo-orbit-theme"
 # googleAnalytics = "UA-XXXXXXX-Y"
 
@@ -19,7 +19,7 @@ disable404 = true
 [params]
 
 # Meta
-    description = "Experienced Cybersecurity Specialist with expertise in cloud security, threat management, and compliance frameworks"
+    description = "NIS2 Compliance Auditor & Zero Trust Architect. GIAC-certified security auditor helping organizations pass NIS2 audits and build defensible Zero Trust architectures."
     author = "Tenny Vongtip"
 
     [params.securityBadges]
@@ -39,7 +39,7 @@ disable404 = true
     # Profile section
     [params.profile]
         name = "Siriwat (Tenny) Vongtip"
-        tagline = "Cybersecurity Specialist & Technology Strategist"
+        tagline = "NIS2 Compliance Auditor & Zero Trust Architect"
         avatar = "profile-new.png"
 
     # Contact section
@@ -88,9 +88,9 @@ disable404 = true
         title = "Education"
 
         [[params.education.list]]
-        degree = "Masters in Information Security Engineering"
+        degree = "Masters in Information Security Engineering (Cloud Security Focus)"
         college = "SANS Technology Institute"
-        dates = "2023 - 2026"
+        dates = "Expected Dec 2026"
         
         [[params.education.list]]
         degree = "Bachelor of Science in Computer Science"
@@ -103,7 +103,7 @@ disable404 = true
         title = "Certifications"
 
         [[params.certifications.list]]
-        name = "GIAC Web Application Penetration Tester (GWAPT)"
+        name = "GIAC Web Application Penetration Tester (GWAPT, Honors)"
         issuer = "GIAC"
         date = "September 2025"
 
@@ -133,9 +133,14 @@ disable404 = true
         date = "January 2025"
 
         [[params.certifications.list]]
-        name = "GIAC Cloud Security Automation (GCSA)"
+        name = "GIAC Cloud Security Automation (GCSA, Honors)"
         issuer = "GIAC"
         date = "March 2025"
+
+        [[params.certifications.list]]
+        name = "GIAC Security Leadership (GSLC)"
+        issuer = "GIAC"
+        date = "2026"
 
         [[params.certifications.list]]
         name = "CompTIA A+"
@@ -167,7 +172,10 @@ disable404 = true
         title = "Professional Interests"
 
         [[params.interests.list]]
-        interest = "Cybersecurity Research"
+        interest = "NIS2 & EU Cyber Regulation"
+
+        [[params.interests.list]]
+        interest = "Zero Trust Architecture"
 
         [[params.interests.list]]
         interest = "Cloud Security Architecture"
@@ -198,7 +206,14 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Professional Summary"
-        summary = "Cybersecurity specialist and DevSecOps practitioner with 10+ years across federal agencies, financial services, and international environments. I build security into the places most teams skip: CI/CD pipelines, cloud identity, and developer workflows. Currently interning at Decyda SRLS in Poland, where I deploy Cloud Custodian on AWS and integrate AI-based guardrails into pipelines. Previously at the Department of the Interior, where I automated phishing triage, integrated SAST/SCA into Azure DevOps and GitHub Actions, and built Splunk queries that improved anomaly detection by 30%. Pursuing a Master's in Information Security Engineering at SANS Technology Institute, with active research into how NIST SP 800-204D maps to real federal CI/CD pipeline risks. GIAC-certified across five domains."
+        summary = "I audit organizations against NIS2 requirements and architect the Zero Trust roadmaps that close the gaps. GIAC-certified across eight domains, including Defensible Security Architecture (GDSA, Zero Trust) and Cloud Security Automation (GCSA, earned with honors), with 10+ years of security work spanning U.S. federal agencies, financial services, and EU environments.\n\n**If your organization falls under NIS2 and you want a gap assessment or a Zero Trust architecture review, email me directly. No intake forms, no sales layer. You talk to the auditor.**"
+
+    # How I Can Help section
+    [params.help]
+        enable = true
+        icon = "fa-shield"
+        title = "How I Can Help Your Organization"
+        content = "**NIS2 gap assessment.** I map your current controls against the directive's risk-management measures and incident-reporting duties, then deliver a prioritized, evidence-based findings report your leadership can act on.\n\n**Zero Trust architecture review and roadmap.** Target architectures grounded in NIST SP 800-207 and defensible security architecture principles: identity, network segmentation, least-privilege access, and monitoring, sequenced so each step reduces real risk.\n\n**Penetration testing and full-access audits.** GWAPT-certified (with honors) web application testing with OWASP Top Ten coverage, plus full-access (white-box) audits that show what a malicious insider or compromised account could actually reach: identity permissions, lateral movement paths, and sensitive data exposure. Clear remediation reports your teams can act on, with findings that map back to your compliance evidence, not a theatrical red-team exercise.\n\n**Audit readiness.** Documentation, evidence collection, POA&M management, and incident-response tabletop exercises, so the real assessment holds no surprises.\n\n**Cloud and identity security.** Hands-on reviews of Azure, AWS, and Microsoft Entra ID environments, from account audits to vulnerability management programs.\n\n**Frameworks I work in:** NIS2, DORA, GDPR (Article 32 security measures), the EU Cyber Resilience Act, ISO/IEC 27001, NIST Cybersecurity Framework, NIST SP 800-53, NIST SP 800-207 (Zero Trust), CIS Critical Security Controls, and the OWASP Top Ten."
 
     # Experiences section
     [params.experiences]
@@ -211,7 +226,7 @@ disable404 = true
         enable = true
 
         [[params.jobs.list]]
-        position = "DevSecOps Intern"
+        position = "DevSecOps Engineer"
         dates = "Aug 2025 - Present"
         company = "Decyda SRLS"
         details = "• Engineered cloud security governance by deploying Cloud Custodian on AWS, writing custom Python-based policies to enforce compliance and auto-remediate risks.\n\n• Executed penetration testing on web applications, identifying critical vulnerabilities and partnering with developers to patch code before production deployment.\n\n• Deployed AI-based security guardrails within CI/CD pipelines, automatically blocking risky code changes and reducing manual code review time."
@@ -220,29 +235,17 @@ disable404 = true
         position = "IT Cybersecurity Specialist"
         dates = "Jul 2024 - Jul 2025"
         company = "Department of the Interior"
-        details = "• Developed and integrated automated security scanning tools into Azure and GitHub pipelines, successfully detecting and mitigating 40+ critical vulnerabilities during the build phase.\n\n• Scripted automation for phishing analysis and document processing, which increased team efficiency by 60% and reduced mean time to respond (MTTR).\n\n• Programmed custom Splunk queries to correlate data sources, improving anomaly detection rates by 30% across the enterprise environment.\n\n• Conducted comprehensive identity audits and engineered stricter access controls (IAM) to harden the environment against unauthorized entry."
+        details = "• Audited 500+ Microsoft Entra ID accounts, uncovering 10+ unauthorized users and driving immediate corrective action.\n\n• Kept seven federal systems continuously audit-ready in XACTA and closed 15+ POA&Ms to maintain regulatory alignment.\n\n• Provided weekly Zero Trust architecture guidance (GDSA-certified) for transitioning cloud systems toward a Zero Trust maturity model.\n\n• Led an incident-response tabletop exercise with 15+ participants that surfaced three critical security gaps."
 
         [[params.jobs.list]]
         position = "IT/Cyber Security Auditor"
         dates = "January 2024 - July 2024"
         company = "United Services Automobile Association (USAA)"
-        details = "• Developed comprehensive technical documentation for internal threat management controls and monitoring systems\n\n• Created detailed process maps identifying business partner workflows and technology integration points\n\n• Analyzed control effectiveness and identified opportunities for refinement and improvement\n\n• Collaborated with cross-functional teams to enhance security posture and threat detection capabilities"
-
-        [[params.jobs.list]]
-        position = "Systems Administrator"
-        dates = "December 2022 - May 2023"
-        company = "Piedmont Regional Council, Kernersville, NC"
-        details = "• Developed and deployed custom Microsoft PowerApps solutions, automating business processes and creating data visualization dashboards\n\n• Managed Azure cloud infrastructure for 200+ users, including VM deployment, storage configuration, and network resource maintenance\n\n• Enhanced organizational productivity through streamlined workflows and improved decision-making capabilities\n\n• Implemented security best practices and ensured system scalability and reliability"
-
-        [[params.jobs.list]]
-        position = "Systems Administrator"
-        dates = "December 2012 - December 2022"
-        company = "Various locations in the US and overseas"
-        details = "• Managed critical infrastructure including Windows systems, LAN networks, and cloud backup solutions\n\n• Supervised application maintenance and computing infrastructure activities ensuring 99.9% uptime\n\n• Provided technical support to 200+ employees across the United States with <2-hour response times\n\n• Implemented robust backup and disaster recovery procedures ensuring data resilience and availability\n\n• Provided Tier 1/2 technical support for over 500 personnel, resolving an average of 200+ helpdesk tickets monthly with a 87% satisfaction rating\n\n• Managed user accounts, permissions, and group policies within Active Directory to ensure compliance with strict Department of Defense (DoD) security protocols"
+        details = "• Evaluated 20+ security controls and recommended architectural changes that strengthened risk detection and incident response.\n\n• Audited mobile application source code against the OWASP Top Ten, verifying secure coding practices and strengthening compliance review policies."
 
     # Projects section
     [params.projects]
-        enable = true
+        enable = false
         icon = "fa-archive"
         title = "Technical Projects"
         intro = "A collection of projects demonstrating expertise in cybersecurity, software development, and data analysis. These projects showcase practical applications of security principles, automation, and analytical thinking."
@@ -279,28 +282,16 @@ disable404 = true
         title = "Technical Skills & Proficiencies"
 
         [[params.skills.list]]
-        category = "Cybersecurity & Security Tools"
-        skills = "Threat Management, Security Auditing, Compliance Frameworks (NIST, ISO 27001), Vulnerability Assessment, Incident Response, Security Controls, OWASP ZAP, Penetration Testing, Risk Assessment, Security Scanners, IntelliJ"
+        category = "Compliance & Audit"
+        skills = "NIS2 Readiness Assessment, Security Auditing, Compliance Frameworks (NIST, ISO 27001), XACTA, POA&M Management, Risk Assessment, Security Controls Assessment, Incident Response Tabletop Exercises, OWASP Top Ten"
+
+        [[params.skills.list]]
+        category = "Zero Trust & Security Architecture"
+        skills = "Zero Trust Maturity Models, Defensible Security Architecture (GDSA), Identity Security (Microsoft Entra ID), Least-Privilege Firewall Design, Vulnerability Management (Tenable, BigFix, Defender for Cloud), Splunk Threat Detection, Penetration Testing"
 
         [[params.skills.list]]
         category = "Cloud & Infrastructure"
         skills = "Microsoft Azure, AWS, Cloud Security, Infrastructure Management, Virtual Machines, Network Security, Azure Active Directory, Microsoft Entra ID, Cloud Backup Solutions, Disaster Recovery"
-
-        [[params.skills.list]]
-        category = "Programming & Development"
-        skills = "Python, Java, JavaScript, SQL, PowerShell, REST APIs, Microsoft Power Platform, PowerApps, Power Automate, HTML/CSS, Git, Version Control"
-
-        [[params.skills.list]]
-        category = "Data & Analytics"
-        skills = "Data Analysis, Data Visualization, Pandas, Jupyter Notebooks, MongoDB, SQLite, Business Intelligence, Dashboard Creation, Statistical Analysis"
-
-        [[params.skills.list]]
-        category = "IT Management & Support"
-        skills = "Windows Systems Administration, LAN/WAN Management, Technical Support, System Maintenance, User Training, Documentation, Process Automation, Change Management"
-
-        [[params.skills.list]]
-        category = "Business & Leadership"
-        skills = "Strategic Planning, Project Management, Team Leadership, Stakeholder Communication, ROI Analysis, Digital Marketing, Business Process Optimization"
 
     # Footer section
 

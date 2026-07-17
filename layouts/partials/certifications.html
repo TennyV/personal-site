@@ -1,5 +1,5 @@
             <div class="certifications-container container-block">
-                <h2 class="container-block-title">{{ i18n "certifications" }}</h2>
+                <h2 class="container-block-title">{{ .Site.Params.certifications.title | default "Certifications" }}</h2>
 				{{ range .Site.Params.certifications.list }}
                 <div class="item">
                     <h4 class="certification">{{ .name }}</h4>

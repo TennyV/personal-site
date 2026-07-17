@@ -617,6 +617,24 @@ html {
     color: white !important;
 }
 
+.banner-section .banner-cta {
+    display: inline-block !important;
+    margin-top: 15px !important;
+    padding: 10px 28px !important;
+    border: 2px solid white !important;
+    border-radius: 30px !important;
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+.banner-section .banner-cta:hover {
+    background-color: white !important;
+    color: var(--primary-color) !important;
+}
+
 .banner-watermark {
     position: absolute !important;
     right: 50px !important;

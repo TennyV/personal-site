@@ -1,0 +1,6 @@
+            <section class="section help-section">
+                <h2 class="section-title"><i class="fa {{ .Site.Params.help.icon }}"></i>{{ .Site.Params.help.title }}</h2>
+                <div class="summary">
+                    {{ with .Site.Params.help.content }}{{ . | markdownify }}{{ end }}
+                </div><!--//summary-->
+            </section><!--//section-->

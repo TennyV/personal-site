@@ -59,7 +59,7 @@ jobs:
 
 ## Conclusion
 
-DevSecOps is not just a methodology—it's a mindset that prioritizes security throughout the entire development lifecycle. By implementing these practices, organizations can significantly reduce vulnerabilities and improve their overall security posture.
+DevSecOps is not just a methodology; it's a mindset that prioritizes security throughout the entire development lifecycle. By implementing these practices, organizations can significantly reduce vulnerabilities and improve their overall security posture.
 
 ---
 

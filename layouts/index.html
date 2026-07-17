@@ -17,6 +17,10 @@
 	{{ partial "summary.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.help.enable }}
+    {{ partial "help.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.experiences.enable }}
     {{ partial "experiences.html" . }}
     {{ end }}

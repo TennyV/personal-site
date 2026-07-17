@@ -6,30 +6,42 @@ draft: false
 
 # About Tenny Vongtip
 
-I'm a Cybersecurity Specialist & Technology Strategist with over 10 years of experience in IT and security. My expertise spans cloud security, threat management, and compliance frameworks.
+I'm a NIS2 Compliance Auditor and Zero Trust Architect. I help organizations that fall under the EU's NIS2 directive find out where they actually stand, then design the security architecture that closes the gaps.
 
-## My Journey
+## Why me
 
-From my early days in IT support to my current role as a cybersecurity specialist, I've always been passionate about technology and security. I've worked across various industries and locations, gaining valuable experience in both technical and strategic aspects of cybersecurity.
+Most compliance consultants have read the framework. I've lived on both sides of the audit table:
 
-## What I Do
+- **As an auditor** at USAA, evaluating 20+ security controls and tracing attack vectors through complex software workflows.
+- **As the audited**, shepherding seven U.S. federal systems through continuous compliance in XACTA and closing 15+ POA&Ms with Information System Security Officers.
+- **As an architect**, providing weekly Zero Trust guidance for cloud systems as a GIAC Defensible Security Architect (GDSA), including replacing port-based firewall rules with application-based least-privilege rules.
 
-- **Cybersecurity Auditing**: Comprehensive security assessments and compliance reviews
-- **Cloud Security**: Azure and AWS security architecture and implementation
-- **Threat Management**: Proactive threat detection and incident response
-- **DevSecOps**: Integrating security into development pipelines
-- **Training & Awareness**: Building security-conscious organizations
+The credentials behind that: eight GIAC certifications (GDSA, GCSA with honors, GWAPT with honors, GSTRT, GCIA, GCIH, GSEC, GSLC), a Master's in Information Security Engineering in progress at SANS Technology Institute (Cloud Security focus), and 10+ years across U.S. federal agencies, financial services, and EU environments.
 
-## Certifications
+## Frameworks I work in
 
-- GIAC Web Application Penetration Tester (GWAPT) - September 2025
-- GIAC Security Essentials (GSEC)
-- GIAC Certified Incident Handler (GCIH)
-- GIAC Certified Intrusion Analyst (GCIA)
-- GIAC Strategic Planning, Policy & Leadership (GSTRT)
-- GIAC Defense Security Architecture (GDSA)
-- GIAC Cloud Security Automation (GCSA)
-- CompTIA A+
+**EU regulation:**
 
-Feel free to reach out if you'd like to discuss cybersecurity, technology, or potential collaborations!
+- **NIS2** risk-management measures and incident-reporting requirements
+- **DORA** digital operational resilience for financial entities
+- **GDPR Article 32** technical and organizational security measures
+- **EU Cyber Resilience Act** product security requirements
 
+**International standards and baselines:**
+
+- **ISO/IEC 27001** information security management
+- **NIST Cybersecurity Framework** and **NIST SP 800-53** control baselines
+- **NIST SP 800-207** Zero Trust architecture
+- **CIS Critical Security Controls**
+- **OWASP Top Ten** for application security
+
+## What an engagement looks like
+
+1. **Gap assessment.** I map your current controls against NIS2's risk-management and reporting requirements and give you a prioritized, evidence-based findings report.
+2. **Zero Trust roadmap.** For the gaps that matter, I design the target architecture: identity, segmentation, least privilege, and monitoring.
+3. **Validation testing.** Scoped, GWAPT-certified web application penetration testing, plus full-access audits that reveal what an insider or compromised account could reach, with findings mapped back to compliance evidence.
+4. **Audit readiness.** Documentation, evidence collection, and tabletop exercises so that when the real assessment comes, there are no surprises.
+
+## Talk to the auditor
+
+No intake forms, no sales team. Email me directly at [tenny.vongtip@gmail.com](mailto:tenny.vongtip@gmail.com?subject=NIS2%20Audit%20Inquiry) and tell me about your environment. I'll tell you honestly whether I can help.
