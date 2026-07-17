@@ -309,7 +309,7 @@ disable404 = true
 
         [[params.jobs.list]]
         position = "IT/Cyber Security Auditor"
-        dates = "May 2025 - July 2025"
+        dates = "May 2023 - July 2023"
         company = "United Services Automobile Association (USAA)"
         details = "• Evaluated 20+ security controls and recommended architectural changes that strengthened risk detection and incident response.\n\n• Audited mobile application source code against the OWASP Top Ten, verifying secure coding practices and strengthening compliance review policies."
 
