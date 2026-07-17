@@ -1,10 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Tenny Vongtip - Cybersecurity Professional</title><link>/blog/</link><description>Recent content in Blog on Tenny Vongtip - Cybersecurity Professional</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 17 Jun 2026 11:50:19 +0200</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>From Pipeline to Policy: Writing a Research Whitepaper on Federal CI/CD Security</title><link>/blog/cicd-security-research-whitepaper/</link><pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate><guid>/blog/cicd-security-research-whitepaper/</guid><description>&lt;h1 id="from-pipeline-to-policy-writing-a-research-whitepaper-on-federal-cicd-security">From Pipeline to Policy: Writing a Research Whitepaper on Federal CI/CD Security&lt;/h1>
-&lt;p>One of the most rewarding parts of the SANS Master&amp;rsquo;s program has been the push to take what you&amp;rsquo;ve seen in production and turn it into something rigorous. For my research project, I&amp;rsquo;m doing exactly that: writing a whitepaper that bridges the gap between federal CI/CD security guidance and what actually shows up in real pipelines.&lt;/p>
-&lt;h2 id="where-the-idea-came-from">Where the Idea Came From&lt;/h2>
-&lt;p>I&amp;rsquo;ve spent years building and maintaining CI/CD pipelines across GitHub Actions, GitLab CI/CD, and Azure DevOps. Two patterns kept showing up regardless of team size or agency:&lt;/p></description></item><item><title>GWAPT Journey: The Reality of Web Application Security Testing</title><link>/blog/gwapt-web-app-security-testing/</link><pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate><guid>/blog/gwapt-web-app-security-testing/</guid><description>&lt;h1 id="gwapt-journey-the-reality-of-web-application-security-testing">GWAPT Journey: The Reality of Web Application Security Testing&lt;/h1>
-&lt;p>As I prepare for my upcoming GWAPT (GIAC Web Application Penetration Tester) certification, I&amp;rsquo;ve been reflecting on the incredible complexity and time-intensive nature of web application security testing. It&amp;rsquo;s fascinating how the virtual world has evolved to such an accessible state, yet the underlying security challenges remain as intricate as ever.&lt;/p>
-&lt;h2 id="the-time-investment-reality">The Time Investment Reality&lt;/h2>
-&lt;p>One of the most eye-opening aspects of web application security testing is just how time consuming it can be. Even with professional-grade tools like Burp Suite Professional at your disposal, the process requires an immense amount of patience, persistence, and deep technical understanding.&lt;/p></description></item><item><title>DevSecOps Best Practices: Integrating Security into CI/CD Pipelines</title><link>/blog/devsecops-best-practices/</link><pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><guid>/blog/devsecops-best-practices/</guid><description>&lt;h1 id="devsecops-best-practices-integrating-security-into-cicd-pipelines">DevSecOps Best Practices: Integrating Security into CI/CD Pipelines&lt;/h1>
-&lt;p>In today&amp;rsquo;s rapidly evolving cybersecurity landscape, the integration of security practices into the development lifecycle has become paramount. DevSecOps represents a cultural shift that emphasizes the importance of security as a shared responsibility across development, operations, and security teams.&lt;/p>
-&lt;h2 id="the-foundation-of-devsecops">The Foundation of DevSecOps&lt;/h2>
-&lt;p>DevSecOps builds upon the principles of DevOps while adding security as a core component. This approach ensures that security is not an afterthought but rather an integral part of the development process from the very beginning.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 Jul 2026 15:52:43 +0200</lastBuildDate>
+    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10?</title>
+      <link>/blog/cicd-federal-guidance-interim-findings/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>/blog/cicd-federal-guidance-interim-findings/</guid>
+      <description>&lt;h1 id=&#34;interim-findings-how-well-does-federal-guidance-cover-the-owasp-cicd-top-10&#34;&gt;Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10?&lt;/h1&gt;&#xA;&lt;p&gt;Last month I &lt;a href=&#34;/blog/cicd-security-research-whitepaper/&#34;&gt;introduced my SANS research project&lt;/a&gt;: a structured mapping of federal cybersecurity guidance against the risks that actually show up in CI/CD pipelines. The control-extraction and mapping phase is now done, and the interim numbers are worth sharing.&lt;/p&gt;&#xA;&lt;p&gt;The usual caveat applies, and I mean it: these are interim results from a single coder. An independent reliability audit is pending, and no final calls get made until it has run. I flag this not as fine print but because reporting what the evidence says, before you know whether you like it, is the whole job. It is the same discipline I bring to security audits.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Pipeline to Policy: Writing a Research Whitepaper on Federal CI/CD Security</title>
+      <link>/blog/cicd-security-research-whitepaper/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>/blog/cicd-security-research-whitepaper/</guid>
+      <description>&lt;h1 id=&#34;from-pipeline-to-policy-writing-a-research-whitepaper-on-federal-cicd-security&#34;&gt;From Pipeline to Policy: Writing a Research Whitepaper on Federal CI/CD Security&lt;/h1&gt;&#xA;&lt;p&gt;One of the most rewarding parts of the SANS Master&amp;rsquo;s program has been the push to take what you&amp;rsquo;ve seen in production and turn it into something rigorous. For my research project, I&amp;rsquo;m doing exactly that: writing a whitepaper that bridges the gap between federal CI/CD security guidance and what actually shows up in real pipelines.&lt;/p&gt;&#xA;&lt;h2 id=&#34;where-the-idea-came-from&#34;&gt;Where the Idea Came From&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve spent years building and maintaining CI/CD pipelines across GitHub Actions, GitLab CI/CD, and Azure DevOps. Two patterns kept showing up regardless of team size or agency:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GWAPT Journey: The Reality of Web Application Security Testing</title>
+      <link>/blog/gwapt-web-app-security-testing/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>/blog/gwapt-web-app-security-testing/</guid>
+      <description>&lt;h1 id=&#34;gwapt-journey-the-reality-of-web-application-security-testing&#34;&gt;GWAPT Journey: The Reality of Web Application Security Testing&lt;/h1&gt;&#xA;&lt;p&gt;As I prepare for my upcoming GWAPT (GIAC Web Application Penetration Tester) certification, I&amp;rsquo;ve been reflecting on the incredible complexity and time-intensive nature of web application security testing. It&amp;rsquo;s fascinating how the virtual world has evolved to such an accessible state, yet the underlying security challenges remain as intricate as ever.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-time-investment-reality&#34;&gt;The Time Investment Reality&lt;/h2&gt;&#xA;&lt;p&gt;One of the most eye-opening aspects of web application security testing is just how time consuming it can be. Even with professional-grade tools like Burp Suite Professional at your disposal, the process requires an immense amount of patience, persistence, and deep technical understanding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DevSecOps Best Practices: Integrating Security into CI/CD Pipelines</title>
+      <link>/blog/devsecops-best-practices/</link>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>/blog/devsecops-best-practices/</guid>
+      <description>&lt;h1 id=&#34;devsecops-best-practices-integrating-security-into-cicd-pipelines&#34;&gt;DevSecOps Best Practices: Integrating Security into CI/CD Pipelines&lt;/h1&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s rapidly evolving cybersecurity landscape, the integration of security practices into the development lifecycle has become paramount. DevSecOps represents a cultural shift that emphasizes the importance of security as a shared responsibility across development, operations, and security teams.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-foundation-of-devsecops&#34;&gt;The Foundation of DevSecOps&lt;/h2&gt;&#xA;&lt;p&gt;DevSecOps builds upon the principles of DevOps while adding security as a core component. This approach ensures that security is not an afterthought but rather an integral part of the development process from the very beginning.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -323,7 +323,7 @@ body, html, div, section, article, aside, nav, header, footer, main {
     border-color: var(--accent-navy) !important;
 }
 </style> 
-    <title>GWAPT Journey: The Reality of Web Application Security Testing - Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</title>
+    <title>Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10? - Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</title>
 </head>
 <body>
         <section class="banner-section">
@@ -666,70 +666,65 @@ function setLanguage(lang) {
             <article class="blog-post-section section">
                 <header class="blog-post-header">
                     <div class="blog-post-meta">
-                        <time class="blog-post-date">August 19, 2025</time>
+                        <time class="blog-post-date">July 17, 2026</time>
                         
                         <div class="blog-post-tags">
                             
-                            <span class="blog-tag">GWAPT</span>
+                            <span class="blog-tag">DevSecOps</span>
                             
-                            <span class="blog-tag">Web Application Security</span>
+                            <span class="blog-tag">CI/CD Security</span>
                             
-                            <span class="blog-tag">Penetration Testing</span>
+                            <span class="blog-tag">NIST</span>
                             
-                            <span class="blog-tag">Burp Suite</span>
+                            <span class="blog-tag">OWASP</span>
                             
-                            <span class="blog-tag">Krakow</span>
+                            <span class="blog-tag">Research</span>
+                            
+                            <span class="blog-tag">Supply Chain Security</span>
                             
                         </div>
                         
                     </div>
                     
-                    <h1 class="blog-post-title">GWAPT Journey: The Reality of Web Application Security Testing</h1>
+                    <h1 class="blog-post-title">Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10?</h1>
                     
                     
-                    <p class="blog-post-description">Exploring the challenges and time-intensive nature of web application security testing, even with professional tools like Burp Suite.</p>
+                    <p class="blog-post-description">700 mapping cells later: interim results from my SANS research mapping federal cybersecurity guidance against the OWASP Top 10 CI/CD Security Risks, and the four gap areas every pipeline owner should check.</p>
                     
                 </header>
                 
                 <div class="blog-post-content">
-                    <h1 id="gwapt-journey-the-reality-of-web-application-security-testing">GWAPT Journey: The Reality of Web Application Security Testing</h1>
-<p>As I prepare for my upcoming GWAPT (GIAC Web Application Penetration Tester) certification, I&rsquo;ve been reflecting on the incredible complexity and time-intensive nature of web application security testing. It&rsquo;s fascinating how the virtual world has evolved to such an accessible state, yet the underlying security challenges remain as intricate as ever.</p>
-<h2 id="the-time-investment-reality">The Time Investment Reality</h2>
-<p>One of the most eye-opening aspects of web application security testing is just how time consuming it can be. Even with professional-grade tools like Burp Suite Professional at your disposal, the process requires an immense amount of patience, persistence, and deep technical understanding.</p>
-<h3 id="why-web-app-testing-takes-so-long">Why Web App Testing Takes So Long</h3>
-<p><strong>1. Understanding Application Logic</strong>
-The biggest challenge isn&rsquo;t just running automated scans; it&rsquo;s understanding the complex business logic behind modern web applications. Every application has its own unique flow, authentication mechanisms, and data processing patterns that must be thoroughly understood before effective testing can begin.</p>
-<p><strong>2. Tool Limitations</strong>
-While Burp Suite Professional is an incredible tool, it&rsquo;s not a magic wand. It can identify common vulnerabilities, but it can&rsquo;t understand the context of your specific application. The real work begins when you need to:</p>
+                    <h1 id="interim-findings-how-well-does-federal-guidance-cover-the-owasp-cicd-top-10">Interim Findings: How Well Does Federal Guidance Cover the OWASP CI/CD Top 10?</h1>
+<p>Last month I <a href="/blog/cicd-security-research-whitepaper/">introduced my SANS research project</a>: a structured mapping of federal cybersecurity guidance against the risks that actually show up in CI/CD pipelines. The control-extraction and mapping phase is now done, and the interim numbers are worth sharing.</p>
+<p>The usual caveat applies, and I mean it: these are interim results from a single coder. An independent reliability audit is pending, and no final calls get made until it has run. I flag this not as fine print but because reporting what the evidence says, before you know whether you like it, is the whole job. It is the same discipline I bring to security audits.</p>
+<h2 id="the-numbers-so-far">The numbers so far</h2>
+<p>From a corpus of federal guidance documents (NIST SP 800-204D, the NSA/CISA joint advisory on defending CI/CD environments, the SSDF in SP 800-218, SP 800-53, SP 800-161r1, and Executive Order 14028, among others), I extracted 72 controls and rated 70 of them against all ten categories of the OWASP Top 10 CI/CD Security Risks. That is 700 mapping cells, each rated fully, partially, or not addressed, with verbatim quote evidence behind every rating.</p>
+<p>Rolled up to the category level:</p>
 <ul>
-<li>Manually trace through application workflows</li>
-<li>Understand session management intricacies</li>
-<li>Analyze custom authentication mechanisms</li>
-<li>Test business logic flaws that automated tools miss</li>
+<li><strong>6 of 10 categories are fully addressed</strong> somewhere in the corpus: flow control, identity and access management, pipeline-based access controls abuse (poisoned pipeline execution), credential hygiene, artifact integrity, and logging and visibility.</li>
+<li><strong>4 of 10 are only partially addressed</strong>: dependency chain abuse, pipeline-based access controls, insecure system configuration, and ungoverned third-party services.</li>
+<li><strong>0 categories are unaddressed.</strong> Federal guidance now touches every category of the OWASP CI/CD taxonomy at least at the objective level.</li>
 </ul>
-<p><strong>3. The Human Element</strong>
-Web applications are built by humans, which means they contain human logic, and human errors. Finding these requires thinking like both a developer and an attacker, understanding not just how the application works, but how it could be made to work differently.</p>
-<h2 id="the-knowledge-gap">The Knowledge Gap</h2>
-<p>Having access to professional tools doesn&rsquo;t automatically make you a security expert. The gap between having Burp Suite Professional and being able to effectively use it is significant. It requires:</p>
-<ul>
-<li><strong>Deep understanding of web technologies</strong> (HTTP, JavaScript, various frameworks)</li>
-<li><strong>Knowledge of common vulnerabilities</strong> and how they manifest in real applications</li>
-<li><strong>Experience with different testing methodologies</strong> and when to apply them</li>
-<li><strong>Patience to methodically work through complex applications</strong></li>
-</ul>
-<h2 id="my-upcoming-testing-session">My Upcoming Testing Session</h2>
-<p>In two weeks, I&rsquo;ll be conducting some hands-on web application security testing while on vacation in Krakow, Poland. There&rsquo;s something poetic about testing the virtual world&rsquo;s security from such a historic city, a reminder that while our digital landscape is constantly evolving, the fundamental principles of security remain timeless.</p>
-<p>The ease of access to the virtual world today is incredible. We can test applications from anywhere, access tools and resources instantly, and collaborate with security professionals worldwide. But this accessibility also means that potential attackers have the same advantages, making thorough security testing more important than ever.</p>
-<h2 id="the-gwapt-challenge">The GWAPT Challenge</h2>
-<p>The GWAPT certification represents a significant milestone in web application security expertise. It&rsquo;s not just about knowing how to use tools; it&rsquo;s about understanding the underlying principles, being able to think like an attacker, and having the patience to methodically work through complex applications.</p>
-<p>As I continue my preparation, I&rsquo;m reminded that web application security testing is as much an art as it is a science. It requires creativity, persistence, and a deep understanding of both technology and human nature.</p>
-<h2 id="looking-forward">Looking Forward</h2>
-<p>The virtual world&rsquo;s accessibility has democratized security testing, but it hasn&rsquo;t made it easier. If anything, it&rsquo;s made the field more competitive and the challenges more complex. But that&rsquo;s what makes it exciting: there&rsquo;s always something new to learn, always a new vulnerability to discover, always a new way to think about security.</p>
-<p>Stay tuned for updates from my testing session in Krakow, where I&rsquo;ll be exploring the intersection of ancient history and modern cybersecurity.</p>
+<h2 id="what-surprised-me">What surprised me</h2>
+<p>I pre-registered a hypothesis that federal guidance would be broad but shallow: most categories touched, few covered with operational depth. The data is currently trending against my own hypothesis, and the reason is instructive.</p>
+<p>Two documents carry almost all of the operational weight: NIST SP 800-204D (2024) and the NSA/CISA cybersecurity information sheet on CI/CD environments (2023). These are not framework documents that tell you to &ldquo;manage risk.&rdquo; They name tool-recognizable mechanisms: sandboxed CI runs, push protection, enforced commit signing, provenance-gated deployment admission, secrets-manager indirection. The older framework documents (SP 800-53, the SSDF, EO 14028) rate almost uniformly &ldquo;partially&rdquo;: objectives named, implementation left to you.</p>
+<p>The practical takeaway: if you own a pipeline and you have only read the framework-level guidance, the two documents above are where the actionable material lives.</p>
+<h2 id="the-four-gaps-that-should-worry-you">The four gaps that should worry you</h2>
+<p>Across the entire corpus, four areas remain thin. These are the places where a pipeline owner gets the least help from official guidance, and in my experience they are also where real-world incidents concentrate:</p>
+<ol>
+<li><strong>Dependency-resolution abuse mechanics.</strong> Guidance covers pinning and verification objectives, but not the specific failure modes: dependency confusion, typosquatting, mutable-tag references on third-party actions.</li>
+<li><strong>Pipeline-node credential scoping.</strong> What a specific runner or pipeline node should be allowed to reach is largely left as an exercise for the reader.</li>
+<li><strong>CI/CD server and runner hardening.</strong> Hardening guidance for the pipeline infrastructure itself is objective-level at best.</li>
+<li><strong>Governance of third-party CI/CD service integrations.</strong> Only one corpus item even names third-party services in development processes as a control target.</li>
+</ol>
+<p>If you want a quick self-check: could you say, today, which third-party actions or services your pipelines call, whether those references are pinned to immutable versions, and what credentials each pipeline node can reach? Those three questions cover most of the gap surface above.</p>
+<h2 id="why-this-matters-beyond-the-us-federal-space">Why this matters beyond the US federal space</h2>
+<p>I now work with EU organizations on NIS2 readiness, and the overlap is direct. NIS2&rsquo;s risk-management measures explicitly include supply-chain security, and your CI/CD pipeline is the part of your supply chain you actually control. The four gap areas above are precisely where I look first in an audit, because they are the places where neither US federal guidance nor most internal policies give teams concrete answers.</p>
+<h2 id="whats-next">What&rsquo;s next</h2>
+<p>The reference-compromise mapping (SolarWinds, Codecov, 3CX) is in progress, and the independent reliability audit comes after that. If the audit downgrades some borderline ratings, the picture shifts back toward my original hypothesis; if it holds, the &ldquo;guidance is more operational than expected&rdquo; story stands. Either way, the final whitepaper will report it.</p>
+<p>If you run pipelines in a regulated environment and want to compare notes, my inbox is open.</p>
 <hr>
-<p><em>This post reflects my ongoing journey in web application security and preparation for the GWAPT certification. The virtual world may be easily accessible, but mastering its security requires dedication, patience, and continuous learning.</em></p>
-<hr>
-<p><strong>Need hands-on web application security testing?</strong> I provide <a href="/#help">penetration testing and full-access audits</a> as part of NIS2 compliance engagements. <a href="/#engagement">Learn about the audit process and timeline</a>.</p>
+<p><strong>Looking to secure your CI/CD pipeline for NIS2 compliance?</strong> I conduct <a href="/#help">supply-chain security audits and Zero Trust architecture reviews</a> for EU organizations. <a href="/#engagement">See the typical engagement timeline</a> to understand what an audit looks like.</p>
 
                 </div>
                 
