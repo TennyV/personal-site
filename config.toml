@@ -198,6 +198,10 @@ disable404 = true
         level = "Native"
 
         [[params.language.list]]
+        language = "Polish"
+        level = "Strong A2, approaching B1"
+
+        [[params.language.list]]
         language = "Thai"
         level = "Conversational"
 

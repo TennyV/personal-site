@@ -2399,3 +2399,49 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
     }
 }
+
+/* ===== Cert cards: clean light styling ===== */
+/* The sidebar-wide background override above paints dark boxes behind the
+   badge images and text inside the white cards. Re-establish a clean card:
+   white background, transparent children, dark readable text. */
+.sidebar-wrapper .cert-card,
+.sidebar-wrapper .cert-card * {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.sidebar-wrapper .cert-card {
+    background: #ffffff !important;
+    border: 1px solid #e6eaef !important;
+    padding: 14px;
+    align-items: center;
+}
+
+.sidebar-wrapper .cert-card .certification {
+    color: #2b3e50 !important;
+    font-size: 0.88rem;
+}
+
+.sidebar-wrapper .cert-card .meta {
+    color: #346fa6 !important;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-wrapper .cert-card .time {
+    color: #8a94a0 !important;
+    font-size: 0.78rem;
+}
+
+.sidebar-wrapper .cert-badge-image {
+    width: 88px;
+    height: 88px;
+    background: #ffffff !important;
+    border-radius: 0;
+}
+
+.sidebar-wrapper .certifications-intro,
+.sidebar-wrapper .certifications-intro a {
+    background-color: transparent !important;
+}
