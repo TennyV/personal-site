@@ -103,44 +103,66 @@ disable404 = true
         title = "Certifications"
 
         [[params.certifications.list]]
-        name = "GIAC Web Application Penetration Tester (GWAPT)"
+        name = "Cloud Security Automation"
+        acronym = "GCSA"
         issuer = "GIAC"
-        date = "September 2025"
+        date = "March 2025"
+        honors = true
 
         [[params.certifications.list]]
-        name = "GIAC Security Essentials (GSEC)"
-        issuer = "GIAC"
-        date = "May 2023"
-
-        [[params.certifications.list]]
-        name = "GIAC Certified Incident Handler (GCIH)"
-        issuer = "GIAC"
-        date = "August 2023"
-
-        [[params.certifications.list]]
-        name = "GIAC Certified Intrusion Analyst (GCIA)"
-        issuer = "GIAC"
-        date = "November 2023"
-
-        [[params.certifications.list]]
-        name = "GIAC Strategic Planning, Policy & Leadership (GSTRT)"
-        issuer = "GIAC"
-        date = "May 2024"
-
-        [[params.certifications.list]]
-        name = "GIAC Defense Security Architecture (GDSA)"
+        name = "Defensible Security Architecture"
+        acronym = "GDSA"
         issuer = "GIAC"
         date = "January 2025"
 
         [[params.certifications.list]]
-        name = "GIAC Cloud Security Automation (GCSA)"
+        name = "Web App Penetration Tester"
+        acronym = "GWAPT"
         issuer = "GIAC"
-        date = "March 2025"
+        date = "September 2024"
+        honors = true
+
+        [[params.certifications.list]]
+        name = "Certified Intrusion Analyst"
+        acronym = "GCIA"
+        issuer = "GIAC"
+        date = "November 2023"
+
+        [[params.certifications.list]]
+        name = "Certified Incident Handler"
+        acronym = "GCIH"
+        issuer = "GIAC"
+        date = "August 2023"
+
+        [[params.certifications.list]]
+        name = "Strategic Planning & Leadership"
+        acronym = "GSTRT"
+        issuer = "GIAC"
+        date = "May 2024"
+
+        [[params.certifications.list]]
+        name = "Security Essentials"
+        acronym = "GSEC"
+        issuer = "GIAC"
+        date = "May 2023"
+
+        [[params.certifications.list]]
+        name = "Security Leadership"
+        acronym = "GSLC"
+        issuer = "GIAC"
+        date = "2024"
+
+        [[params.certifications.list]]
+        name = "Security Awareness Professional"
+        acronym = "SSAP"
+        issuer = "SANS"
+        date = "2024"
 
         [[params.certifications.list]]
         name = "CompTIA A+"
+        acronym = "A+"
         issuer = "CompTIA"
-        date = "December 2021"
+        date = "December 2024"
         
     # Languages section
     [params.language]
@@ -198,7 +220,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Professional Summary"
-        summary = "I'm a security engineer who loves finding things that are broken before the bad guys do. My sweet spot is CI/CD pipelines — getting security to live inside the build process instead of bolted on at the end. I've done this at federal agencies, in finance, and now internationally at Decyda SRLS in Poland. When I'm not at a keyboard I'm tinkering with Raspberry Pis, because apparently I can't stop. Working toward my Master's in Information Security Engineering at SANS and hold five GIAC certifications."
+        summary = "I'm a security engineer who loves finding things that are broken before the bad guys do. My sweet spot is CI/CD pipelines — getting security to live inside the build process instead of bolted on at the end. I've done this at federal agencies, in finance, and now internationally at Decyda SRLS in Poland. When I'm not at a keyboard I'm tinkering with Raspberry Pis, because apparently I can't stop. Working toward my Master's in Information Security Engineering at SANS and hold eight GIAC certifications."
 
     # Experiences section
     [params.experiences]

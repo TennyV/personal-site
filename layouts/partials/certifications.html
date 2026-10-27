@@ -1,11 +1,20 @@
             <div class="certifications-container container-block">
                 <h2 class="container-block-title">{{ i18n "certifications" }}</h2>
-				{{ range .Site.Params.certifications.list }}
-                <div class="item">
-                    <h4 class="certification">{{ .name }}</h4>
-                    <h5 class="meta">{{ .issuer }}</h5>
-                    <div class="time">{{ .date }}</div>
-                </div><!--//item-->
-				{{ end }}
+                <div class="certifications-grid">
+                {{ range .Site.Params.certifications.list }}
+                <div class="cert-card">
+                    <div class="cert-badge-placeholder">
+                        <div class="giac-logo">
+                            <div style="font-size:1.1rem;font-weight:800;letter-spacing:0.5px;">{{ .acronym }}</div>
+                            <div style="font-size:0.6rem;margin-top:3px;opacity:0.85;">{{ .issuer }}</div>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h4 class="certification">{{ .name }}{{ if .honors }} <span style="color:#f39c12;font-size:0.75rem;">★ Honors</span>{{ end }}</h4>
+                        <div class="meta">{{ .issuer }}</div>
+                        <div class="time">{{ .date }}</div>
+                    </div>
+                </div>
+                {{ end }}
+                </div>
             </div><!--//certifications-container-->
-
