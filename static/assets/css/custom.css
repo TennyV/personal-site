@@ -612,9 +612,10 @@ html {
 
 .banner-subtitle {
     font-size: 1.2rem !important;
-    opacity: 0.9 !important;
-    font-weight: 300 !important;
-    color: white !important;
+    opacity: 1 !important;
+    font-weight: 400 !important;
+    color: #e8ecf0 !important;
+    letter-spacing: 0.3px !important;
 }
 
 .banner-section .banner-cta {
@@ -673,8 +674,10 @@ html {
 
 .banner-subtitle {
     font-size: 1.2rem;
-    opacity: 0.9;
-    font-weight: 300;
+    opacity: 1;
+    font-weight: 400;
+    color: #e8ecf0;
+    letter-spacing: 0.3px;
 }
 
 .banner-watermark {
