@@ -106,14 +106,14 @@ disable404 = true
         name = "Advisory Board"
         acronym = "GIAC"
         issuer = "GIAC"
-        date = "2025"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/efd77bd2-ab34-4323-b427-47b3e7136029/image.png"
 
         [[params.certifications.list]]
         name = "Cloud Security Automation"
         acronym = "GCSA"
         issuer = "GIAC"
-        date = "March 2025"
+        date = "Exp. Aug 31, 2030"
         honors = true
         badgeImage = "https://images.credly.com/size/110x110/images/244a6e6e-467c-456f-b9f8-426e7f587a82/image.png"
 
@@ -121,21 +121,21 @@ disable404 = true
         name = "Defensible Security Architecture"
         acronym = "GDSA"
         issuer = "GIAC"
-        date = "January 2025"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/4a1f018b-712c-44a7-b494-52ecdfe1ed35/image.png"
 
         [[params.certifications.list]]
         name = "Cloud Threat Detection"
         acronym = "GCTD"
         issuer = "GIAC"
-        date = "2025"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/cbff2cbf-bcac-4e0a-9ac6-7f618015d46b/image.png"
 
         [[params.certifications.list]]
         name = "Web App Penetration Tester"
         acronym = "GWAPT"
         issuer = "GIAC"
-        date = "September 2024"
+        date = "Exp. Aug 31, 2030"
         honors = true
         badgeImage = "https://images.credly.com/size/110x110/images/f535241f-edd3-4dd2-93fd-2243dbc0826e/image.png"
 
@@ -143,35 +143,35 @@ disable404 = true
         name = "Certified Intrusion Analyst"
         acronym = "GCIA"
         issuer = "GIAC"
-        date = "November 2023"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/ff692b5b-67a7-40f9-b8c9-8eb6308f4f53/image.png"
 
         [[params.certifications.list]]
         name = "Certified Incident Handler"
         acronym = "GCIH"
         issuer = "GIAC"
-        date = "August 2023"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/c3e2745b-2f30-4e6b-9290-f7557a705181/image.png"
 
         [[params.certifications.list]]
         name = "Strategic Planning & Leadership"
         acronym = "GSTRT"
         issuer = "GIAC"
-        date = "May 2024"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/59114c3c-205c-443a-9e67-ef5d55574527/image.png"
 
         [[params.certifications.list]]
         name = "Security Essentials"
         acronym = "GSEC"
         issuer = "GIAC"
-        date = "May 2023"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/8e6bde54-8a33-4ec0-9d70-90fcde581bcf/image.png"
 
         [[params.certifications.list]]
         name = "Security Leadership"
         acronym = "GSLC"
         issuer = "GIAC"
-        date = "2024"
+        date = "Exp. Aug 31, 2030"
         badgeImage = "https://images.credly.com/size/110x110/images/bb26d719-4fc5-432e-ad22-2b17d367b900/image.png"
 
         [[params.certifications.list]]
