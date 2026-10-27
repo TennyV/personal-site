@@ -1,11 +1,10 @@
 # Page settings
 
-baseurl = "/"
+baseurl = ""
 languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "Tenny Vongtip - NIS2 Compliance Auditor & Zero Trust Architect"
+title = "Tenny Vongtip"
 theme = "hugo-orbit-theme"
-googleAnalytics = "G-9215SRQ9LR"
+# googleAnalytics = "UA-XXXXXXX-Y"
 
 # Professional site settings
 enableGitInfo = true
@@ -13,23 +12,14 @@ enableEmoji = true
 enableRobotsTXT = true
 
 # Do not build files for websites. Need them? Set to false
-disableRSS = false
-disableSitemap = false
+disableRSS = true
+disableSitemap = true
 disable404 = true
-
-# Multi-language support
-[languages]
-  [languages.en]
-    languageName = "English"
-    weight = 1
-  [languages.pl]
-    languageName = "Polski"
-    weight = 2
 
 [params]
 
 # Meta
-    description = "NIS2 Compliance Auditor & Zero Trust Architect. GIAC-certified security auditor helping organizations pass NIS2 audits and build defensible Zero Trust architectures."
+    description = "Security engineer who protects people from their computers and looks for broken things. Raspberry Pi nerd. CI/CD enthusiast."
     author = "Tenny Vongtip"
 
     [params.securityBadges]
@@ -49,8 +39,7 @@ disable404 = true
     # Profile section
     [params.profile]
         name = "Siriwat (Tenny) Vongtip"
-        tagline = "NIS2 Compliance Auditor & Zero Trust Architect"
-        tagline_pl = "Audytor Zgodności NIS2 i Architekt Zero Trust"
+        tagline = "I protect people from their computers and look for broken things"
         avatar = "profile-new.png"
 
     # Contact section
@@ -99,9 +88,9 @@ disable404 = true
         title = "Education"
 
         [[params.education.list]]
-        degree = "Masters in Information Security Engineering (Cloud Security Focus)"
+        degree = "Masters in Information Security Engineering"
         college = "SANS Technology Institute"
-        dates = "Expected Dec 2026"
+        dates = "2023 - 2026"
         
         [[params.education.list]]
         degree = "Bachelor of Science in Computer Science"
@@ -114,80 +103,44 @@ disable404 = true
         title = "Certifications"
 
         [[params.certifications.list]]
-        name = "GIAC Web Application Penetration Tester (GWAPT, Honors)"
+        name = "GIAC Web Application Penetration Tester (GWAPT)"
         issuer = "GIAC"
         date = "September 2025"
-        credlyUrl = "https://www.credly.com/badges/cb0a0dc1-7109-4fb5-9bd9-9b9a2710472e"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/f535241f-edd3-4dd2-93fd-2243dbc0826e/image.png"
 
         [[params.certifications.list]]
         name = "GIAC Security Essentials (GSEC)"
         issuer = "GIAC"
         date = "May 2023"
-        credlyUrl = "https://www.credly.com/badges/5581ba51-3295-474c-9322-a5a9de888740"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/8e6bde54-8a33-4ec0-9d70-90fcde581bcf/image.png"
 
         [[params.certifications.list]]
         name = "GIAC Certified Incident Handler (GCIH)"
         issuer = "GIAC"
         date = "August 2023"
-        credlyUrl = "https://www.credly.com/badges/0115d37b-7781-4e34-a21c-0681c0b2cbc2"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/c3e2745b-2f30-4e6b-9290-f7557a705181/image.png"
 
         [[params.certifications.list]]
         name = "GIAC Certified Intrusion Analyst (GCIA)"
         issuer = "GIAC"
         date = "November 2023"
-        credlyUrl = "https://www.credly.com/badges/3a920140-6fd2-4e2c-b4ac-e5ea0f69663c"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/ff692b5b-67a7-40f9-b8c9-8eb6308f4f53/image.png"
 
         [[params.certifications.list]]
         name = "GIAC Strategic Planning, Policy & Leadership (GSTRT)"
         issuer = "GIAC"
         date = "May 2024"
-        credlyUrl = "https://www.credly.com/badges/3a3c1d31-e64a-434f-86de-8a5204079d64"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/59114c3c-205c-443a-9e67-ef5d55574527/image.png"
 
         [[params.certifications.list]]
-        name = "GIAC Defensible Security Architecture (GDSA)"
+        name = "GIAC Defense Security Architecture (GDSA)"
         issuer = "GIAC"
         date = "January 2025"
-        credlyUrl = "https://www.credly.com/badges/6dcf212a-ad80-46fa-b9a8-88f81050e64c"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/4a1f018b-712c-44a7-b494-52ecdfe1ed35/image.png"
 
         [[params.certifications.list]]
-        name = "GIAC Cloud Security Automation (GCSA, Honors)"
+        name = "GIAC Cloud Security Automation (GCSA)"
         issuer = "GIAC"
         date = "March 2025"
-        credlyUrl = "https://www.credly.com/badges/ba53b38b-8e9e-4cd3-adea-39d7cb42cd0f"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/244a6e6e-467c-456f-b9f8-426e7f587a82/image.png"
-
-        [[params.certifications.list]]
-        name = "GIAC Security Leadership (GSLC)"
-        issuer = "GIAC"
-        date = "2026"
-        credlyUrl = "https://www.credly.com/badges/7c7f966a-cdc3-4211-8510-fef097ea5efd"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/bb26d719-4fc5-432e-ad22-2b17d367b900/image.png"
-
-        [[params.certifications.list]]
-        name = "GIAC Advisory Board (invitation for 90+ exam scores)"
-        issuer = "GIAC"
-        date = "May 2023"
-        credlyUrl = "https://www.credly.com/badges/e74393b6-f252-49bf-9e84-39637c7295ea"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/efd77bd2-ab34-4323-b427-47b3e7136029/image.png"
-
-        [[params.certifications.list]]
-        name = "SANS Security Awareness Professional (SSAP)"
-        issuer = "SANS"
-        date = "August 2024"
-        credlyUrl = "https://www.credly.com/badges/6dbd24a2-1fd2-4530-80b7-af1d47574ada"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/f3b0e384-2906-40c6-a19f-354a2d2ad291/image.png"
 
         [[params.certifications.list]]
         name = "CompTIA A+"
         issuer = "CompTIA"
-        date = "December 2024"
-        badgeImageUrl = "https://images.credly.com/size/220x220/images/f6d62c5d-1e1d-4de6-92ee-8dc8c80b1c7b/blob"
+        date = "December 2021"
         
     # Languages section
     [params.language]
@@ -197,10 +150,6 @@ disable404 = true
         [[params.language.list]]
         language = "English"
         level = "Native"
-
-        [[params.language.list]]
-        language = "Polish"
-        level = "Strong A2, approaching B1"
 
         [[params.language.list]]
         language = "Thai"
@@ -218,10 +167,7 @@ disable404 = true
         title = "Professional Interests"
 
         [[params.interests.list]]
-        interest = "NIS2 & EU Cyber Regulation"
-
-        [[params.interests.list]]
-        interest = "Zero Trust Architecture"
+        interest = "Cybersecurity Research"
 
         [[params.interests.list]]
         interest = "Cloud Security Architecture"
@@ -252,65 +198,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Professional Summary"
-        title_pl = "Profesjonalne Streszczenie"
-        summary = "I audit organizations against NIS2 requirements and architect the Zero Trust roadmaps that close the gaps. GIAC-certified across eight domains, including Defensible Security Architecture (GDSA, Zero Trust) and Cloud Security Automation (GCSA, earned with honors). GIAC Advisory Board member, an invitation reserved for exam scores of 90 or above. 10+ years of security work spanning U.S. federal agencies, financial services, and EU environments.\n\n**If your organization falls under NIS2 and you want a gap assessment or a Zero Trust architecture review, email me directly. No intake forms, no sales layer. You talk to the auditor.**"
-        summary_pl = "Przeprowadzam audyty organizacji pod kątem wymagań NIS2 i architektury Zero Trust zamykające luki bezpieczeństwa. Certyfikowany GIAC w ośmiu domenach, w tym Defensible Security Architecture (GDSA, Zero Trust) i Cloud Security Automation (GCSA, uzyskany z wyróżnieniem). Członek GIAC Advisory Board, do którego zaproszenie otrzymują wyłącznie osoby z wynikiem egzaminu 90+. Ponad 10-letnie doświadczenie w bezpieczeństwie w agencjach federalnych USA, usługach finansowych i środowiskach europejskich.\n\n**Jeśli Twoja organizacja podlega NIS2 i chcesz oceny luk lub przeglądu architektury Zero Trust, napisz do mnie bezpośrednio. Żadnych formularzy wstępnych, brak warstwy sprzedaży. Rozmawiam z audytorem.**"
-
-    # Why NIS2 Now section
-    [params.nis2]
-        enable = true
-        icon = "fa-clock-o"
-        title = "Why NIS2, Why Now"
-        title_pl = "Dlaczego NIS2, Dlaczego Teraz"
-        content = "**The law is already in force.** Poland's amended National Cybersecurity System Act (the KSC Act), which implements NIS2, took effect on April 3, 2026. It covers roughly 42,000 companies across 18 sectors: energy, transport, banking, healthcare, digital infrastructure, manufacturing, public administration, and more.\n\n**The deadlines are close.**\n\n- **October 3, 2026**: covered entities must self-identify and register with the authorities.\n- **April 2027**: risk-management measures, security controls, and incident-reporting processes must be fully in place.\n- **April 2028**: first mandatory security audits.\n\n**The penalties are real.** Fines reach 10 million EUR or 2% of global turnover for essential entities, and management can be held personally liable for compliance failures.\n\nIf you have not yet confirmed whether your organization is covered, that is the first conversation to have. It costs you one email."
-        content_pl = "**Prawo jest już w mocy.** Nowelizowana polska Ustawa o Krajowym Systemie Cyberbezpieczeństwa (Ustawa KSC), która wdraża NIS2, weszła w życie 3 kwietnia 2026 r. Obejmuje około 42 000 firm w 18 sektorach: energetyka, transport, bankowość, opieka zdrowotna, infrastruktura cyfrowa, produkcja, administracja publiczna i inne.\n\n**Terminy są bliskie.**\n\n- **3 października 2026 r.**: podmioty objęte muszą się zidentyfikować i zarejestrować u władz.\n- **Kwiecień 2027**: środki zarządzania ryzykiem, kontrole bezpieczeństwa i procesy raportowania incydentów muszą być w pełni wdrożone.\n- **Kwiecień 2028**: pierwsze obowiązkowe audyty bezpieczeństwa.\n\n**Kary są rzeczywiste.** Grzywny sięgają 10 milionów EUR lub 2% światowego obrotu dla podmiotów istotnych, a kierownictwo może być osobiście odpowiedzialne za niepowodzenie w zakresie zgodności.\n\nJeśli nie potwierdzono jeszcze, czy Twoja organizacja jest objęta, to jest pierwsza rozmowa do przeprowadzenia. Kosztuje cię jedną wiadomość e-mail."
-
-    # How I Can Help section
-    [params.help]
-        enable = true
-        icon = "fa-shield"
-        title = "How I Can Help Your Organization"
-        title_pl = "Jak Mogę Pomóc Twojej Organizacji"
-        content = "**NIS2 gap assessment.** I map your current controls against the directive's risk-management measures and incident-reporting duties, then deliver a prioritized, evidence-based findings report your leadership can act on.\n\n**Zero Trust architecture review and roadmap.** Target architectures grounded in NIST SP 800-207 and defensible security architecture principles: identity, network segmentation, least-privilege access, and monitoring, sequenced so each step reduces real risk.\n\n**Penetration testing and full-access audits.** GWAPT-certified (with honors) web application testing with OWASP Top Ten coverage, plus full-access (white-box) audits that show what a malicious insider or compromised account could actually reach: identity permissions, lateral movement paths, and sensitive data exposure. Clear remediation reports your teams can act on, with findings that map back to your compliance evidence, not a theatrical red-team exercise.\n\n**Audit readiness.** Documentation, evidence collection, POA&M management, and incident-response tabletop exercises, so the real assessment holds no surprises.\n\n**Cloud and identity security.** Hands-on reviews of Azure, AWS, and Microsoft Entra ID environments, from account audits to vulnerability management programs.\n\n**Frameworks I work in:** NIS2, DORA, GDPR (Article 32 security measures), the EU Cyber Resilience Act, ISO/IEC 27001, NIST Cybersecurity Framework, NIST SP 800-53, NIST SP 800-207 (Zero Trust), CIS Critical Security Controls, and the OWASP Top Ten."
-        content_pl = "**Ocena luk NIS2.** Mapuję Twoje obecne kontrole w stosunku do miar zarządzania ryzykiem dyrektywy i obowiązków raportowania incydentów, a następnie dostarczam priorytetowy, oparty na dowodach raport z ustaleniami, na które Twoje kierownictwo może działać.\n\n**Przegląd architektury Zero Trust i mapa drogowa.** Architektura docelowa oparta na NIST SP 800-207 i zasadach defensywnej architektury bezpieczeństwa: tożsamość, segmentacja sieci, dostęp z najmniejszymi uprawnieniami i monitorowanie, zaplanowane tak, aby każdy krok zmniejszał rzeczywiste ryzyko.\n\n**Testowanie penetracyjne i audyty z pełnym dostępem.** Testowanie aplikacji internetowych certyfikowane GWAPT (z wyróżnieniem) z pokryciem OWASP Top Ten, plus audyty z pełnym dostępem (white-box) pokazujące, co rzeczywiście mogą osiągnąć złośliwy insider lub skompromitowane konto: uprawnienia tożsamości, ścieżki ruchu bocznego i ekspozycja czułych danych. Jasne raporty o środkach naprawczych, na które Twoje zespoły mogą działać, z ustaleniami odwzorowanymi na dowodach zgodności, a nie na ćwiczeniu red-team.\n\n**Gotowość do audytu.** Dokumentacja, zbieranie dowodów, zarządzanie POA&M i ćwiczenia symulujące reagowanie na incydenty, aby rzeczywista ocena nie niosła żadnych niespodzianek.\n\n**Bezpieczeństwo chmury i tożsamości.** Praktyczne przeglądy środowisk Azure, AWS i Microsoft Entra ID, od audytów kont do programów zarządzania lukami w zabezpieczeniach.\n\n**Ramy, w których pracuję:** NIS2, DORA, GDPR (artykuł 32 – środki bezpieczeństwa), Ustawa UE o odporności cybernetycznej, ISO/IEC 27001, Framework Cyberbezpieczeństwa NIST, NIST SP 800-53, NIST SP 800-207 (Zero Trust), CIS Critical Security Controls i OWASP Top Ten."
-
-    # Typical engagement section
-    [params.engagement]
-        enable = true
-        icon = "fa-calendar-check-o"
-        title = "A Typical NIS2 Engagement"
-        title_pl = "Typowe Zaangażowanie NIS2"
-        content = "Most gap assessments run four to six weeks, scoped to your size and sector.\n\n**Weeks 1-2: Scoping and evidence.** Confirm your entity classification (essential or important), map the systems in scope, and collect existing policies, registers, and evidence.\n\n**Weeks 3-4: Assessment.** Controls review against the KSC Act's risk-management measures, identity and access audit, and validation testing where agreed.\n\n**Weeks 5-6: Findings and roadmap.** Prioritized findings report, a remediation roadmap with owners and timelines, and an executive briefing for management.\n\nYou end with three things: a gap register mapped to the law's requirements, a board-ready summary, and a remediation plan your team can execute alone or with my help."
-        content_pl = "Większość ocen luk trwa od czterech do sześciu tygodni, zakreślona do Twojego rozmiaru i sektora.\n\n**Tygodnie 1-2: Zakres i dowody.** Potwierdź klasyfikację jednostki (istotna lub ważna), zmapuj systemy objęte zakresem i zbierz istniejące polityki, rejestry i dowody.\n\n**Tygodnie 3-4: Ocena.** Przegląd kontroli w stosunku do miar zarządzania ryzykiem ustawy KSC, audyt tożsamości i dostępu oraz testowanie sprawdzające w razie potrzeby.\n\n**Tygodnie 5-6: Ustalenia i mapa drogowa.** Priorytetowy raport z ustaleniami, mapa drogowa remediation z właścicielami i harmonogramami oraz briefing dla kierownictwa.\n\nKończy się trzema rzeczami: rejestr luk zmapowany do wymogów prawa, streszczenie gotowe dla zarządu i plan naprawy, który Twój zespół może wykonać sam lub przy mojej pomocy."
-
-    # Results section
-    [params.results]
-        enable = true
-        icon = "fa-check-square-o"
-        title = "Results From Real Engagements"
-        title_pl = "Wyniki z Rzeczywistych Zaangażowań"
-        intro = "No invented testimonials here. These are anonymized, verifiable outcomes from my security and audit work in U.S. federal and financial-services environments."
-        intro_pl = "Tutaj nie ma wymyślonych rekomendacji. To są zanonimizowane, weryfikowalne wyniki mojej pracy w zakresie bezpieczeństwa i audytu w agencjach federalnych USA i środowiskach usług finansowych."
-
-        [[params.results.list]]
-        metric = "7 systems"
-        title = "Continuous federal compliance"
-        text = "Kept seven U.S. federal systems audit-ready in XACTA, closed 15+ POA&Ms, and maintained ~90% security-documentation compliance."
-
-        [[params.results.list]]
-        metric = "500+ accounts"
-        title = "Identity audit that caught intruders"
-        text = "Audited 500+ Microsoft Entra ID accounts, uncovering 10+ unauthorized users and driving immediate corrective action."
-
-        [[params.results.list]]
-        metric = "20+ controls"
-        title = "Financial-services insider-threat audit"
-        text = "Evaluated 20+ internal-threat controls at a major U.S. financial institution and surfaced weak controls for targeted refinement."
-
-        [[params.results.list]]
-        metric = "3 gaps"
-        title = "Tabletop that changed priorities"
-        text = "Ran an incident-response exercise with 15+ participants that exposed three critical security gaps and triggered focused remediation."
+        summary = "I'm a security engineer who loves finding things that are broken before the bad guys do. My sweet spot is CI/CD pipelines — getting security to live inside the build process instead of bolted on at the end. I've done this at federal agencies, in finance, and now internationally at Decyda SRLS in Poland. When I'm not at a keyboard I'm tinkering with Raspberry Pis, because apparently I can't stop. Working toward my Master's in Information Security Engineering at SANS and hold five GIAC certifications."
 
     # Experiences section
     [params.experiences]
@@ -323,7 +211,7 @@ disable404 = true
         enable = true
 
         [[params.jobs.list]]
-        position = "DevSecOps Engineer"
+        position = "DevSecOps Intern"
         dates = "Aug 2025 - Present"
         company = "Decyda SRLS"
         details = "• Engineered cloud security governance by deploying Cloud Custodian on AWS, writing custom Python-based policies to enforce compliance and auto-remediate risks.\n\n• Executed penetration testing on web applications, identifying critical vulnerabilities and partnering with developers to patch code before production deployment.\n\n• Deployed AI-based security guardrails within CI/CD pipelines, automatically blocking risky code changes and reducing manual code review time."
@@ -332,17 +220,29 @@ disable404 = true
         position = "IT Cybersecurity Specialist"
         dates = "Jul 2024 - Jul 2025"
         company = "Department of the Interior"
-        details = "• Audited 500+ Microsoft Entra ID accounts, uncovering 10+ unauthorized users and driving immediate corrective action.\n\n• Kept seven federal systems continuously audit-ready in XACTA and closed 15+ POA&Ms to maintain regulatory alignment.\n\n• Provided weekly Zero Trust architecture guidance (GDSA-certified) for transitioning cloud systems toward a Zero Trust maturity model.\n\n• Led an incident-response tabletop exercise with 15+ participants that surfaced three critical security gaps."
+        details = "• Developed and integrated automated security scanning tools into Azure and GitHub pipelines, successfully detecting and mitigating 40+ critical vulnerabilities during the build phase.\n\n• Scripted automation for phishing analysis and document processing, which increased team efficiency by 60% and reduced mean time to respond (MTTR).\n\n• Programmed custom Splunk queries to correlate data sources, improving anomaly detection rates by 30% across the enterprise environment.\n\n• Conducted comprehensive identity audits and engineered stricter access controls (IAM) to harden the environment against unauthorized entry."
 
         [[params.jobs.list]]
         position = "IT/Cyber Security Auditor"
-        dates = "May 2023 - July 2023"
+        dates = "January 2024 - July 2024"
         company = "United Services Automobile Association (USAA)"
-        details = "• Evaluated 20+ security controls and recommended architectural changes that strengthened risk detection and incident response.\n\n• Audited mobile application source code against the OWASP Top Ten, verifying secure coding practices and strengthening compliance review policies."
+        details = "• Developed comprehensive technical documentation for internal threat management controls and monitoring systems\n\n• Created detailed process maps identifying business partner workflows and technology integration points\n\n• Analyzed control effectiveness and identified opportunities for refinement and improvement\n\n• Collaborated with cross-functional teams to enhance security posture and threat detection capabilities"
+
+        [[params.jobs.list]]
+        position = "Systems Administrator"
+        dates = "December 2022 - May 2023"
+        company = "Piedmont Regional Council, Kernersville, NC"
+        details = "• Developed and deployed custom Microsoft PowerApps solutions, automating business processes and creating data visualization dashboards\n\n• Managed Azure cloud infrastructure for 200+ users, including VM deployment, storage configuration, and network resource maintenance\n\n• Enhanced organizational productivity through streamlined workflows and improved decision-making capabilities\n\n• Implemented security best practices and ensured system scalability and reliability"
+
+        [[params.jobs.list]]
+        position = "Systems Administrator"
+        dates = "December 2012 - December 2022"
+        company = "Various locations in the US and overseas"
+        details = "• Managed critical infrastructure including Windows systems, LAN networks, and cloud backup solutions\n\n• Supervised application maintenance and computing infrastructure activities ensuring 99.9% uptime\n\n• Provided technical support to 200+ employees across the United States with <2-hour response times\n\n• Implemented robust backup and disaster recovery procedures ensuring data resilience and availability\n\n• Provided Tier 1/2 technical support for over 500 personnel, resolving an average of 200+ helpdesk tickets monthly with a 87% satisfaction rating\n\n• Managed user accounts, permissions, and group policies within Active Directory to ensure compliance with strict Department of Defense (DoD) security protocols"
 
     # Projects section
     [params.projects]
-        enable = false
+        enable = true
         icon = "fa-archive"
         title = "Technical Projects"
         intro = "A collection of projects demonstrating expertise in cybersecurity, software development, and data analysis. These projects showcase practical applications of security principles, automation, and analytical thinking."
@@ -379,16 +279,28 @@ disable404 = true
         title = "Technical Skills & Proficiencies"
 
         [[params.skills.list]]
-        category = "Compliance & Audit"
-        skills = "NIS2 Readiness Assessment, Security Auditing, Compliance Frameworks (NIST, ISO 27001), XACTA, POA&M Management, Risk Assessment, Security Controls Assessment, Incident Response Tabletop Exercises, OWASP Top Ten"
-
-        [[params.skills.list]]
-        category = "Zero Trust & Security Architecture"
-        skills = "Zero Trust Maturity Models, Defensible Security Architecture (GDSA), Identity Security (Microsoft Entra ID), Least-Privilege Firewall Design, Vulnerability Management (Tenable, BigFix, Defender for Cloud), Splunk Threat Detection, Penetration Testing"
+        category = "Cybersecurity & Security Tools"
+        skills = "Threat Management, Security Auditing, Compliance Frameworks (NIST, ISO 27001), Vulnerability Assessment, Incident Response, Security Controls, OWASP ZAP, Penetration Testing, Risk Assessment, Security Scanners, IntelliJ"
 
         [[params.skills.list]]
         category = "Cloud & Infrastructure"
         skills = "Microsoft Azure, AWS, Cloud Security, Infrastructure Management, Virtual Machines, Network Security, Azure Active Directory, Microsoft Entra ID, Cloud Backup Solutions, Disaster Recovery"
+
+        [[params.skills.list]]
+        category = "Programming & Development"
+        skills = "Python, Java, JavaScript, SQL, PowerShell, REST APIs, Microsoft Power Platform, PowerApps, Power Automate, HTML/CSS, Git, Version Control"
+
+        [[params.skills.list]]
+        category = "Data & Analytics"
+        skills = "Data Analysis, Data Visualization, Pandas, Jupyter Notebooks, MongoDB, SQLite, Business Intelligence, Dashboard Creation, Statistical Analysis"
+
+        [[params.skills.list]]
+        category = "IT Management & Support"
+        skills = "Windows Systems Administration, LAN/WAN Management, Technical Support, System Maintenance, User Training, Documentation, Process Automation, Change Management"
+
+        [[params.skills.list]]
+        category = "Business & Leadership"
+        skills = "Strategic Planning, Project Management, Team Leadership, Stakeholder Communication, ROI Analysis, Digital Marketing, Business Process Optimization"
 
     # Footer section
 
