@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>/en/sitemap.xml</loc>
-    
-      <lastmod>2026-07-17T21:44:52+02:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>/pl/sitemap.xml</loc>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1314/tags/ci/cd-security/</loc>
+    <lastmod>2026-06-17T11:50:19+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/devsecops/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/federal-security/</loc>
+    <lastmod>2026-06-17T11:50:19+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/blog/cicd-security-research-whitepaper/</loc>
+    <lastmod>2026-06-17T11:50:19+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/nist/</loc>
+    <lastmod>2026-06-17T11:50:19+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/research/</loc>
+    <lastmod>2026-06-17T11:50:19+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/</loc>
+    <lastmod>2026-10-27T18:17:58+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/burp-suite/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/gwapt/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/blog/gwapt-web-app-security-testing/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/krakow/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/penetration-testing/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/web-application-security/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/azure-devops/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/ci/cd/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/tags/cybersecurity/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/blog/devsecops-best-practices/</loc>
+    <lastmod>2026-07-17T16:38:45+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/about/</loc>
+    <lastmod>2026-10-27T18:17:58+01:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/blog/</loc>
+    <lastmod>2025-07-30T23:15:15+02:00</lastmod>
+  </url><url>
+    <loc>//localhost:1314/categories/</loc>
+  </url>
+</urlset>

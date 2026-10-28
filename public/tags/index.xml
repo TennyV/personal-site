@@ -1,158 +1,102 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Tenny Vongtip - NIS2 Compliance Auditor &amp; Zero Trust Architect</description>
+    <title>Tags on Tenny Vongtip</title>
+    <link>//localhost:1314/tags/</link>
+    <description>Recent content in Tags on Tenny Vongtip</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2026 21:44:52 +0200</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jul 2026 16:38:45 +0200</lastBuildDate>
+    <atom:link href="//localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CI/CD Security</title>
-      <link>/tags/ci/cd-security/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/ci/cd-security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Compliance</title>
-      <link>/tags/compliance/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/compliance/</guid>
+      <link>//localhost:1314/tags/ci/cd-security/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1314/tags/ci/cd-security/</guid>
       <description></description>
     </item>
     <item>
       <title>DevSecOps</title>
-      <link>/tags/devsecops/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/devsecops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Entity Classification</title>
-      <link>/tags/entity-classification/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/entity-classification/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>EU Regulation</title>
-      <link>/tags/eu-regulation/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/eu-regulation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>KSC Act</title>
-      <link>/tags/ksc-act/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/ksc-act/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NIS2</title>
-      <link>/tags/nis2/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/nis2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NIST</title>
-      <link>/tags/nist/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/nist/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OWASP</title>
-      <link>/tags/owasp/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/owasp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Poland</title>
-      <link>/tags/poland/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/poland/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Research</title>
-      <link>/tags/research/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/research/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Supply Chain Security</title>
-      <link>/tags/supply-chain-security/</link>
-      <pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/supply-chain-security/</guid>
+      <link>//localhost:1314/tags/devsecops/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1314/tags/devsecops/</guid>
       <description></description>
     </item>
     <item>
       <title>Federal Security</title>
-      <link>/tags/federal-security/</link>
+      <link>//localhost:1314/tags/federal-security/</link>
       <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>/tags/federal-security/</guid>
+      <guid>//localhost:1314/tags/federal-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NIST</title>
+      <link>//localhost:1314/tags/nist/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1314/tags/nist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>//localhost:1314/tags/research/</link>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1314/tags/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Burp Suite</title>
-      <link>/tags/burp-suite/</link>
+      <link>//localhost:1314/tags/burp-suite/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/burp-suite/</guid>
+      <guid>//localhost:1314/tags/burp-suite/</guid>
       <description></description>
     </item>
     <item>
       <title>GWAPT</title>
-      <link>/tags/gwapt/</link>
+      <link>//localhost:1314/tags/gwapt/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/gwapt/</guid>
+      <guid>//localhost:1314/tags/gwapt/</guid>
       <description></description>
     </item>
     <item>
       <title>Krakow</title>
-      <link>/tags/krakow/</link>
+      <link>//localhost:1314/tags/krakow/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/krakow/</guid>
+      <guid>//localhost:1314/tags/krakow/</guid>
       <description></description>
     </item>
     <item>
       <title>Penetration Testing</title>
-      <link>/tags/penetration-testing/</link>
+      <link>//localhost:1314/tags/penetration-testing/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/penetration-testing/</guid>
+      <guid>//localhost:1314/tags/penetration-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Application Security</title>
-      <link>/tags/web-application-security/</link>
+      <link>//localhost:1314/tags/web-application-security/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/web-application-security/</guid>
+      <guid>//localhost:1314/tags/web-application-security/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure DevOps</title>
-      <link>/tags/azure-devops/</link>
+      <link>//localhost:1314/tags/azure-devops/</link>
       <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/azure-devops/</guid>
+      <guid>//localhost:1314/tags/azure-devops/</guid>
       <description></description>
     </item>
     <item>
       <title>CI/CD</title>
-      <link>/tags/ci/cd/</link>
+      <link>//localhost:1314/tags/ci/cd/</link>
       <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/ci/cd/</guid>
+      <guid>//localhost:1314/tags/ci/cd/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
-      <link>/tags/cybersecurity/</link>
+      <link>//localhost:1314/tags/cybersecurity/</link>
       <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/cybersecurity/</guid>
+      <guid>//localhost:1314/tags/cybersecurity/</guid>
       <description></description>
     </item>
   </channel>
