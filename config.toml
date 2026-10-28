@@ -186,6 +186,7 @@ disable404 = true
         acronym = "A+"
         issuer = "CompTIA"
         date = "December 2024"
+        badgeImage = "/assets/images/comptia-aplus-badge.jpg"
         
     # Languages section
     [params.language]
