@@ -16,6 +16,9 @@ disableRSS = true
 disableSitemap = true
 disable404 = true
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
 
 # Meta
