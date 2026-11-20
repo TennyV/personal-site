@@ -247,7 +247,7 @@ disable404 = true
         enable = true
         icon = "fa-user"
         title = "Professional Summary"
-        summary = "I'm a security engineer who loves finding things that are broken before the bad guys do. My sweet spot is CI/CD pipelines — getting security to live inside the build process instead of bolted on at the end. I've done this at federal agencies, in finance, and now internationally at Decyda SRLS in Poland. When I'm not at a keyboard I'm tinkering with Raspberry Pis, because apparently I can't stop. Working toward my Master's in Information Security Engineering at SANS and hold eight GIAC certifications."
+        summary = "I'm a security engineer who likes finding things that are broken before the bad guys do. CI/CD pipelines are my sweet spot: getting security to live inside the build process instead of bolted on at the end. I've done this at federal agencies, in finance, and now internationally at Decyda SRLS in Poland. When I'm not at a keyboard I'm tinkering with Raspberry Pis, because apparently I can't stop. Working toward my Master's in Information Security Engineering at SANS and hold multiple GIAC certifications."
 
     # Experiences section
     [params.experiences]
@@ -288,38 +288,6 @@ disable404 = true
         dates = "December 2012 - December 2022"
         company = "Various locations in the US and overseas"
         details = "• Managed critical infrastructure including Windows systems, LAN networks, and cloud backup solutions\n\n• Supervised application maintenance and computing infrastructure activities ensuring 99.9% uptime\n\n• Provided technical support to 200+ employees across the United States with <2-hour response times\n\n• Implemented robust backup and disaster recovery procedures ensuring data resilience and availability\n\n• Provided Tier 1/2 technical support for over 500 personnel, resolving an average of 200+ helpdesk tickets monthly with a 87% satisfaction rating\n\n• Managed user accounts, permissions, and group policies within Active Directory to ensure compliance with strict Department of Defense (DoD) security protocols"
-
-    # Projects section
-    [params.projects]
-        enable = true
-        icon = "fa-archive"
-        title = "Technical Projects"
-        intro = "A collection of projects demonstrating expertise in cybersecurity, software development, and data analysis. These projects showcase practical applications of security principles, automation, and analytical thinking."
-
-        [[params.projects.list]]
-        title = "Inventory Management Application"
-        url = "https://github.com/TennyV/inventory_Management"
-        tagline = "Developed a comprehensive Android inventory management system using Java and SQLite database, featuring user authentication, real-time inventory tracking, and data persistence capabilities."
-
-        [[params.projects.list]]
-        title = "Animal Shelter Analytics Dashboard"
-        url = "https://github.com/TennyV/AAC_shelter"
-        tagline = "Built an interactive data visualization dashboard using Python Dash framework, integrating REST API with MongoDB for real-time animal shelter data tracking and analytics."
-
-        [[params.projects.list]]
-        title = "Financial Fraud Detection Analysis"
-        url = "https://github.com/TennyV/JPMorgan"
-        tagline = "Conducted comprehensive fraud analysis on financial payment datasets using Python and pandas, creating data visualizations and statistical models to identify patterns and support risk management decisions."
-
-        [[params.projects.list]]
-        title = "OWASP Security Vulnerability Assessment"
-        url = "https://github.com/TennyV/OWASPremedy"
-        tagline = "Performed comprehensive security assessment of banking application using IntelliJ and OWASP tools, identifying vulnerabilities, remediating false positives, and recommending security improvements including Spring Boot updates."
-
-        [[params.projects.list]]
-        title = "Data Analytics Shopping Cart System"
-        url = "https://github.com/TennyV/Shoppingcart"
-        tagline = "Developed a data processing system that analyzes sales data from text files, generating comprehensive reports including product sales summaries, item-specific analytics, and visual histograms for business intelligence."
 
     # Skills section
     [params.skills]
